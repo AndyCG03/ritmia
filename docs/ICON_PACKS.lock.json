@@ -1,0 +1,52 @@
+[
+  {
+    "name": "simple-icons",
+    "version": "16.35.0",
+    "license": "CC0-1.0",
+    "dist": {
+      "shasum": "78db83dd7f5ae0212b68d05c2ae7797e5d864921",
+      "tarball": "https://registry.npmjs.org/simple-icons/-/simple-icons-16.35.0.tgz",
+      "fileCount": 3484,
+      "integrity": "sha512-TCfl/2+GTrx0nCo4pEWGvxhOb8c6NsqOU1OpwjtF4lwJAthB8IYVD0fuIMjLMg6JFuG1YBO0t1iETQqJLqkoJA==",
+      "signatures": [
+        {
+          "sig": "MEQCIF16SVevy0+hHQ2MAfTFYfna1Jp85JJmORXSRoz2etxdAiAAwU3Z6PkueuE5W3EGgtyZWB+XKPPBNJZVvlBwkcdHjQ==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQCOdpXQ+PdknesUbu+QfnAK6zuBaPZ0UPCT21MvjuMNewIhAJOKvMF/4VNRLe95ykXBR0XIsb3TYxUYA6rXeOG/8vYb",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/simple-icons@16.35.0",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 16107937
+    }
+  },
+  {
+    "name": "@lobehub/icons-static-svg",
+    "version": "1.95.1",
+    "license": "MIT",
+    "dist": {
+      "shasum": "7c6281bf457230b5cfc3b7c2cdd15d3b8d8ab479",
+      "tarball": "https://registry.npmjs.org/@lobehub/icons-static-svg/-/icons-static-svg-1.95.1.tgz",
+      "fileCount": 952,
+      "integrity": "sha512-Hw7EPPgVnC4NZLXBfTNJG6hyQgqECfUPC11VVXodPSr1aebKcFxDZlSpxhWwYNdCc6bhxps/x5TtXoPmfKH2ag==",
+      "signatures": [
+        {
+          "sig": "MEYCIQDN/hcffjJOd9ooLoSG3f4Wx7f5si/SFFosGxgTCTxh6QIhAOKZSVcbtu3lNh6PHt0ncMEJa8xrZfjqXouQV4wwPULv",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIB1NtvXEmIJ+w+RpQxuYYI9ejB/9yDzIk4Mb8c0/L4a1AiEA9RB69sOFaL33wZfDV62RQsQoddv1f4IDaMDiezUTdVM=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 2418274
+    }
+  }
+]

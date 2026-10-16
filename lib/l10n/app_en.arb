@@ -1,0 +1,284 @@
+{
+  "@@locale": "en",
+  "tagline": "Your subscriptions. Your rhythm.",
+  "home": "Overview",
+  "calendar": "Calendar",
+  "settings": "Settings",
+  "add": "Add subscription",
+  "edit": "Edit subscription",
+  "subscriptions": "Your subscriptions",
+  "emptyTitle": "Make room for what matters.",
+  "emptyBody": "Add your first subscription. See what it costs and when it renews.",
+  "monthCharges": "Expected charges this month",
+  "noCharges": "No expected charges",
+  "localMode": "Local mode · data on this device",
+  "all": "All",
+  "paid": "Paid",
+  "free": "Free",
+  "active": "Active",
+  "paused": "Paused",
+  "archived": "Archived",
+  "search": "Search name or notes",
+  "name": "Name",
+  "amount": "Amount per cycle",
+  "currency": "Currency",
+  "billingCycle": "Billing cycle",
+  "weekly": "Weekly",
+  "monthly": "Monthly",
+  "quarterly": "Quarterly",
+  "yearly": "Yearly",
+  "anchorDate": "First renewal / anchor date",
+  "color": "Color",
+  "logo": "Custom logo",
+  "uploadLogo": "Upload image",
+  "removeLogo": "Remove image",
+  "logoHelp": "PNG/JPG/WebP · optimized to 256 px and up to 128 KB.",
+  "catalog": "Choose a service",
+  "notes": "Notes",
+  "save": "Save",
+  "cancel": "Back",
+  "delete": "Delete",
+  "deleteTitle": "Delete this subscription?",
+  "deleteBody": "This deletes the Ritmia record. Your contract with the provider stays active.",
+  "saved": "Subscription saved",
+  "invalidName": "Enter a name of up to 80 characters.",
+  "invalidAmount": "Enter a valid amount greater than zero, with no thousands separators.",
+  "invalidUrl": "Use a valid https address.",
+  "dateOrder": "The end date must follow the anchor date.",
+  "status": "Status",
+  "category": "Category",
+  "entertainment": "Entertainment",
+  "productivity": "Productivity",
+  "storageCategory": "Storage",
+  "education": "Education",
+  "health": "Health",
+  "utilities": "Utilities",
+  "other": "Other",
+  "reminders": "Reminders",
+  "reminderHelp": "Notify at 09:00 before renewal, trial end or plan end.",
+  "daysOne": "1 day",
+  "daysThree": "3 days",
+  "daysSeven": "7 days",
+  "daysFourteen": "14 days",
+  "endsOn": "Plan ends (optional)",
+  "trialEndsOn": "Trial ends (optional)",
+  "clear": "Clear",
+  "cancelUrl": "Manage / cancel URL",
+  "manage": "Manage with provider",
+  "manageHelp": "Opens the provider website. Ritmia does not cancel contracts or process charges.",
+  "nextRenewal": "Next renewal",
+  "noRenewal": "No upcoming renewal",
+  "events": "Renewals on this day",
+  "noEvents": "A day with no renewals.",
+  "today": "Today",
+  "previousMonth": "Previous month",
+  "nextMonth": "Next month",
+  "language": "Language",
+  "system": "System default",
+  "plan": "Your plan",
+  "freePlan": "Ritmia Free",
+  "freeFeatures": "5 subscriptions in total, calendar, logos, reminders and all currencies.",
+  "proPlan": "Ritmia Pro",
+  "proFeatures": "Unlimited subscriptions. Activation through a server-verified purchase.",
+  "proPending": "Purchases are not enabled yet.",
+  "limitMessage": "You reached the free limit of 5 subscriptions. Delete one to add another.",
+  "quotaHelp": "Paused and archived records also occupy a slot.",
+  "export": "Export CSV",
+  "exportHelp": "Export your records. Logos are not included.",
+  "notificationToggle": "Alerts on this device",
+  "notificationHelp": "Schedules the next 60 days (up to 60 alerts). Open the app to refresh the schedule.",
+  "webNotificationHelp": "On web, closed-app alerts use email once Firebase and the email provider are configured.",
+  "emailToggle": "Email reminders",
+  "emailHelp": "Requires a verified email account. Sends at 09:00 in your time zone.",
+  "permissionDenied": "Allow notifications in your device settings.",
+  "notificationError": "Could not update alerts. Check permissions and reopen the app.",
+  "account": "Account",
+  "signIn": "Sign in",
+  "signUp": "Create account",
+  "email": "Email",
+  "password": "Password",
+  "passwordHelp": "At least 8 characters.",
+  "forgotPassword": "Reset password",
+  "resetSent": "If the account exists, you will receive a password reset email.",
+  "verificationSent": "Verification email sent. Check your inbox.",
+  "verifyEmail": "Verify email",
+  "signOut": "Sign out",
+  "verified": "Email verified",
+  "invalidEmail": "Enter a valid email address.",
+  "weakPassword": "Use a password with at least 8 characters.",
+  "emailInUse": "That email already has an account.",
+  "credentialsError": "Could not sign in with those credentials.",
+  "tooManyRequests": "Too many attempts. Please wait.",
+  "networkError": "No connection. Try again.",
+  "genericError": "Could not complete the action. Try again.",
+  "conflictMessage": "This record changed on another device. Close and reopen the editor.",
+  "imageError": "Use a PNG/JPG/WebP image that can be reduced to 128 KB.",
+  "preconditionError": "Verify your email or check your Firebase configuration.",
+  "retry": "Retry",
+  "loading": "Loading",
+  "logoPartialError": "Record saved, but logo upload failed. Open it to retry.",
+  "reminderRenewal": "A renewal is coming",
+  "reminderTrial": "Your trial is ending",
+  "reminderEnding": "Your plan is ending",
+  "reminderBody": "Review your subscription before the indicated date.",
+  "privacy": "Your data is used to manage your subscriptions and the alerts you enable.",
+  "cloudSetupError": "Could not connect to Firebase. Check docs/FIREBASE.md and startup configuration.",
+  "searchBrands": "Search all service brands",
+  "catalogHelp": "Showing up to 12 matches. Search any brand in the catalog.",
+  "skip": "Skip",
+  "next": "Next",
+  "getStarted": "Find my rhythm",
+  "onboardEyebrowOne": "Less noise. More clarity.",
+  "onboardTitleOne": "Everything recurring,\none calm place.",
+  "onboardBodyOne": "Bring your free and paid subscriptions together. Give each its color, logo and a place of its own.",
+  "onboardEyebrowTwo": "Your month, at a glance",
+  "onboardTitleTwo": "No more surprise\nrenewals.",
+  "onboardBodyTwo": "See renewals on the calendar and expected charges in each currency. No mental arithmetic.",
+  "onboardEyebrowThree": "You decide what stays",
+  "onboardTitleThree": "A timely reminder.\nA calmer decision.",
+  "onboardBodyThree": "Choose alerts before renewals or trial endings. When you want to cancel, open your provider's link.",
+  "thisMonth": "This month",
+  "subscriptionCount": "{count, plural, =1{1 subscription} other{{count} subscriptions}}",
+  "@subscriptionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "subscriptionsHeading": "Subscriptions",
+  "perWeek": "/ week",
+  "perMonth": "/ month",
+  "perQuarter": "/ quarter",
+  "perYear": "/ year",
+  "renewalLabel": "{cycle} renewal",
+  "@renewalLabel": {
+    "placeholders": {
+      "cycle": {
+        "type": "String"
+      }
+    }
+  },
+  "tapDateHint": "Tap a date to see its renewals",
+  "openCalendar": "Open calendar",
+  "close": "Close",
+  "filter": "Filter",
+  "searchService": "Search a service",
+  "tabAll": "All",
+  "tabAi": "Artificial intelligence",
+  "addCustom": "Add custom service",
+  "noResults": "No services match your search.",
+  "daysBefore": "{count, plural, =1{1 day} other{{count} days}}",
+  "@daysBefore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "remindersBefore": "{list} before",
+  "@remindersBefore": {
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
+  },
+  "and": "and",
+  "noReminders": "No reminders",
+  "colorAndIcon": "Color and icon",
+  "providerHelp": "Cancel your plan on the {name} website.",
+  "@providerHelp": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noProviderLink": "Add the provider link when editing.",
+  "pauseTracking": "Pause tracking",
+  "resumeTracking": "Resume tracking",
+  "deleteRecord": "Delete record",
+  "notCancelHelp": "This does not cancel your plan with the provider.",
+  "theme": "Appearance",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "renewsToday": "Renews today",
+  "notifChannel": "Renewal reminders",
+  "notifChannelHelp": "Heads-up before renewals, trial ends and plan ends.",
+  "notifToday": "today",
+  "notifTomorrow": "tomorrow",
+  "notifInDays": "in {count} days",
+  "@notifInDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifRenewalTitle": "{name} renews {when}",
+  "@notifRenewalTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "notifTrialTitle": "{name} trial ends {when}",
+  "@notifTrialTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "notifEndingTitle": "{name} plan ends {when}",
+  "@notifEndingTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "notifRenewalBody": "{amount} · {day}. Still using it? There's time to decide calmly.",
+  "@notifRenewalBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "notifOtherBody": "{day}. Check whether you want to continue.",
+  "@notifOtherBody": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "permTitle": "Reminders, right on time",
+  "permBody": "Ritmia lets you know at 9:00 before a renewal, a trial end or a plan end. Only your reminders — never ads.",
+  "permPointOne": "You choose 1, 3, 7 or 14 days before",
+  "permPointTwo": "Works offline, on this device",
+  "permPointThree": "Turn them off any time in Settings",
+  "permAllow": "Turn on reminders",
+  "permLater": "Not now",
+  "permGranted": "Reminders are on.",
+  "permDeniedTitle": "Notifications are blocked",
+  "permDeniedBody": "Android is blocking Ritmia's notifications. Turn them on in Phone settings › Apps › Ritmia › Notifications, then come back.",
+  "permBlockedBanner": "Notifications are blocked in phone settings.",
+  "understood": "Got it",
+  "notificationsSection": "Notifications"
+}

@@ -1,0 +1,15 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /users/{uid}/logos/{subscriptionId}/{fileName} {
+      function owner() { return request.auth != null && request.auth.uid == uid; }
+      function subscription() { return firestore.get(/databases/(default)/documents/users/$(uid)/subscriptions/$(subscriptionId)); }
+      allow read: if owner();
+      allow create, update: if owner()
+        && firestore.exists(/databases/(default)/documents/users/$(uid)/subscriptions/$(subscriptionId))
+        && fileName == string(subscription().data.revision) + '.png'
+        && request.resource.size <= 131072 && request.resource.contentType == 'image/png';
+      allow delete: if false;
+    }
+  }
+}

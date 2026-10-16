@@ -1,0 +1,17 @@
+Use case: ui-mockup. Deliver exactly ONE complete portrait Android app screen as a polished, realistic high-fidelity product design screenshot, approximately 9:20 aspect ratio. Full-bleed flat UI, no physical phone, no perspective, no hands, no desk, no presentation board, no annotation callouts. All visible product copy in Spanish, rendered accurately and legibly. Product: Ritmia, a calm subscription tracker. The attached reference is the approved app icon; preserve its orbital lavender R symbol and coral dot, use it only as a small brand mark. Design should feel individually art-directed by a senior mobile product designer: restrained typography, optical alignment, precise 8-point spacing, thin separators, strong contrast, quiet surfaces, practical hierarchy. System-inspired modern grotesk typography with tabular numerals. Touch targets at least 48 logical pixels. Brand palette deep aubergine #282338, lavender #B9A3F5, coral #F47D68, warm ivory #F8F6F1. Accent lavender sparingly on actions, coral only meaningful small details. No purple gradients, glowing borders, glassmorphism, decorative blobs, excessive pills, oversized generic cards, fake 3D, watermarks, unnecessary tags or explanatory technical labels. Never show 'modo local', FREE, PRO, backend, Firebase, technical implementation copy or a language selector. There is one main screen; supplementary functions open bottom sheets. Include understated Android status bar and bottom gesture handle.
+SCREEN 04 — ADD SUBSCRIPTION / AI SERVICE CATALOG BOTTOM SHEET, LIGHT MODE.
+Use the first reference as the exact parent home screen and preserve its typography, brand identity and spacing. Ivory main background #F8F6F1. A tall native white-ivory bottom sheet opened over the main screen, gentle scrim, 24px top corners, small drag handle. A faint recognizable Ritmia home header appears above it. No navigation bar.
+Sheet title 'Añadir suscripción' in 25px semibold, a close X on the right. Under it one clean full-width search input with magnifying glass, placeholder 'Buscar un servicio', light warm neutral field, thin outline, 14px radius. Then a restrained text-tab row 'Todos' and 'Inteligencia artificial'; the second selected with a short thin lavender underline, no colorful pills.
+Display a clean scannable service list of recognizable AI subscriptions. Each 56-60px row has a small correct service logo in a neutral square, name in 16px medium, and fine plus icon on the right:
+ChatGPT — OpenAI knot
+Claude — terracotta asterisk
+Gemini — colorful four-point Gemini star
+Perplexity — teal geometric Perplexity mark
+Microsoft Copilot — multicolor Copilot loop
+Midjourney — black sailboat symbol
+Cursor — black geometric Cursor cube/arrow
+ElevenLabs — black two vertical bars
+Poe — minimal dark Poe chat mark
+Do not show prices for catalog services, because users enter their own paid/free plan. No product slogans under each row. Thin separators, thoughtful spacing, optically consistent icon sizes. Keep all services visible without crowding; bottom whitespace and safe area remain.
+Bottom: a secondary full-width outline button with a fine plus icon, 'Añadir servicio personalizado'. This permits a custom name, color and uploaded logo. No selected service yet; no meaningless Continue button. This is a service chooser modal; the actual editor opens after choosing a row.
+Maintain the same quiet professional product aesthetic as the first screen. No language selector, AI assistant chat, technical tags or tier badges.
