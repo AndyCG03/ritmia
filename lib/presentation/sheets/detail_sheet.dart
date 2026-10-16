@@ -90,8 +90,7 @@ class _DetailSheetState extends ConsumerState<DetailSheet> {
           Expanded(child: Padding(padding: const EdgeInsets.only(top: 12), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(item.name, style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600, color: t.textPrimary, height: 1.15)),
             const SizedBox(height: 2),
-            Text(item.status == SubscriptionStatus.active ? context.categoryLabel(item.category) : context.statusLabel(item.status),
-              style: TextStyle(fontSize: 17, color: t.textSecondary)),
+            Text(context.renewalLabel(item.cycle), style: TextStyle(fontSize: 17, color: t.textSecondary)),
             const SizedBox(height: 10),
             if (item.free) Text(s.free, style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700, color: t.textPrimary))
             else Wrap(crossAxisAlignment: WrapCrossAlignment.end, spacing: 8, children: [

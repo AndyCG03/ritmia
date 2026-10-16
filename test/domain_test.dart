@@ -62,4 +62,11 @@ void main(){
     final csv=exportCsv([s]);expect(csv,contains("'=HYPERLINK"));expect(csv,contains('""evil""'));
     expect(csv,startsWith('\uFEFF'));expect(csv,contains('amount_minor'));
   });
+  test('buying today renews next cycle, not today',(){
+    final today=dateOnly(DateTime.now());
+    final s=Subscription(id:'n',name:'N',amountMinor:100,currency:'USD',free:false,anchorDate:dateKey(today),purchasedOn:dateKey(today),cycle:BillingCycle.monthly,color:0);
+    final next=s.nextRenewal(DateTime.now())!;
+    expect(next.isAfter(today),isTrue);
+    expect(next,s.occurrence(1));
+  });
 }

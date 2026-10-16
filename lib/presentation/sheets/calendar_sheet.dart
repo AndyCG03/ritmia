@@ -12,7 +12,7 @@ import 'sheet.dart';
 Map<String, List<Subscription>> renewalsBetween(List<Subscription> items, DateTime from, DateTime until) {
   final events = <String, List<Subscription>>{};
   for (final item in items) {
-    for (final d in item.occurrences(from, until)) {
+    for (final d in item.renewals(from, until)) {
       events.putIfAbsent(dateKey(d), () => []).add(item);
     }
   }

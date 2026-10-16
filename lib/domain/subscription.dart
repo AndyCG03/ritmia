@@ -96,7 +96,13 @@ class Subscription {
       if (!date.isBefore(start)) yield date;
     }
   }
-  DateTime? nextRenewal(DateTime now) => occurrences(dateOnly(now), DateTime(now.year + 2, now.month, now.day)).firstOrNull;
+  /// Renewals: charges after the purchase day. Buying today means the next renewal is one cycle later.
+  Iterable<DateTime> renewals(DateTime from, DateTime until) {
+    if (purchasedOn == null) return occurrences(from, until); // legacy: anchor was the first renewal
+    final bought = DateTime.parse(purchasedOn!);
+    return occurrences(from, until).where((d) => d.isAfter(bought));
+  }
+  DateTime? nextRenewal(DateTime now) => renewals(dateOnly(now), DateTime(now.year + 2, now.month, now.day)).firstOrNull;
   Subscription withLogo(String? path, {String? bytes}) => Subscription(
     id: id, name: name, amountMinor: amountMinor, currency: currency, free: free,
     anchorDate: anchorDate, cycle: cycle, color: color, brandId: brandId, category: category,

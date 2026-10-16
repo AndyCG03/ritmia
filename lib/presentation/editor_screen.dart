@@ -35,7 +35,6 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
   DateTime? _ends;
   late bool _free, _becomesPaid;
   bool _busy = false, _removeLogo = false;
-  late int _color;
   String? _brand;
   late BillingCycle _cycle;
   late SubscriptionStatus _status;
@@ -65,9 +64,8 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
     _paidFrom = trialConverts ? DateTime.parse(s.anchorDate) : DateTime(today.year, today.month + 1, today.day);
     _ends = s?.endsOn == null ? null : DateTime.parse(s!.endsOn!);
     _brand = s?.brandId ?? b?.id;
-    _color = s?.color ?? b?.color ?? BrandTheme.colors.first;
     _cycle = s?.cycle ?? BillingCycle.monthly;
-    _status = s?.status ?? SubscriptionStatus.active;
+    _status = s?.status ?? SubscriptionStatus.active; // kept, not edited here
     _category = s?.category ?? (b != null && b.ai ? Category.productivity : Category.other);
     _reminders = (s?.reminderDays ?? [3, 1]).toSet();
   }
@@ -97,7 +95,7 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
 
   Subscription _build() => Subscription(id: _id, name: _name.text.trim(),
     amountMinor: _charges ? (parseAmount(_amount.text, _currency) ?? 0) : 0,
-    currency: _currency, free: !_charges, anchorDate: dateKey(_anchor), cycle: _cycle, color: _color, brandId: _brand,
+    currency: _currency, free: !_charges, anchorDate: dateKey(_anchor), cycle: _cycle, color: widget.item?.color ?? BrandTheme.ink.toARGB32(), brandId: _brand,
     status: _status, category: _category, notes: _notes.text.trim(), cancelUrl: _url.text.trim(),
     endsOn: _ends == null ? null : dateKey(_ends!), trialEndsOn: _free && _becomesPaid ? dateKey(_paidFrom) : null,
     reminderDays: _reminders.toList()..sort(), revision: widget.item?.revision ?? 0, purchasedOn: dateKey(_purchase),
@@ -253,18 +251,6 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
             tilePadding: EdgeInsets.zero, childrenPadding: EdgeInsets.zero,
             title: Text(s.moreOptions, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: t.textPrimary)),
             children: [
-              DropdownButtonFormField<Category>(initialValue: _category, decoration: InputDecoration(labelText: s.category),
-                items: Category.values.map((c) => DropdownMenuItem(value: c, child: Text(context.categoryLabel(c)))).toList(),
-                onChanged: _busy ? null : (v) => setState(() => _category = v!)),
-              const SizedBox(height: 16),
-              DropdownButtonFormField<SubscriptionStatus>(initialValue: _status, decoration: InputDecoration(labelText: s.status),
-                items: SubscriptionStatus.values.map((c) => DropdownMenuItem(value: c, child: Text(context.statusLabel(c)))).toList(),
-                onChanged: _busy ? null : (v) => setState(() => _status = v!)),
-              const SizedBox(height: 8),
-              _DateRow(label: s.endsOn, date: _ends, enabled: !_busy,
-                onPick: () async { final d = await _pick(_ends ?? _anchor.add(const Duration(days: 365))); if (d != null) setState(() => _ends = d); },
-                onClear: _ends == null ? null : () => setState(() => _ends = null)),
-              const SizedBox(height: 8),
               TextFormField(controller: _url, maxLength: 500, decoration: InputDecoration(labelText: s.cancelUrl, helperText: s.manageHelp, helperMaxLines: 3),
                 validator: (v) { if (v == null || v.trim().isEmpty) return null; final uri = Uri.tryParse(v.trim());
                   return uri != null && uri.scheme == 'https' && uri.host.contains('.') ? null : s.invalidUrl; }),
@@ -279,11 +265,10 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
 }
 
 class _DateRow extends StatelessWidget {
-  const _DateRow({required this.label, required this.date, required this.onPick, required this.enabled, this.onClear});
+  const _DateRow({required this.label, required this.date, required this.onPick, required this.enabled});
   final String label;
   final DateTime? date;
   final VoidCallback onPick;
-  final VoidCallback? onClear;
   final bool enabled;
   @override
   Widget build(BuildContext context) {
@@ -292,8 +277,7 @@ class _DateRow extends StatelessWidget {
       InkWell(onTap: enabled ? onPick : null, child: ConstrainedBox(constraints: const BoxConstraints(minHeight: 56), child: Row(children: [
         Expanded(child: Text(label, style: TextStyle(fontSize: 16, color: t.textSecondary))),
         Text(date == null ? '—' : context.dayMonthYear(date!), style: TextStyle(fontSize: 16, color: t.textPrimary, fontFeatures: BrandTheme.tabular)),
-        if (onClear != null) IconButton(tooltip: context.l10n.clear, onPressed: onClear, icon: Icon(Icons.close_rounded, size: 20, color: t.textSecondary))
-        else Padding(padding: const EdgeInsets.only(left: 8), child: Icon(Icons.calendar_today_outlined, size: 20, color: t.textPrimary)),
+        Padding(padding: const EdgeInsets.only(left: 8), child: Icon(Icons.calendar_today_outlined, size: 20, color: t.textPrimary)),
       ]))),
       const Hairline(),
     ]);

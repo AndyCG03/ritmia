@@ -97,7 +97,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final s = context.l10n, t = context.tokens, user = ref.watch(authProvider).asData?.value;
     final emailState = ref.watch(emailPreferencesProvider);
     final emailEnabled = emailState.asData?.value['emailEnabled'] == true;
-    final sync = ref.watch(reminderSyncProvider);
     final alerts = ref.watch(deviceAlertsProvider);
     final blocked = ref.watch(systemBlockedProvider).asData?.value == true;
     final locale = ref.watch(localeProvider)?.languageCode;
@@ -149,24 +148,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         if (NotificationService.instance.supported) ...[
           _Row(icon: alerts && !blocked ? Icons.notifications_active_outlined : Icons.notifications_none_rounded,
             title: s.notificationToggle,
-            subtitle: blocked ? s.notifBlockedSummary : alerts ? s.notifOnSummary : s.notifOffSummary,
-            subtitleColor: blocked ? t.danger : null,
+            subtitle: alerts && !blocked ? s.notifOnSummary : s.notifOffSummary,
             trailing: Switch(value: alerts && !blocked, onChanged: _busy ? null : (enabled) => _action(() async {
-              if (enabled) {
-                if (blocked) { await NotificationService.instance.openSystemSettings(); } else { await askForReminders(context, ref); }
-              } else { await ref.read(deviceAlertsProvider.notifier).setEnabled(false); }
+              if (enabled) { await askForReminders(context, ref); }
+              else { await ref.read(deviceAlertsProvider.notifier).setEnabled(false); }
               ref.invalidate(systemBlockedProvider);
             }))),
-          if (blocked) ...[
-            const Hairline(indent: 68),
-            _Row(icon: Icons.open_in_new_rounded, title: s.openPhoneSettings, iconColor: t.danger,
-              onTap: () => NotificationService.instance.openSystemSettings()),
-          ],
-          if (sync.hasError) ...[
-            const Hairline(indent: 68),
-            _Row(icon: Icons.warning_amber_rounded, title: s.notificationError, iconColor: t.danger,
-              onTap: () => ref.invalidate(reminderSyncProvider)),
-          ],
         ] else Padding(padding: const EdgeInsets.all(16), child: Text(kIsWeb ? s.webNotificationHelp : s.notificationHelp,
           style: TextStyle(fontSize: 14, color: t.textSecondary))),
         if (Environment.cloud) ...[
@@ -205,7 +192,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       const SizedBox(height: 28),
       Text(s.privacy, textAlign: TextAlign.center, style: TextStyle(fontSize: 13, height: 1.4, color: t.textSecondary)),
       const SizedBox(height: 6),
-      Text('Ritmia · 1.2.0', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: t.textSecondary)),
+      Text('Ritmia · 1.2.1', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: t.textSecondary)),
     ]);
   }
 }
@@ -229,13 +216,13 @@ class _Group extends StatelessWidget {
 }
 
 class _Row extends StatelessWidget {
-  const _Row({required this.icon, required this.title, this.subtitle, this.value, this.trailing, this.onTap, this.iconColor, this.subtitleColor});
+  const _Row({required this.icon, required this.title, this.subtitle, this.value, this.trailing, this.onTap, this.iconColor});
   final IconData icon;
   final String title;
   final String? subtitle, value;
   final Widget? trailing;
   final VoidCallback? onTap;
-  final Color? iconColor, subtitleColor;
+  final Color? iconColor;
   @override
   Widget build(BuildContext context) {
     final t = context.tokens;
@@ -247,7 +234,7 @@ class _Row extends StatelessWidget {
         Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
           Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: t.textPrimary)),
           if (subtitle != null) Padding(padding: const EdgeInsets.only(top: 2),
-            child: Text(subtitle!, style: TextStyle(fontSize: 13.5, height: 1.35, color: subtitleColor ?? t.textSecondary))),
+            child: Text(subtitle!, style: TextStyle(fontSize: 13.5, height: 1.35, color: t.textSecondary))),
         ])),
         if (value != null) Padding(padding: const EdgeInsets.only(left: 8), child: Text(value!, style: TextStyle(fontSize: 15, color: t.textSecondary))),
         trailing ?? (onTap != null ? Padding(padding: const EdgeInsets.only(left: 4), child: Icon(Icons.chevron_right_rounded, color: t.textSecondary)) : const SizedBox.shrink()),

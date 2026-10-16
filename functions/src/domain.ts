@@ -41,7 +41,7 @@ export function dueReminders(s:Subscription,today:string):Reminder[]{
   for(;;index++){
     const target=occurrence(s,index);
     if(target>addDays(today,14)||(s.endsOn!==null&&target>=s.endsOn))break;
-    if(target>=today)targets.push({kind:"renewal",target});
+    if(target>=today&&target>(s.purchasedOn??""))targets.push({kind:"renewal",target});
   }
   if(s.trialEndsOn)targets.push({kind:"trial",target:s.trialEndsOn});
   if(s.endsOn)targets.push({kind:"ending",target:s.endsOn});

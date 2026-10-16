@@ -15,10 +15,9 @@ Color brandInk(BuildContext context, int color) {
 
 /// Neutral square tile with a service mark: uploaded logo, catalog SVG or a typographic fallback.
 class BrandMark extends StatelessWidget {
-  const BrandMark({super.key, required this.name, this.brand, this.color, this.bytes, this.icon, this.size = 52});
+  const BrandMark({super.key, required this.name, this.brand, this.bytes, this.icon, this.size = 52});
   final String name;
   final ServiceBrand? brand;
-  final int? color;
   final dynamic bytes;
   /// Generic icon for custom services.
   final IconData? icon;
@@ -26,7 +25,7 @@ class BrandMark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.tokens;
-    final tint = brandInk(context, color ?? brand?.color ?? BrandTheme.ink.toARGB32());
+    final tint = brandInk(context, brand?.color ?? BrandTheme.ink.toARGB32());
     final inner = size * 0.52;
     Widget child;
     if (bytes != null) {

@@ -13,7 +13,7 @@ List<ReminderEvent> upcomingReminders(List<Subscription> items, DateTime now, {i
   final events = <ReminderEvent>[];
   for (final s in items.where((s) => s.status == SubscriptionStatus.active)) {
     final targets = <(DateTime, ReminderKind)>[
-      for (final d in s.occurrences(dateOnly(now), DateTime(horizon.year,horizon.month,horizon.day + 14))) (d, ReminderKind.renewal),
+      for (final d in s.renewals(dateOnly(now), DateTime(horizon.year,horizon.month,horizon.day + 14))) (d, ReminderKind.renewal),
       if (s.trialEndsOn != null) (DateTime.parse(s.trialEndsOn!), ReminderKind.trial),
       if (s.endsOn != null) (DateTime.parse(s.endsOn!), ReminderKind.ending),
     ];
