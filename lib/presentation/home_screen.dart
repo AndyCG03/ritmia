@@ -60,10 +60,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   void _openSettings(List<Subscription> items, Entitlement plan) => showRitmiaSheet(context, heightFactor: 0.88, maxFactor: 0.9,
-    builder: (_) => Column(children: [
-      const Align(alignment: Alignment.centerRight, child: Padding(padding: EdgeInsets.only(right: 12), child: SheetCloseButton())),
-      Expanded(child: SettingsScreen(items: items, plan: plan)),
-    ]));
+    builder: (_) => SettingsScreen(items: items, plan: plan));
 
   void _openFilter() {
     final s = context.l10n;
@@ -163,18 +160,24 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       Row(children: List.generate(7, (i) {
         final day = monday.add(Duration(days: i));
         final isToday = day == today;
-        final has = week.containsKey(dateKey(day));
+        final has = !day.isBefore(today) && week.containsKey(dateKey(day));
+        final bought = all.any((i) => dateKey(i.purchaseDate) == dateKey(day));
+        final deadline = all.any((i) => i.stopsRenewing && i.endsOn == dateKey(day));
         return Expanded(child: Semantics(button: true, selected: isToday, label: context.longDay(day),
           child: InkWell(borderRadius: BorderRadius.circular(12), onTap: () => showCalendarSheet(context, initial: day),
             child: Column(children: [
               Text(context.weekdayInitial(i), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: t.textSecondary)),
               const SizedBox(height: 8),
               Container(width: 42, height: 34, alignment: Alignment.center,
-                decoration: BoxDecoration(color: isToday ? t.selectedDay : null, borderRadius: BorderRadius.circular(10)),
+                decoration: BoxDecoration(color: isToday ? (deadline ? t.alert : t.selectedDay) : deadline ? t.alert.withValues(alpha: 0.12) : null,
+                  borderRadius: BorderRadius.circular(10)),
                 child: Text('${day.day}', style: TextStyle(fontSize: 17, fontFeatures: BrandTheme.tabular,
-                  fontWeight: isToday ? FontWeight.w600 : FontWeight.w400, color: isToday ? t.onSelectedDay : t.textPrimary))),
+                  fontWeight: isToday || deadline ? FontWeight.w600 : FontWeight.w400,
+                  color: isToday ? t.onSelectedDay : deadline ? t.alert : t.textPrimary))),
               const SizedBox(height: 8),
-              RenewalDot(visible: has, today: isToday),
+              deadline ? Container(width: 6, height: 6, decoration: BoxDecoration(shape: BoxShape.circle, color: t.alert))
+                : bought ? Container(width: 6, height: 6, decoration: BoxDecoration(shape: BoxShape.circle, color: t.purchase))
+                : RenewalDot(visible: has, today: isToday),
               const SizedBox(height: 4),
             ]))));
       })),

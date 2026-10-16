@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
@@ -40,6 +41,15 @@ class NotificationService {
       onDidReceiveNotificationResponse: (r) => openedSubscription.value = r.payload);
     final launch = await _plugin.getNotificationAppLaunchDetails();
     if (launch?.didNotificationLaunchApp ?? false) openedSubscription.value = launch!.notificationResponse?.payload;
+  }
+
+  static const _settings = MethodChannel('app.ritmia/settings');
+
+  /// Opens the phone's notification settings for Ritmia (Android). Returns false when unavailable.
+  Future<bool> openSystemSettings() async {
+    if (kIsWeb || defaultTargetPlatform != TargetPlatform.android) return false;
+    try { return await _settings.invokeMethod<bool>('openNotificationSettings') ?? false; }
+    on PlatformException { return false; } on MissingPluginException { return false; }
   }
 
   /// Whether the OS currently lets Ritmia post notifications (Android 13+ can revoke it from Settings).

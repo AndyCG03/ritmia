@@ -1,9 +1,11 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ritmia/app.dart';
 import 'package:ritmia/core/catalog.dart';
+import 'package:ritmia/domain/subscription.dart';
 import 'package:ritmia/core/reminder_providers.dart';
 void main(){
   setUp((){SharedPreferences.setMockInitialValues({'locale':'en','onboardingComplete':true});});
@@ -13,6 +15,23 @@ void main(){
   test('catalog contains at least 100 unique local brands',(){
     expect(serviceBrands.length,greaterThanOrEqualTo(100));
     expect(serviceBrands.map((b)=>b.id).toSet().length,serviceBrands.length);
+  });
+  test('retired brands and currencies are available',(){
+    for(final id in ['linkedin','slack','canva','primevideo','microsoftteams','xbox']){expect(findBrand(id),isNotNull,reason:id);}
+    expect(searchBrands('linked').first.id,'linkedin');
+    expect(currencies,containsAll(['MXN','ARS','COP','CLP','BRL']));
+    expect(currencyDigits('CLP'),0);expect(currencyNames["MXN"]!.$1,'Peso mexicano');
+  });
+  test('free service that becomes paid only charges from its start day',(){
+    final s=Subscription(id:'x',name:'Trial',amountMinor:19900,currency:'MXN',free:false,anchorDate:'2026-11-05',
+      trialEndsOn:'2026-11-05',cycle:BillingCycle.monthly,color:0);
+    expect(chargesInMonth([s],DateTime(2026,10)),isEmpty);
+    expect(chargesInMonth([s],DateTime(2026,11)),{'MXN':19900});
+  });
+  test('purchase date is stored and falls back to the anchor',(){
+    final s=Subscription(id:'p',name:'P',amountMinor:100,currency:'USD',free:false,anchorDate:'2026-11-05',cycle:BillingCycle.monthly,color:0,purchasedOn:'2026-10-05');
+    expect(Subscription.fromJson(s.toJson()).purchasedOn,'2026-10-05');
+    expect(Subscription.fromJson({...s.toJson()}..remove('purchasedOn')).purchaseDate,DateTime(2026,11,5));
   });
   test('AI catalog and aliases',(){
     expect(searchBrands('',aiOnly:true).first.name,'ChatGPT');
@@ -49,6 +68,23 @@ void main(){
     await tester.tap(find.text('Vercel'));await tester.pumpAndSettle();
     expect(find.text('Delete record'),findsOneWidget);
     expect(find.text('This does not cancel your plan with the provider.'),findsOneWidget);
+    expect(tester.takeException(),isNull);
+  });
+  testWidgets("don't renew marks the cancel deadline and stops renewals", (tester)async{
+    final now=DateTime.now();
+    final anchor=dateKey(DateTime(now.year,now.month,now.day).add(const Duration(days:3)));
+    final sub={'id':'s1','name':'Netflix','amountMinor':1500,'currency':'USD','free':false,'anchorDate':anchor,'cycle':'monthly',
+      'color':0xFF282338,'brandId':'netflix','status':'active','category':'entertainment','notes':'','logoPath':null,'revision':1,
+      'reminderDays':[1],'endsOn':null,'trialEndsOn':null,'cancelUrl':''};
+    SharedPreferences.setMockInitialValues({'locale':'en','onboardingComplete':true,'ritmia.local.subscriptions.v1':jsonEncode([sub])});
+    await open(tester);
+    await tester.tap(find.text('Netflix'));await tester.pumpAndSettle();
+    expect(find.text('Renews'),findsOneWidget);
+    await tester.tap(find.text("Don't renew"));await tester.pumpAndSettle();
+    expect(find.text('Stop renewing Netflix?'),findsOneWidget);
+    await tester.tap(find.widgetWithText(FilledButton,"Don't renew"));await tester.pumpAndSettle();
+    expect(find.text("Won't renew"),findsOneWidget);
+    expect(find.textContaining('Cancel before'),findsOneWidget);
     expect(tester.takeException(),isNull);
   });
 }

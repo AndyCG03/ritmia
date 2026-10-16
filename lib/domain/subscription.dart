@@ -3,8 +3,46 @@ import 'dart:math';
 enum BillingCycle { weekly, monthly, quarterly, yearly }
 enum SubscriptionStatus { active, paused, archived }
 enum Category { entertainment, productivity, storage, education, health, utilities, other }
-const currencies = ['USD', 'EUR', 'MXN', 'CUP', 'GBP', 'CAD', 'JPY'];
-int currencyDigits(String currency) => currency == 'JPY' ? 0 : 2;
+/// ISO 4217 codes Ritmia accepts. Keep in sync with functions/src/domain.ts.
+const currencies = ['USD', 'EUR', 'MXN', 'ARS', 'COP', 'CLP', 'PEN', 'UYU', 'BOB', 'PYG', 'VES', 'BRL', 'DOP', 'CUP', 'GTQ', 'HNL', 'NIO', 'CRC', 'PAB', 'CAD', 'GBP', 'CHF', 'AUD', 'NZD', 'JPY', 'CNY', 'KRW', 'INR', 'SEK', 'NOK', 'DKK', 'PLN', 'TRY'];
+const zeroDecimalCurrencies = {'JPY', 'CLP', 'PYG', 'KRW'};
+/// Display names (es, en) for the currency picker.
+const currencyNames = <String, (String, String)>{
+  'USD': ('Dólar estadounidense', 'US dollar'),
+  'EUR': ('Euro', 'Euro'),
+  'MXN': ('Peso mexicano', 'Mexican peso'),
+  'ARS': ('Peso argentino', 'Argentine peso'),
+  'COP': ('Peso colombiano', 'Colombian peso'),
+  'CLP': ('Peso chileno', 'Chilean peso'),
+  'PEN': ('Sol peruano', 'Peruvian sol'),
+  'UYU': ('Peso uruguayo', 'Uruguayan peso'),
+  'BOB': ('Boliviano', 'Bolivian boliviano'),
+  'PYG': ('Guaraní paraguayo', 'Paraguayan guaraní'),
+  'VES': ('Bolívar venezolano', 'Venezuelan bolívar'),
+  'BRL': ('Real brasileño', 'Brazilian real'),
+  'DOP': ('Peso dominicano', 'Dominican peso'),
+  'CUP': ('Peso cubano', 'Cuban peso'),
+  'GTQ': ('Quetzal guatemalteco', 'Guatemalan quetzal'),
+  'HNL': ('Lempira hondureño', 'Honduran lempira'),
+  'NIO': ('Córdoba nicaragüense', 'Nicaraguan córdoba'),
+  'CRC': ('Colón costarricense', 'Costa Rican colón'),
+  'PAB': ('Balboa panameño', 'Panamanian balboa'),
+  'CAD': ('Dólar canadiense', 'Canadian dollar'),
+  'GBP': ('Libra esterlina', 'Pound sterling'),
+  'CHF': ('Franco suizo', 'Swiss franc'),
+  'AUD': ('Dólar australiano', 'Australian dollar'),
+  'NZD': ('Dólar neozelandés', 'New Zealand dollar'),
+  'JPY': ('Yen japonés', 'Japanese yen'),
+  'CNY': ('Yuan chino', 'Chinese yuan'),
+  'KRW': ('Won surcoreano', 'South Korean won'),
+  'INR': ('Rupia india', 'Indian rupee'),
+  'SEK': ('Corona sueca', 'Swedish krona'),
+  'NOK': ('Corona noruega', 'Norwegian krone'),
+  'DKK': ('Corona danesa', 'Danish krone'),
+  'PLN': ('Esloti polaco', 'Polish złoty'),
+  'TRY': ('Lira turca', 'Turkish lira'),
+};
+int currencyDigits(String currency) => zeroDecimalCurrencies.contains(currency) ? 0 : 2;
 int? parseAmount(String value, String currency) {
   final text = value.trim().replaceAll(',', '.');
   if (!RegExp(currencyDigits(currency) == 0 ? r'^\d{1,9}$' : r'^\d{1,9}(\.\d{1,2})?$').hasMatch(text)) return null;
@@ -21,9 +59,11 @@ class Subscription {
     required this.cycle, required this.color, this.brandId,
     this.status = SubscriptionStatus.active, this.category = Category.other,
     this.notes = '', this.logoPath, this.localLogo, this.revision = 0,
-    this.reminderDays = const [3, 1], this.endsOn, this.trialEndsOn, this.cancelUrl = ''});
+    this.reminderDays = const [3, 1], this.endsOn, this.trialEndsOn, this.cancelUrl = '', this.purchasedOn});
   final String id, name, currency, anchorDate, notes, cancelUrl;
   final String? brandId, logoPath, localLogo, endsOn, trialEndsOn;
+  /// Civil date of the first purchase (YYYY-MM-DD); shown in blue on the calendar.
+  final String? purchasedOn;
   final int amountMinor, color, revision;
   final List<int> reminderDays;
   final bool free;
@@ -61,13 +101,14 @@ class Subscription {
     id: id, name: name, amountMinor: amountMinor, currency: currency, free: free,
     anchorDate: anchorDate, cycle: cycle, color: color, brandId: brandId, category: category,
     status: status, notes: notes, logoPath: path, localLogo: bytes, revision: revision,
-    reminderDays: reminderDays, endsOn: endsOn, trialEndsOn: trialEndsOn, cancelUrl: cancelUrl);
+    reminderDays: reminderDays, endsOn: endsOn, trialEndsOn: trialEndsOn, cancelUrl: cancelUrl, purchasedOn: purchasedOn);
   Map<String, dynamic> toJson() => {
     'id': id, 'name': name, 'amountMinor': amountMinor, 'currency': currency,
     'free': free, 'anchorDate': anchorDate, 'cycle': cycle.name, 'color': color,
     'brandId': brandId, 'status': status.name, 'category': category.name, 'notes': notes,
     'logoPath': logoPath, 'revision': revision, 'reminderDays': reminderDays,
     'endsOn': endsOn, 'trialEndsOn': trialEndsOn, 'cancelUrl': cancelUrl,
+    if (purchasedOn != null) 'purchasedOn': purchasedOn,
     if (localLogo != null) 'localLogo': localLogo,
   };
   factory Subscription.fromJson(Map<String, dynamic> j) => Subscription(
@@ -80,7 +121,8 @@ class Subscription {
     notes: j['notes'] as String? ?? '', logoPath: j['logoPath'] as String?,
     localLogo: j['localLogo'] as String?, revision: (j['revision'] as num?)?.toInt() ?? 0,
     reminderDays: (j['reminderDays'] as List? ?? [3,1]).map((v) => (v as num).toInt()).toList(),
-    endsOn: j['endsOn'] as String?, trialEndsOn: j['trialEndsOn'] as String?, cancelUrl: j['cancelUrl'] as String? ?? '');
+    endsOn: j['endsOn'] as String?, trialEndsOn: j['trialEndsOn'] as String?, cancelUrl: j['cancelUrl'] as String? ?? '',
+    purchasedOn: j['purchasedOn'] as String?);
 }
 Map<String, int> chargesInMonth(List<Subscription> items, DateTime month) {
   final totals = <String, int>{};
@@ -92,4 +134,14 @@ Map<String, int> chargesInMonth(List<Subscription> items, DateTime month) {
     }
   }
   return totals;
+}
+/// "Don't renew": the plan ends on [endsOn], which is also the deadline to cancel with the provider.
+extension RenewalChoice on Subscription {
+  bool get stopsRenewing => endsOn != null && status == SubscriptionStatus.active;
+  DateTime? get renewalDeadline => endsOn == null ? null : DateTime.parse(endsOn!);
+  Subscription withEndsOn(String? date) => Subscription.fromJson({...toJson(), 'endsOn': date});
+}
+extension PurchaseDate on Subscription {
+  /// Explicit purchase date, falling back to the anchor for records created before it existed.
+  DateTime get purchaseDate => DateTime.parse(purchasedOn ?? anchorDate);
 }

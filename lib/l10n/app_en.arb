@@ -280,5 +280,91 @@
   "permDeniedBody": "Android is blocking Ritmia's notifications. Turn them on in Phone settings › Apps › Ritmia › Notifications, then come back.",
   "permBlockedBanner": "Notifications are blocked in phone settings.",
   "understood": "Got it",
-  "notificationsSection": "Notifications"
+  "notificationsSection": "Notifications",
+  "priceSection": "Price",
+  "paidOption": "Paid",
+  "freeOption": "Free",
+  "becomesPaid": "Becomes paid later",
+  "becomesPaidHelp": "Set the day charges start and how much they will be.",
+  "paidFrom": "Charges start on",
+  "amountAfter": "Amount after that",
+  "purchaseDate": "Purchase date",
+  "purchaseHelp": "It renews every cycle from this day. Renewals appear in the calendar.",
+  "yesterday": "Yesterday",
+  "pickDate": "Pick a date",
+  "nextRenewalPreview": "Next renewal: {date}",
+  "@nextRenewalPreview": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "freeUntilPreview": "Free until {date}, then {amount}",
+  "@freeUntilPreview": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "moreOptions": "More options",
+  "searchCurrency": "Search currency",
+  "customLook": "Color and logo",
+  "serviceName": "Service name",
+  "chooseCurrency": "Currency",
+  "about": "About",
+  "general": "General",
+  "dataSection": "Your data",
+  "openPhoneSettings": "Open phone settings",
+  "notifOnSummary": "On · 9:00 before each renewal",
+  "notifOffSummary": "Off",
+  "notifBlockedSummary": "Blocked in phone settings",
+  "appearanceSummary": "Appearance",
+  "languageSummary": "Language",
+  "autoRenew": "Renewal",
+  "willRenew": "Renews",
+  "stopRenewing": "Don't renew",
+  "resumeRenewing": "Renew again",
+  "notRenewing": "Won't renew",
+  "cancelBefore": "Cancel before {date}",
+  "@cancelBefore": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "rowNotRenewing": "Don't renew · {date}",
+  "@rowNotRenewing": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "stopRenewHelp": "Ritmia marks the deadline to cancel with the provider before the next charge.",
+  "stopRenewTitle": "Stop renewing {name}?",
+  "@stopRenewTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "stopRenewBody": "You'll see {date} as your deadline to cancel, with reminders before it. Ritmia doesn't cancel the plan for you.",
+  "@stopRenewBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "endsHere": "Last day · don't renew",
+  "chooseIcon": "Icon",
+  "uploadOwn": "Upload your own image",
+  "purchasedHere": "Purchased"
 }

@@ -651,4 +651,142 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get notificationsSection => 'Notificaciones';
+
+  @override
+  String get priceSection => 'Precio';
+
+  @override
+  String get paidOption => 'De pago';
+
+  @override
+  String get freeOption => 'Gratis';
+
+  @override
+  String get becomesPaid => 'Pasará a ser de pago';
+
+  @override
+  String get becomesPaidHelp =>
+      'Marca desde qué día empezará a cobrarse y cuánto.';
+
+  @override
+  String get paidFrom => 'Se cobrará a partir del';
+
+  @override
+  String get amountAfter => 'Importe a partir de entonces';
+
+  @override
+  String get purchaseDate => 'Fecha de compra';
+
+  @override
+  String get purchaseHelp =>
+      'Se renueva cada ciclo a partir de este día. Las renovaciones se marcan en el calendario.';
+
+  @override
+  String get yesterday => 'Ayer';
+
+  @override
+  String get pickDate => 'Elegir fecha';
+
+  @override
+  String nextRenewalPreview(String date) {
+    return 'Próxima renovación: $date';
+  }
+
+  @override
+  String freeUntilPreview(String date, String amount) {
+    return 'Gratis hasta el $date, después $amount';
+  }
+
+  @override
+  String get moreOptions => 'Más opciones';
+
+  @override
+  String get searchCurrency => 'Buscar moneda';
+
+  @override
+  String get customLook => 'Color y logo';
+
+  @override
+  String get serviceName => 'Nombre del servicio';
+
+  @override
+  String get chooseCurrency => 'Moneda';
+
+  @override
+  String get about => 'Acerca de';
+
+  @override
+  String get general => 'General';
+
+  @override
+  String get dataSection => 'Tus datos';
+
+  @override
+  String get openPhoneSettings => 'Abrir ajustes del teléfono';
+
+  @override
+  String get notifOnSummary => 'Activados · 09:00 antes de cada renovación';
+
+  @override
+  String get notifOffSummary => 'Desactivados';
+
+  @override
+  String get notifBlockedSummary => 'Bloqueados en los ajustes del teléfono';
+
+  @override
+  String get appearanceSummary => 'Apariencia';
+
+  @override
+  String get languageSummary => 'Idioma';
+
+  @override
+  String get autoRenew => 'Renovación';
+
+  @override
+  String get willRenew => 'Se renueva';
+
+  @override
+  String get stopRenewing => 'No renovar';
+
+  @override
+  String get resumeRenewing => 'Volver a renovar';
+
+  @override
+  String get notRenewing => 'No se renovará';
+
+  @override
+  String cancelBefore(String date) {
+    return 'Cancela antes del $date';
+  }
+
+  @override
+  String rowNotRenewing(String date) {
+    return 'No renovar · $date';
+  }
+
+  @override
+  String get stopRenewHelp =>
+      'Ritmia marca la fecha límite para cancelar con el proveedor antes del próximo cobro.';
+
+  @override
+  String stopRenewTitle(String name) {
+    return '¿No renovar $name?';
+  }
+
+  @override
+  String stopRenewBody(String date) {
+    return 'Verás el $date como fecha límite para cancelar, con avisos antes. Ritmia no cancela el plan por ti.';
+  }
+
+  @override
+  String get endsHere => 'Fecha límite · no renovar';
+
+  @override
+  String get chooseIcon => 'Icono';
+
+  @override
+  String get uploadOwn => 'Subir imagen propia';
+
+  @override
+  String get purchasedHere => 'Fecha de compra';
 }

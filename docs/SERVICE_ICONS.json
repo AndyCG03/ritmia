@@ -68572,5 +68572,5657 @@
   },
   "package": "@lobehub/icons-static-svg",
   "version": "1.95.1"
+ },
+ {
+  "id": "abbrobotstudio",
+  "assetId": "abbrobotstudio",
+  "name": "ABB RobotStudio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 426,
+  "sha256": "989c680090fefa9210a0f1951debdcfbedc6bb7d34585a4a8a0c7c02309369b0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/abbrobotstudio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobeacrobatreader",
+  "assetId": "adobeacrobatreader",
+  "name": "Adobe Acrobat Reader",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1352,
+  "sha256": "71f3b509f37495300663765f2d1ea7cd10ba52a1677e616974e2347499427ff6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobeacrobatreader.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobeaftereffects",
+  "assetId": "adobeaftereffects",
+  "name": "Adobe After Effects",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1530,
+  "sha256": "ccd2af60b2d926939f1f39d21f4798dbafdba61258754aef31547517ffaa3412",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobeaftereffects.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobeaudition",
+  "assetId": "adobeaudition",
+  "name": "Adobe Audition",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1236,
+  "sha256": "288e9e56be58ff3098831330ff732fb6ef411a4d3b735ebf9c483e7de2ba754b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobeaudition.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobecreativecloud",
+  "assetId": "adobecreativecloud",
+  "name": "Adobe Creative Cloud",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2061,
+  "sha256": "069e79e54961b1845f7a05e763ce5cec903726c60dad0747310ff88edb133c8e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobecreativecloud.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobedreamweaver",
+  "assetId": "adobedreamweaver",
+  "name": "Adobe Dreamweaver",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1908,
+  "sha256": "0f23e65cf6925586549d9f9dd0ca31400b1ef80edd93baa23241cebcee75483f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobedreamweaver.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobefonts",
+  "assetId": "adobefonts",
+  "name": "Adobe Fonts",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 815,
+  "sha256": "a7fb449561a20cd81cfadb9ff0ff1d70d6685a0f2eea58b67d66c3da7e5a2ca6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobefonts.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobeillustrator",
+  "assetId": "adobeillustrator",
+  "name": "Adobe Illustrator",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1012,
+  "sha256": "f6bfd1f6662f2db4d8047406fd93ffb8d262b20b74ec83999d0d5c64c122177d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobeillustrator.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobeindesign",
+  "assetId": "adobeindesign",
+  "name": "Adobe InDesign",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 954,
+  "sha256": "7faaa78a832df205e02f11f2af4990cbf66bd677f5606430a444462dc4548d56",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobeindesign.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobelightroom",
+  "assetId": "adobelightroom",
+  "name": "Adobe Lightroom",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 836,
+  "sha256": "8673a7b2dc627f94c84f7970d0da5815bbd28a4d1c4bb0f1dfc7e010957ce11c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobelightroom.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobelightroomclassic",
+  "assetId": "adobelightroomclassic",
+  "name": "Adobe Lightroom Classic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1546,
+  "sha256": "6d7f60579d234d3e1d29e69d6723b2eb3efc9b49651310149ac1c150ef763f77",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobelightroomclassic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobephotoshop",
+  "assetId": "adobephotoshop",
+  "name": "Adobe Photoshop",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1686,
+  "sha256": "11f791a18f274a494148fa2b2b04b81e4cb21561537ce5ac0af38ec8fdce97c1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobephotoshop.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobepremierepro",
+  "assetId": "adobepremierepro",
+  "name": "Adobe Premiere Pro",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 993,
+  "sha256": "99b48567deeb7f54d95d5d3e7cb8b9394f3fdabc2fa7845fff377f80c2c975db",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobepremierepro.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "adobexd",
+  "assetId": "adobexd",
+  "name": "Adobe XD",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1430,
+  "sha256": "26115bad16bc0a8d4653678890990259cc37a2cfc18a2c72a4b7eed4e1112c08",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/adobexd.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "aerlingus",
+  "assetId": "aerlingus",
+  "name": "Aer Lingus",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1156,
+  "sha256": "019f70b453143bae80a63ef350866a5de32145fd466a7e01fd4e092e61c3b274",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/aerlingus.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "aerospike",
+  "assetId": "aerospike",
+  "name": "Aerospike",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 279,
+  "sha256": "13bc25f20099f9c90b27e11d40f58840d24267a652b842094b2d1aa45273bf4c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/aerospike.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "aew",
+  "assetId": "aew",
+  "name": "AEW",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2059,
+  "sha256": "980353f54bace3a9e929c64925e70e2ea4d944f9922925ef9cf1b0f8358d8345",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/aew.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "affinity",
+  "assetId": "affinity",
+  "name": "Affinity",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 366,
+  "sha256": "46d741503fbe3e2f8031a3f67d2464bb5dafb259373ea1ab41f4ea7d1c0771ba",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/affinity.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "affinitydesigner",
+  "assetId": "affinitydesigner",
+  "name": "Affinity Designer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 582,
+  "sha256": "1547c57f8ac729eb874fbe11adacaafc7467f539dd86a2af54814fb05f4bc56a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/affinitydesigner.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "affinityphoto",
+  "assetId": "affinityphoto",
+  "name": "Affinity Photo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 892,
+  "sha256": "bd1635fd8b164ec41bbcba16f9488e2d8fb5636a0983b826a22cf97866f4ad1e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/affinityphoto.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "affinitypublisher",
+  "assetId": "affinitypublisher",
+  "name": "Affinity Publisher",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 661,
+  "sha256": "58b89fff19108e5c7f3b57a71f43072234cdfce83211f1f71ac6c472486ed00f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/affinitypublisher.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "alfaromeo",
+  "assetId": "alfaromeo",
+  "name": "Alfa Romeo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 5607,
+  "sha256": "c3d25becfb70b68ceb2d8f4f086dea3bf7ee4f28ea2d3e0fbf27f825ef991fd7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/alfaromeo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "allocine",
+  "assetId": "allocine",
+  "name": "AlloCin&#233;",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 747,
+  "sha256": "e7ebfb306972a14d12a703a122c11c39d649fc99c39ffa1e4dd4a1e1c070e736",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/allocine.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "alteryx",
+  "assetId": "alteryx",
+  "name": "Alteryx",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4138,
+  "sha256": "7fabd2d7a3fbc3ddbaa4c5f0f5c01855de0f4da307d14ebf1a424d55810b437b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/alteryx.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "altiumdesigner",
+  "assetId": "altiumdesigner",
+  "name": "Altium Designer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1654,
+  "sha256": "e326025b3b2da6bb5e660c6aa89909aff3655c1a899ac54ccd17591681bb3599",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/altiumdesigner.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "alx",
+  "assetId": "alx",
+  "name": "ALX",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 645,
+  "sha256": "83493b22d4636d329b9a39a810f0166891fc448e5f18cc543fa517b321515e85",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/alx.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazon",
+  "assetId": "amazon",
+  "name": "Amazon",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2129,
+  "sha256": "f7ef379d2ea0da19e63e74e394ec6a1423e335ef785a456729da66a840858dbf",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazon.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonalexa",
+  "assetId": "amazonalexa",
+  "name": "Amazon Alexa",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 498,
+  "sha256": "517d346087d44972e05db5daab3371b956ff9254e6fbf12486bd6f5272c89d41",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonalexa.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonapigateway",
+  "assetId": "amazonapigateway",
+  "name": "Amazon API Gateway",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1043,
+  "sha256": "0e6fbe7a5a18480443c888bb7996625475352103a90a30a49f2bc356a301a557",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonapigateway.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazoncloudwatch",
+  "assetId": "amazoncloudwatch",
+  "name": "Amazon CloudWatch",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1706,
+  "sha256": "0c6e007c207a8336fe4eb74a598856837d1a8dfe537100921b9364c6e48c4b9a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazoncloudwatch.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazoncognito",
+  "assetId": "amazoncognito",
+  "name": "Amazon Cognito",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1492,
+  "sha256": "04fb90c06b585bc1c760cb998f35984f5363769c241fdc4cafdcc112ac9849cc",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazoncognito.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazondocumentdb",
+  "assetId": "amazondocumentdb",
+  "name": "Amazon DocumentDB",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2107,
+  "sha256": "2134791f145d0bf519f06e05b6b3574cbe37e07f64ff70bee7efbb44ba4d1bb2",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazondocumentdb.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazondynamodb",
+  "assetId": "amazondynamodb",
+  "name": "Amazon DynamoDB",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2147,
+  "sha256": "b1ccfa7134591728f9532d56669eeb1e87433edaeb518d3c49619ff113f4ea45",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazondynamodb.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonec2",
+  "assetId": "amazonec2",
+  "name": "Amazon EC2",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1081,
+  "sha256": "7523b082d6f5075681898840475fa2ef29a71b95be33720f5bcf9edd0c550fb8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonec2.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonecs",
+  "assetId": "amazonecs",
+  "name": "Amazon ECS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 835,
+  "sha256": "50ccf9114e860d173ffb45e25ca549c445911232cab157b1dcb1b738ab6715ff",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonecs.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazoneks",
+  "assetId": "amazoneks",
+  "name": "Amazon EKS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 920,
+  "sha256": "bb9275e3d3dc407e7a89a958ad647106631ac82c24e7cb06f5ac8b2fc08bdabb",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazoneks.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonelasticache",
+  "assetId": "amazonelasticache",
+  "name": "Amazon ElastiCache",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2010,
+  "sha256": "e9262be5bfb6a8564b26102304dcd3917799d588e7383cd27a8618e93f9ff69c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonelasticache.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonfiretv",
+  "assetId": "amazonfiretv",
+  "name": "Amazon Fire TV",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3258,
+  "sha256": "f9795db8d0879535eaa5733c24f60e54144c5a947a20e69c12ccd4b453a6fc2b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonfiretv.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazongames",
+  "assetId": "amazongames",
+  "name": "Amazon Games",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4717,
+  "sha256": "039245f2ca14a21239e2c6072eb38484ded7d0265ac5e2e5c7889e471402304d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazongames.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazoniam",
+  "assetId": "amazoniam",
+  "name": "Amazon Identity Access Management",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1188,
+  "sha256": "924578ec95ef2aee3dce3dcb814b4ea83c8e8cdb990d80dcf1f09b3dfb8ac6d0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazoniam.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonlumberyard",
+  "assetId": "amazonlumberyard",
+  "name": "Amazon Lumberyard",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 7143,
+  "sha256": "24c149e72a26f5fdf6d539b3589f803c2e04c10570064261e06e314c901b098c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonlumberyard.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonluna",
+  "assetId": "amazonluna",
+  "name": "Amazon Luna",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1551,
+  "sha256": "c362a028c50c45c90d1227f5562b430359875ffa0b27017c22f947e35d06d332",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonluna.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonmusic",
+  "assetId": "amazonmusic",
+  "name": "Amazon Music",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 6893,
+  "sha256": "9388a83ef567e467153e50b59bef0ff86489b4e9a4a14231052b06e4f67a2236",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonmusic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonpay",
+  "assetId": "amazonpay",
+  "name": "Amazon Pay",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2877,
+  "sha256": "24d0edf24ac42bc93e70258ab5ac326b55a034da8d3dcfefc88c198ed2c1ce12",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonpay.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonprime",
+  "assetId": "amazonprime",
+  "name": "Amazon Prime",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 7166,
+  "sha256": "493cb06b25292b562a806caeec091f63712fb349df4a54b3ee58a408e7e83cbd",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonprime.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonrds",
+  "assetId": "amazonrds",
+  "name": "Amazon RDS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1507,
+  "sha256": "60c2a6e7686275b3783cdb9f4ce697c2df76a9ccfdfb7a97319bf27cec34a0b9",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonrds.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonredshift",
+  "assetId": "amazonredshift",
+  "name": "Amazon Redshift",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1380,
+  "sha256": "642ae09da0a82409b85650e8d73a03918f6be83ed1b736f007f7ec125e813d43",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonredshift.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonroute53",
+  "assetId": "amazonroute53",
+  "name": "Amazon Route 53",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3313,
+  "sha256": "d61e401128213855c76f1389adeff680a421039f0f1ed4ee96a27ea1c587d8fd",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonroute53.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazons3",
+  "assetId": "amazons3",
+  "name": "Amazon S3",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3551,
+  "sha256": "cba625e28cf2a5f653d53aad6a0f33ffb21f8e2c70e07237506c216684bbda2e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazons3.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonsimpleemailservice",
+  "assetId": "amazonsimpleemailservice",
+  "name": "Amazon Simple Email Service",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1817,
+  "sha256": "468b9c36f68771ac5991215aae9e4fe8ab90f101556f43358c5f6c7b9d753b5e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonsimpleemailservice.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonsqs",
+  "assetId": "amazonsqs",
+  "name": "Amazon SQS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2042,
+  "sha256": "d4fdea1e6f3ce16b31d7f870229f2cfe14a5b0311849f92e54adc7695471817f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonsqs.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonwebservices",
+  "assetId": "amazonwebservices",
+  "name": "Amazon Web Services",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3165,
+  "sha256": "f67734a0f5a7f925c84b6a9ea6e5489fe7af96e4ae167da6b71506a5d6afcab4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/amazonwebservices.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "aol",
+  "assetId": "aol",
+  "name": "AOL",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 565,
+  "sha256": "d1139769405928b57691136b8d36f3f576e45948bde4dd223a3e99f396aee5be",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/aol.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "apacheflink",
+  "assetId": "apacheflink",
+  "name": "Apache Flink",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 11222,
+  "sha256": "6553a12cf4dd2fd4e775b40f7c629194223349b36ffed3313c68f97335fa61a5",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/apacheflink.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "askfm",
+  "assetId": "askfm",
+  "name": "ASKfm",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2521,
+  "sha256": "0f37bdeb864b527e55ba98b775b967a4c983dbcd65fc0831d4d7c29fe455cb4f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/askfm.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "authy",
+  "assetId": "authy",
+  "name": "Authy",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 915,
+  "sha256": "3b3dd22777207e6a2acf3ee3ba1fd3030d3ce6fbf2d7b7125a756218368d3c8a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/authy.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awsamplify",
+  "assetId": "awsamplify",
+  "name": "AWS Amplify",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 262,
+  "sha256": "bb6d0d2f5e4077d02bdcb561160857d1454385faa0478abb8150b4bae468cc91",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awsamplify.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awselasticloadbalancing",
+  "assetId": "awselasticloadbalancing",
+  "name": "AWS Elastic Load Balancing",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1139,
+  "sha256": "2b1c2eb52655bc0aaa3c5469c2720b08f0a25cbaedd90953dda76f9e95233a8f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awselasticloadbalancing.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awsfargate",
+  "assetId": "awsfargate",
+  "name": "AWS Fargate",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1698,
+  "sha256": "9611cfeb34bc4fc3c84044bcc1377dafad3bfcf164d038d1e9ae1a37a672acbc",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awsfargate.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awslambda",
+  "assetId": "awslambda",
+  "name": "AWS Lambda",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 814,
+  "sha256": "3d2a1a33cacaec01728917af5dd1f94e9d77c85f3d2708474df0f6efa9d50670",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awslambda.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awsorganizations",
+  "assetId": "awsorganizations",
+  "name": "AWS Organizations",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 988,
+  "sha256": "2c1300d42fb5ec2c734a6c8c506314db09b7bc994043b63e55ec30be2211dd20",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awsorganizations.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "awssecretsmanager",
+  "assetId": "awssecretsmanager",
+  "name": "AWS Secrets Manager",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1592,
+  "sha256": "cecb12a6515094414f8d6b1e8d2d113fa46b9280d413e8d3ed38b89bb2c8d6c3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/awssecretsmanager.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "bugsnag",
+  "assetId": "bugsnag",
+  "name": "Bugsnag",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 789,
+  "sha256": "db64b34f081fd46794cd6a2cc34b71289573f4ff56b71998f1d146382dfcfb4d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/bugsnag.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "caffeine",
+  "assetId": "caffeine",
+  "name": "Caffeine",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 859,
+  "sha256": "c6150986be996b2af57d36ede694a5960b5181b5410abe00470537a3480b366f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/caffeine.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "canva",
+  "assetId": "canva",
+  "name": "Canva",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2756,
+  "sha256": "0d90ba2030f2ad642e19234241467280e97034a151905d60e05f0fc9fc41dcff",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/canva.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "chromecast",
+  "assetId": "chromecast",
+  "name": "Chromecast",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 536,
+  "sha256": "759bf162ed938482bdd39210f3080b0c9cae85e7915ace16c01c4e9b7e04bda7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/chromecast.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "chupachups",
+  "assetId": "chupachups",
+  "name": "Chupa Chups",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8822,
+  "sha256": "ba46c1a21866229ad48cb52ecaef2a5e245184ba32d9c8f4cfdd2738e45e93fb",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/chupachups.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "ckeditor4",
+  "assetId": "ckeditor4",
+  "name": "CKEditor 4",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1140,
+  "sha256": "a25cb2265a21d9fb460bfc5297416db413eff93a6ce7ef62563bcc14df0b474d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/ckeditor4.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "cliqz",
+  "assetId": "cliqz",
+  "name": "Cliqz",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 471,
+  "sha256": "fc83487e935873cb4a5e0edb1ce290fc68c29d3615c14e7c25f91bf7cdd57905",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/cliqz.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "codeium",
+  "assetId": "codeium",
+  "name": "Codeium",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1912,
+  "sha256": "15b483dc188b620711e66d30b93d0ca68ae3e79841299c446aabec6c8dc82c2e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/codeium.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "codepen",
+  "assetId": "codepen",
+  "name": "CodePen",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1273,
+  "sha256": "d2e8f93c582faee9294bf02996709885d0b637790a6c9e1c9452377227cb9979",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/codepen.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "cognizant",
+  "assetId": "cognizant",
+  "name": "Cognizant",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1769,
+  "sha256": "abafc605a4ff9fd0dcffdbad4519f063242c50e53a5e0e81dfc85380d871b64c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/cognizant.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "cohost",
+  "assetId": "cohost",
+  "name": "cohost",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1936,
+  "sha256": "622daf91299053b718998fad22111946b16648de294ebb62e5b788988af16689",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/cohost.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "coil",
+  "assetId": "coil",
+  "name": "Coil",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 840,
+  "sha256": "3ff5740c522ee83232da1ccef8aba68090d49359f8e163442547eb8dd6b08314",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/coil.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "createreactapp",
+  "assetId": "createreactapp",
+  "name": "Create React App",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8336,
+  "sha256": "ac6baf9a367b2acac3ee4533de2f771dd5e34128d0fc5e5618d988ed86cac044",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/createreactapp.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "css3",
+  "assetId": "css3",
+  "name": "CSS3",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 328,
+  "sha256": "f73d87c6b7d2a021f486b0d52a59893174ba5e3b7ceb3dcdfab865ea250ba767",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/css3.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "d3dotjs",
+  "assetId": "d3dotjs",
+  "name": "D3.js",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 627,
+  "sha256": "5fb43ad40ecae0160fa5aa24c0ab91e632cb0c43dc99e66a7f264fffa2965ced",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/d3dotjs.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "dbt",
+  "assetId": "dbt",
+  "name": "dbt",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1515,
+  "sha256": "e8ced6f94379a74d3d6622516f2f067c247b22f8f5470557ca8e6751d426df38",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/dbt.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "delicious",
+  "assetId": "delicious",
+  "name": "del.icio.us",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 150,
+  "sha256": "16a37f9ce21cd0625eb491bb94fa3449a8cb19c0b3d4a7ee1bd8c7309f91210e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/delicious.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "delphi",
+  "assetId": "delphi",
+  "name": "Delphi",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8711,
+  "sha256": "2dbf2355618b447ab9ba722244b7cd06f087d7d6cabafd85943860077ab00a72",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/delphi.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "eljueves",
+  "assetId": "eljueves",
+  "name": "El Jueves",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1506,
+  "sha256": "6879e1f8c9c0d2d40cf7ed54b0e690692d826f320bf11de7d993a8a6bf07ffe1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/eljueves.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "ello",
+  "assetId": "ello",
+  "name": "Ello",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 362,
+  "sha256": "665ccfc43d06b7ceb2377f797d795312a11f9e803b51b9ff43229818cd93519d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/ello.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "empirekred",
+  "assetId": "empirekred",
+  "name": "Empire Kred",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 978,
+  "sha256": "769e49aacdc39e0f6ce1612835803a4d85382c37c70fcc4fd1f89700c95c6542",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/empirekred.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "engadget",
+  "assetId": "engadget",
+  "name": "Engadget",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 271,
+  "sha256": "cdda70d28b2001b3dfd64acc9a5ba24657e9265d204e251d94e6ec99c69729aa",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/engadget.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "eventbrite",
+  "assetId": "eventbrite",
+  "name": "Eventbrite",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 467,
+  "sha256": "8b874c3e39e600923e011ced452e8e04de30b4cc0e663b469d39e299c1be5255",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/eventbrite.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "feathub",
+  "assetId": "feathub",
+  "name": "FeatHub",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 186,
+  "sha256": "22c4ea2ad8aa2aee70e5b4eb29b2bd9413d096a25fabf4c75002c406fe24ee0b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/feathub.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "flipkart",
+  "assetId": "flipkart",
+  "name": "Flipkart",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 834,
+  "sha256": "8787185e8e90a964a7827ea0ec6112060d807cd1f35fd81d5ad0fa0ec535e1f0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/flipkart.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "fluxus",
+  "assetId": "fluxus",
+  "name": "Fluxus",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 585,
+  "sha256": "38b4da393dd46f213bc8eea789f7d53a09d8c59c1e636c637d1d2dac05012455",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/fluxus.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "foursquarecityguide",
+  "assetId": "foursquarecityguide",
+  "name": "Foursquare City Guide",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 767,
+  "sha256": "abbbc35785422aa11eaf7b552ea7e663ab2c5957c7351851ec96689fe6ef65cd",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/foursquarecityguide.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "fsecure",
+  "assetId": "fsecure",
+  "name": "F-Secure",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 971,
+  "sha256": "e1b9f027d7a6b98ca29b1033b0c86fe57f5324935624afa8af308577599d269f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/fsecure.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "funimation",
+  "assetId": "funimation",
+  "name": "Funimation",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 238,
+  "sha256": "c2994a7cc139b060aad0f183c1ac14d4158909cdde54a32a66f3d8612e129917",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/funimation.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "furaffinity",
+  "assetId": "furaffinity",
+  "name": "Fur Affinity",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9384,
+  "sha256": "45201d69de5af92868c804651f0e6a0c681bd06840b4e8c51cb5c269a31304de",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/furaffinity.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "gameandwatch",
+  "assetId": "gameandwatch",
+  "name": "Game & Watch",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2227,
+  "sha256": "94fd365a0523bb07b6017ac6257daa019fea7a3f87f4e1e29bcc75bfeafc0795",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/gameandwatch.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "gdal",
+  "assetId": "gdal",
+  "name": "GDAL",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8775,
+  "sha256": "40079010fac5ae96660b85ca68d40f3a945a0758a5cd01e97fd703d20ff7c242",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/gdal.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "geant",
+  "assetId": "geant",
+  "name": "G&#233;ant",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3683,
+  "sha256": "522ddad7e3522ae8ea09fe487e43839fd926320fb6c5602c57ee1e5c3e61e0b3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/geant.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "gerrit",
+  "assetId": "gerrit",
+  "name": "Gerrit",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9678,
+  "sha256": "7546aa4434a0499b14910eb63336941ed7558685e48070a0ae817baa6f74f37b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/gerrit.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "gin",
+  "assetId": "gin",
+  "name": "Gin",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 11231,
+  "sha256": "5353206a278c46f47a36e8352d29f0d9ef4bf00b4284ccd310490bf1fa10dd39",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/gin.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "goldenline",
+  "assetId": "goldenline",
+  "name": "GoldenLine",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 242,
+  "sha256": "6833dfeaff2e1186f50b96267bc4bd2f1b0a5fc9871891589313ae78d83db752",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/goldenline.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googledatastudio",
+  "assetId": "googledatastudio",
+  "name": "Google Data Studio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 904,
+  "sha256": "57cb9c312feb85ef96d1f715ce6de82518bfe250e6cf38854c43a8b72ef52ba7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/googledatastudio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googlefit",
+  "assetId": "googlefit",
+  "name": "Google Fit",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 799,
+  "sha256": "58c4d246365c163967610d35a577031fdc0c8bc05e9cd34f4fc581b7eeef947b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/googlefit.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "greensock",
+  "assetId": "greensock",
+  "name": "GreenSock",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8721,
+  "sha256": "df88f0f5b5a2ee7bbd63f904cfb0c40a977c7e3d7457f56efcbb722fac8d193d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/greensock.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "grubhub",
+  "assetId": "grubhub",
+  "name": "Grubhub",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3067,
+  "sha256": "16a3bb24268aaafc55c0a42325f8e9cd279c515171ba611935642c9d02787137",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/grubhub.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "handshake_protocol",
+  "assetId": "handshake_protocol",
+  "name": "Handshake",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 924,
+  "sha256": "b62c1453ad15d6fcae575f550f15f5c2e073709a3352c9f798ff59a6935f025e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/handshake_protocol.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "heroku",
+  "assetId": "heroku",
+  "name": "Heroku",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 674,
+  "sha256": "622d358ec7c6b09d8f8d2273ee226b5613e94c75d026651ee3889e44282627c1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/heroku.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "hive_blockchain",
+  "assetId": "hive_blockchain",
+  "name": "Hive",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 713,
+  "sha256": "13ca34d7d0bde8f69545d980bdb945c2235366c2f476c56e37c4ea8cefbd005e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/hive_blockchain.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "informatica",
+  "assetId": "informatica",
+  "name": "Informatica",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 239,
+  "sha256": "b30f6371e8dac79f96ad80f7ad293435d493a209b5c5dfcad3df069f26604792",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/informatica.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "instructables",
+  "assetId": "instructables",
+  "name": "Instructables",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 11020,
+  "sha256": "98a7937a14efc78bf85bdfbdb854630f652121265cdf14bf12af884b7d9742ed",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/instructables.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "invision",
+  "assetId": "invision",
+  "name": "InVision",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 878,
+  "sha256": "79c84adf01c180b386a30b53ed76815f9e41b399579c8f99e70e66a41acea51f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/invision.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "jaeger",
+  "assetId": "jaeger",
+  "name": "Jaeger",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 10389,
+  "sha256": "1bc03584440ea837c6ed8208ab85b132c9b325e0cfb60e9dfa1b4fb051b228c3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/jaeger.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "jaguar",
+  "assetId": "jaguar",
+  "name": "Jaguar",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 5857,
+  "sha256": "0ee3384ec0a800db911a5699cfd70bff9a7a02279cf72a8720d764cf8e2d15e7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/jaguar.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "jamboard",
+  "assetId": "jamboard",
+  "name": "Jamboard",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 263,
+  "sha256": "ce9751ad71d79f4c5f72619032de8ba1fc86fc875887323f580005662a76202b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/jamboard.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "landrover",
+  "assetId": "landrover",
+  "name": "Land Rover",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3321,
+  "sha256": "a9740572838d84a4d7f6f3673bee5ad1bdda7bb2666468441182ac1bc1c564bc",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/landrover.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "linkedin",
+  "assetId": "linkedin",
+  "name": "LinkedIn",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 610,
+  "sha256": "2687ac468d96bd03e748dc8646ef6465cb4cc7f34b96e1d0bc86fcb3dd79121a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/linkedin.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "logitech",
+  "assetId": "logitech",
+  "name": "Logitech",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1003,
+  "sha256": "f00c8facffdc603aaa497a49f3e1c426e7c0a18797797e966e5cc1e213c9409b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/logitech.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "logitechg",
+  "assetId": "logitechg",
+  "name": "Logitech G",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 614,
+  "sha256": "dc3fc27bdb5a3f945a26f3cc5558e86bea08a37c3b09ff4a1eef50172b456f08",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/logitechg.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "magento",
+  "assetId": "magento",
+  "name": "Magento",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 285,
+  "sha256": "fd4a6cb9c691596a8f692680f261d5c60b2de1a829b27bcf8cda96389177bee8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/magento.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "mailboxdotorg",
+  "assetId": "mailboxdotorg",
+  "name": "mailbox.org",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 287,
+  "sha256": "f559eb4b59b2c49375591b5fd7674498701252963f3ac2a27e115a4f0f75f677",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/mailboxdotorg.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "majorleaguehacking",
+  "assetId": "majorleaguehacking",
+  "name": "Major League Hacking",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 10166,
+  "sha256": "ea0a21e06f693cd17460b5360207d6d7c07e6d371b4bbcb6ed569444d7e63dfa",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/majorleaguehacking.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "marketo",
+  "assetId": "marketo",
+  "name": "Marketo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 230,
+  "sha256": "ce115d303bfcf362b5ea303e299faac8beceeec081e5ae0f2fd5c62454ddf963",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/marketo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "mercedes",
+  "assetId": "mercedes",
+  "name": "Mercedes",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 439,
+  "sha256": "26417721062cb3dc1cbe26cece9373d863c873ee5ee66122a9177e417a6606a7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/mercedes.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microgenetics",
+  "assetId": "microgenetics",
+  "name": "Microgenetics",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1510,
+  "sha256": "2cf3dbe1385bfa4f2a06e917f9d0da0c4131072088c3af65b38060c562cbc8de",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/microgenetics.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "minetest",
+  "assetId": "minetest",
+  "name": "Minetest",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3783,
+  "sha256": "1cfc8c5e4d75983624381831c65d1c59f17524205966d36bf31da8d037a09ebf",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/minetest.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "msi",
+  "assetId": "msi",
+  "name": "MSI",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8282,
+  "sha256": "79be40634e937238e44b16c1c182c24db4fb7ed121e6cdd5c30b23c682fe3f65",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/msi.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "mulesoft",
+  "assetId": "mulesoft",
+  "name": "Mulesoft",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 734,
+  "sha256": "db24953d87b29ad04e7557b03f0f6cde9847699fb6b6651adb17fdeab5e93902",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/mulesoft.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "musescore",
+  "assetId": "musescore",
+  "name": "MuseScore",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2830,
+  "sha256": "f9c73b098b91d6b67bcf4364112a715d7f66c90b1d192a6b4f3816457579e483",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/musescore.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nextui",
+  "assetId": "nextui",
+  "name": "NextUI",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 666,
+  "sha256": "e74f20179a3abc111e66ca99934b84e502346120ca77eb0e70144a5be8e9b878",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nextui.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nexusmods",
+  "assetId": "nexusmods",
+  "name": "Nexus Mods",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2964,
+  "sha256": "1884b71c273478004c1e8f2c5278e555e1d097c9a08c59c6b2a544cbee7c5ff4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nexusmods.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendo",
+  "assetId": "nintendo",
+  "name": "Nintendo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2208,
+  "sha256": "4879be6f85a85297ef472d0835fb24e02a7142f7e0a5e764662f2fb0dadd0056",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nintendo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendo3ds",
+  "assetId": "nintendo3ds",
+  "name": "Nintendo 3DS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1017,
+  "sha256": "ce1716bd9989b386ebee165ca5a385580369d9efe87698fde074acdc0ec2fadc",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nintendo3ds.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendods",
+  "assetId": "nintendods",
+  "name": "Nintendo DS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1942,
+  "sha256": "a30d6800bbbacc7b163641254216f0d51f376909a7ffdd7fe6ac9955b02d4ef2",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nintendods.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendogamecube",
+  "assetId": "nintendogamecube",
+  "name": "Nintendo GameCube",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 458,
+  "sha256": "e814c1972fdcdd175e35268d633ec0fa61d1d077ea463ea9cef993186d939d19",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nintendogamecube.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendoswitch",
+  "assetId": "nintendoswitch",
+  "name": "Nintendo Switch",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 723,
+  "sha256": "3acd3fb0b576ed59bf319047ba487e4866ebeb9275509f6dd47568d4dcdf2586",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nintendoswitch.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nuxtdotjs",
+  "assetId": "nuxtdotjs",
+  "name": "Nuxt.js",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 879,
+  "sha256": "0e0beed44c793b35f15a90446f9c58eee1943890fe0318e792ee0ef0d9ac5c3e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/nuxtdotjs.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "oracle",
+  "assetId": "oracle",
+  "name": "Oracle",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 271,
+  "sha256": "d355bd1561de9aea08928e662bdce5b4834f0dcb6096aa0b04b4eed23fc1fcb9",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/oracle.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "peugeot",
+  "assetId": "peugeot",
+  "name": "Peugeot",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 10503,
+  "sha256": "52eac20d95c797916ee5ce7344a0e2a647472a9e560af2f2e1e4f45f0de7edf3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/peugeot.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pluscodes",
+  "assetId": "pluscodes",
+  "name": "Plus Codes",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 491,
+  "sha256": "4416acc699780ba1de80f577f2e2b3b01244eb308edf8f33800142e4240e9ea0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/pluscodes.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pocket",
+  "assetId": "pocket",
+  "name": "Pocket",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 829,
+  "sha256": "774fd32b54360a53638b7cfbeede460367458c9fd4847e480be890ec1c2dff37",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/pocket.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "podman",
+  "assetId": "podman",
+  "name": "Podman",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9936,
+  "sha256": "676f0e895fed6e004e2fbf55f364ba900ff1a6a6de26b78fb5066dde421e4e00",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/podman.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pointy",
+  "assetId": "pointy",
+  "name": "Pointy",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 640,
+  "sha256": "8c6b0319c37d49e2b2faa5fdddfe69e9306c2786394b111c18a5d88331d8b085",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/pointy.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pokemon",
+  "assetId": "pokemon",
+  "name": "Pok&#233;mon",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3805,
+  "sha256": "6af2718e2296d281219a2df4394b8967126c55f4748dc93f871da84b836808c9",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/pokemon.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "prime",
+  "assetId": "prime",
+  "name": "Prime",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3392,
+  "sha256": "47972506048b76c354bb02e881981c2a121d7ecd59f05b55b0b514ec2c62e1d7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/prime.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "primevideo",
+  "assetId": "primevideo",
+  "name": "Prime Video",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 5731,
+  "sha256": "7709e02c4da8574eba7c99222ea95a20320123b9e112811dbe7e1578386d2d8e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/primevideo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "quip",
+  "assetId": "quip",
+  "name": "Quip",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 701,
+  "sha256": "5a2668018c54cfdcc642a806b578e8a91fddaf7461b3c9d1dddb87a384b30ce6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/quip.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "radiopublic",
+  "assetId": "radiopublic",
+  "name": "RadioPublic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1261,
+  "sha256": "d3f94f8d4227b35dc2acf9409e3da1d9b04a1f11b7e963cf5f8ee190d52d106d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/radiopublic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "realm",
+  "assetId": "realm",
+  "name": "Realm",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2566,
+  "sha256": "b0113997eba4604fed0fd9b6b08ed91bb0ab3cfc00c8a19616be10efeb9abbc4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/realm.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "redbull",
+  "assetId": "redbull",
+  "name": "Red Bull",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9354,
+  "sha256": "731284f4a061e181bb50987ba0d880c04ba8155fee168f4716f258275731ad49",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/redbull.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "renpy",
+  "assetId": "renpy",
+  "name": "Ren'Py",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 11379,
+  "sha256": "20e8acac5afea0a1a280cbee350d01cd3a91ceea190af7408b81f18ea85604f2",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/renpy.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "revue",
+  "assetId": "revue",
+  "name": "Revue",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2032,
+  "sha256": "f90fa7ae8eb3a55c7fcd5e7255c12d8131ce46390f1e83dd093f8be9fded4589",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/revue.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "safari",
+  "assetId": "safari",
+  "name": "Safari",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 11844,
+  "sha256": "a982a03a85896238f1a33c9ca19bf46a554fcc80eb21b88091d8f9f49dccfb9e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/safari.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "salesforce",
+  "assetId": "salesforce",
+  "name": "Salesforce",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 544,
+  "sha256": "9f8adb4f73acb235b2fe1c721f17d915d3559c905d1de9c7b678d76d0687eb08",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/salesforce.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sandisk",
+  "assetId": "sandisk",
+  "name": "SanDisk",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 5333,
+  "sha256": "593eda5a233f8a0a3360c820a5eb73cc09ff8e49c093de23fde30a0c2606ed2c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/sandisk.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "scania",
+  "assetId": "scania",
+  "name": "Scania",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8417,
+  "sha256": "99f297800f6f00b95048d47111437c0e74e44a77d2982990598131364406250f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/scania.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "scribd",
+  "assetId": "scribd",
+  "name": "Scribd",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1150,
+  "sha256": "1b713fb135b1bf6817ab96d6e86652d3ae7266fc7fb892a6b6c7ba002adb2160",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/scribd.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sendgrid",
+  "assetId": "sendgrid",
+  "name": "SendGrid",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 420,
+  "sha256": "94df2211ec2e414fa69adc06f7c7f8b93c44755380853a72e04e237433544247",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/sendgrid.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "shutterstock",
+  "assetId": "shutterstock",
+  "name": "Shutterstock",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 320,
+  "sha256": "d5e5c9037a615db8a1ebb13d988717e6133abda09614a22ef2552c2bd3f1fc84",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/shutterstock.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "skyrock",
+  "assetId": "skyrock",
+  "name": "Skyrock",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1435,
+  "sha256": "d1ebb7ad59ffd693d05ed3aea30139444646e162adb7a0e901c638cb149f16b4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/skyrock.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "slack",
+  "assetId": "slack",
+  "name": "Slack",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1123,
+  "sha256": "f23c317b279f53dcd2260a6cd2e279f7a696f87dcb3da259d6201f05bbc45b0d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/slack.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "smashdotgg",
+  "assetId": "smashdotgg",
+  "name": "smash.gg",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1682,
+  "sha256": "eadd7136cad309fefff21de242953d744fd854f8a9595cdd1855b06169e9cad7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/smashdotgg.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sonarcloud",
+  "assetId": "sonarcloud",
+  "name": "SonarCloud",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1063,
+  "sha256": "6764ee2574c48570188c34b4659d754e24f6520e6fd5c6bdec83993ee596f806",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/sonarcloud.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sonarlint",
+  "assetId": "sonarlint",
+  "name": "SonarLint",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1275,
+  "sha256": "2529c478722f6a71a7d6e07f8cd0f43c735f11d20a108b9f05530bb65acbab03",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/sonarlint.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sonarqube",
+  "assetId": "sonarqube",
+  "name": "SonarQube",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 411,
+  "sha256": "363370d2217eefa636e4395bfd535174d136aa6778efae5474cb2a10a8344e8a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/sonarqube.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "spinrilla",
+  "assetId": "spinrilla",
+  "name": "Spinrilla",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 295,
+  "sha256": "e0aed56018c9e0570d239853a55b7a62e02d1658aeef0220302b8037414827b8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/spinrilla.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "spring_creators",
+  "assetId": "spring_creators",
+  "name": "Spring",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 814,
+  "sha256": "fb25815ce341aa70019f30315ffa94fa3b55e94b5b18a94c149d34e0b6a260cd",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/spring_creators.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "stackpath",
+  "assetId": "stackpath",
+  "name": "StackPath",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 979,
+  "sha256": "999adc0fe451fe54ac37512ddaaf28c7266e1d666b977ac473156ae4b1031324",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/stackpath.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "stitcher",
+  "assetId": "stitcher",
+  "name": "Stitcher",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 253,
+  "sha256": "bf283cd52a5dc2c261c8f7f63f21b89ee94c75374090fc83799a23f9615c67d1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/stitcher.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "strongswan",
+  "assetId": "strongswan",
+  "name": "strongSwan",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9671,
+  "sha256": "1ac93b71f393cc296402f2c60e7ab5fea06a240003a50f2c15f002f7fcf9e170",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/strongswan.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "studyverse",
+  "assetId": "studyverse",
+  "name": "Studyverse",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1774,
+  "sha256": "78a280f5659e882329834f37188ac26774641febe1a80d3481934a1dc4e08f4d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/studyverse.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tableau",
+  "assetId": "tableau",
+  "name": "Tableau",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 914,
+  "sha256": "0be88c65662b32fbf6cb5504cf8c2356ab57dcb81d0a9b7632e776b947dd6029",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tableau.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "teepublic",
+  "assetId": "teepublic",
+  "name": "TeePublic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8735,
+  "sha256": "208da97d6a2659d9881e3a9f800e4ed7d4f95d0a25285c76373fb08a18f2f2e8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/teepublic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tekton",
+  "assetId": "tekton",
+  "name": "Tekton",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 10281,
+  "sha256": "3a8eedb07a01d6a3d47e87575577eaedffb2f6aebc6f54199df1b0c4b2af3899",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tekton.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tencentqq",
+  "assetId": "tencentqq",
+  "name": "Tencent QQ",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 658,
+  "sha256": "5b9ffc52750f3a45d86e3a910baaa14c89201089fc1a74764948cbbe29f2a611",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tencentqq.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tmobile",
+  "assetId": "tmobile",
+  "name": "T-Mobile",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 385,
+  "sha256": "ee86080f96dc62fbca5e031df942e24ae43b3f52b004003247dbcc936cce5b99",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tmobile.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tryhackme",
+  "assetId": "tryhackme",
+  "name": "TryHackMe",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8388,
+  "sha256": "5455c0b6214a74f1ce1c2550be9bdd0bd4d695303f5a5c76a45e3380dd27e54f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tryhackme.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tunein",
+  "assetId": "tunein",
+  "name": "TuneIn",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1204,
+  "sha256": "c86659d2ffbcd89be2a7c7df4c6761d869321fe8aba797f45a3edcd9f19970bf",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tunein.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tutanota",
+  "assetId": "tutanota",
+  "name": "Tutanota",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 679,
+  "sha256": "60f24b622eb45eb8657644d014357fcb31095ccdabb13b75579ad4c51251aa83",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/tutanota.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "twilio",
+  "assetId": "twilio",
+  "name": "Twilio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 923,
+  "sha256": "52dcf3b6cea65fdc9b5b525aa2bb9517f405a58c68d464f207f0ddf60c0114ea",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/twilio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "uniqlo_ja",
+  "assetId": "uniqlo_ja",
+  "name": "Uniqlo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 407,
+  "sha256": "86c6c9f3192d1f34482199c5258163223d6546f3b71bcf45c53e875f577579a6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/uniqlo_ja.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "uptobox",
+  "assetId": "uptobox",
+  "name": "Uptobox",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2369,
+  "sha256": "572a8033f234d9d20c414007868a3e95b3b42a491a8d9b57721a304f73f194a5",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/uptobox.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "walmart",
+  "assetId": "walmart",
+  "name": "Walmart",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4155,
+  "sha256": "e7deae878c81e93ef8e23de0465795a966043284d2a3e69a2e0044246cc08240",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/walmart.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "warnerbros",
+  "assetId": "warnerbros",
+  "name": "Warner Bros.",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1812,
+  "sha256": "db521c6c372f68c35c8801042b2078d43636d62252629f8550861bb83b22018a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/warnerbros.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "westerndigital",
+  "assetId": "westerndigital",
+  "name": "Western Digital",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 877,
+  "sha256": "109fa6cce22972f2f1d0dc10aceb8ee2a30d9a087d73cb981693a475a315f14e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/westerndigital.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "wii",
+  "assetId": "wii",
+  "name": "Wii",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 840,
+  "sha256": "dd898ba287199bd57b97d0171a7835a784ac608b90669279cde19761631451c1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/wii.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "wiiu",
+  "assetId": "wiiu",
+  "name": "Wii U",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1024,
+  "sha256": "255a15bcc37cd2e86149482b34f29f2234fa45f1bc5ec639e049dd66dc17fa1b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/wiiu.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "wipro",
+  "assetId": "wipro",
+  "name": "Wipro",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 8707,
+  "sha256": "a9c7eadf82f7cedd60bfb3a7d7b9f88982e451e0d218aeb5be9cef48ba296168",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/wipro.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "zerply",
+  "assetId": "zerply",
+  "name": "Zerply",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 738,
+  "sha256": "dc778e70f62410125544b7e2a21646d0804adc113189513aca68f2b0d373924c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-13.21.0.tgz#icons/zerply.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "13.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "airbrakedotio",
+  "assetId": "airbrakedotio",
+  "name": "Airbrake.io",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 337,
+  "sha256": "e9080d53418420d9969e6a9bcf61abf785760c98cb67bb2856d10d22dc494787",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/airbrakedotio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "amazonaws",
+  "assetId": "amazonaws",
+  "name": "Amazon AWS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3156,
+  "sha256": "79224fcf1ee0030e1ee8974ffb928af867b226f30f2e5817608897aafb45a14e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/amazonaws.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "azureartifacts",
+  "assetId": "azureartifacts",
+  "name": "Azure Artifacts",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 581,
+  "sha256": "469cb2d0857688bb42b0420a86bc08180641073ea5eeebdf8c0bcdf10724b696",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/azureartifacts.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "azuredataexplorer",
+  "assetId": "azuredataexplorer",
+  "name": "Azure Data Explorer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1689,
+  "sha256": "e9f83db030056c51e032ee0c1f889ab3d9009e27bf23fcadb9118b8977d6bf46",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/azuredataexplorer.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "azuredevops",
+  "assetId": "azuredevops",
+  "name": "Azure DevOps",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 268,
+  "sha256": "92fac1394f3e54f657dcd3993dd12dcd847be138d0250424afb670b9773cde6a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/azuredevops.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "azurefunctions",
+  "assetId": "azurefunctions",
+  "name": "Azure Functions",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 633,
+  "sha256": "f63f1bc88700b7faec67e7c1d782f928fdce3fb96585cae195e50d5f26dcb6da",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/azurefunctions.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "azurepipelines",
+  "assetId": "azurepipelines",
+  "name": "Azure Pipelines",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 990,
+  "sha256": "aabac113f75f940320ab067cb083146d72356a71ef5eff648bc997f1b3759ae6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/azurepipelines.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "csharp",
+  "assetId": "csharp",
+  "name": "C#",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1109,
+  "sha256": "e7521ff8bad92fb572390fd549c840a679f43c11b177f9ab4e2811089636d5ca",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/csharp.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "daimler",
+  "assetId": "daimler",
+  "name": "Daimler",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2726,
+  "sha256": "0427e95756651ad89393d269b9f66c10f951e31695b0450e274dc2dae86cf276",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/daimler.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "dataverse",
+  "assetId": "dataverse",
+  "name": "Dataverse",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1028,
+  "sha256": "72a7d825526c6b3f33536566631bf24d917b58539a214507aa0a622f8a71ace3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/dataverse.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "designernews",
+  "assetId": "designernews",
+  "name": "Designer News",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 376,
+  "sha256": "d75a9d4432c66ba8ec66592227be9ba1ef9ccaa03d126498f282edb05645d095",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/designernews.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "docusign",
+  "assetId": "docusign",
+  "name": "DocuSign",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 201,
+  "sha256": "aaa5c7b16a496f0d5d21daebf23bdf7bedf5d9041e0d2bc9f301b9957c283aac",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/docusign.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "dynamics365",
+  "assetId": "dynamics365",
+  "name": "Dynamics 365",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 646,
+  "sha256": "b62967ae6fafa045c59b4d1db8f42cc63cd084810879c7188b4b1068452f59ca",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/dynamics365.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "fite",
+  "assetId": "fite",
+  "name": "FITE",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 735,
+  "sha256": "f1c72d04ff7d73415f5d8833e77f119452f9cda31ad2f016996c3b2fff441b96",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/fite.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "flattr",
+  "assetId": "flattr",
+  "name": "Flattr",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 453,
+  "sha256": "08c0b0807dbf5c7317ced39f86c537091cb81c14feb8517b7bec1e81abeb9e12",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/flattr.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googlebard",
+  "assetId": "googlebard",
+  "name": "Google Bard",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 752,
+  "sha256": "f711de73cb2f79e7dcf4c2ee7a34788eb2f41bc30f67552747e420c16352f416",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googlebard.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googledomains",
+  "assetId": "googledomains",
+  "name": "Google Domains",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 503,
+  "sha256": "46498b0dea08efb3e3874decfca32da296fe1f89f1219d078a45cfd8e3475cb6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googledomains.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googlehangouts",
+  "assetId": "googlehangouts",
+  "name": "Google Hangouts",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 303,
+  "sha256": "0876c91f06f033557a5e413f9c6b89a9cdf9d370848c0869b2a924c6e82cf100",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googlehangouts.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googlemybusiness",
+  "assetId": "googlemybusiness",
+  "name": "Google My Business",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 914,
+  "sha256": "e3007f716a880e92517a601d8d0d7377aa3dd9d54017505e4d52497ddaa2a660",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googlemybusiness.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googleoptimize",
+  "assetId": "googleoptimize",
+  "name": "Google Optimize",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 494,
+  "sha256": "9745754e6f9df0d4c9ed36fa7f3aee53169c2d2d997301d900fb3e5e31adff7f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googleoptimize.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "googlepodcasts",
+  "assetId": "googlepodcasts",
+  "name": "Google Podcasts",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 859,
+  "sha256": "7816fd23745b6a096174ebd5cf9de0630df9ef65d0fba066c5ff49ee8dae2596",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/googlepodcasts.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "ibmcloud",
+  "assetId": "ibmcloud",
+  "name": "IBM Cloud",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2049,
+  "sha256": "b49ad50ac10cfdf20da152c8b4a11e0c200a4292c16bf9ce54a2f6ce2aed1610",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/ibmcloud.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "ibmwatson",
+  "assetId": "ibmwatson",
+  "name": "IBM Watson",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2005,
+  "sha256": "3565d0e72ef750784d41c93fc57d4b75930cd8eb9ef1a03fbb8f973c301db8ea",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/ibmwatson.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "integromat",
+  "assetId": "integromat",
+  "name": "Integromat",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 470,
+  "sha256": "dfe66ac2bbfaa4d68f2badd67abd9188a8977559ca8435d1eed39844bc85ec28",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/integromat.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "internetexplorer",
+  "assetId": "internetexplorer",
+  "name": "Internet Explorer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 997,
+  "sha256": "090145de39ccde689a83e365cfcf8027e2cc92fd8f0323b871821308efcb1e2f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/internetexplorer.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftacademic",
+  "assetId": "microsoftacademic",
+  "name": "Microsoft Academic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 555,
+  "sha256": "24ff1c9a13cbb62ecb81973d79570366bf002996ea87ef25b461f1720a9ed8e1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftacademic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftaccess",
+  "assetId": "microsoftaccess",
+  "name": "Microsoft Access",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2076,
+  "sha256": "7ef10a76b7861dc2f5b433531a708c6fc5a42f208ac257e2c1a9a8cfe7d2b732",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftaccess.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftazure",
+  "assetId": "microsoftazure",
+  "name": "Microsoft Azure",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 593,
+  "sha256": "666f3d9597b7272e61e137bcdc88c99d689d2de7530f4a0a9a56d74d919f51c9",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftazure.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftbing",
+  "assetId": "microsoftbing",
+  "name": "Microsoft Bing",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 951,
+  "sha256": "09b4ebe4bb207182e70ce4b679a033dccfc471498a3c6de9ccf2826903e9fb37",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftbing.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftedge",
+  "assetId": "microsoftedge",
+  "name": "Microsoft Edge",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1486,
+  "sha256": "5f6a04ca78a1c88dd253c7e66394c1f97e5dba717ee90b0468e8959b10ae4388",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftedge.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftexcel",
+  "assetId": "microsoftexcel",
+  "name": "Microsoft Excel",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 563,
+  "sha256": "3392b76e2c1791f6622bc6a27bcf332ea6985cf263f8cb7153a37d43d74d2940",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftexcel.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftexchange",
+  "assetId": "microsoftexchange",
+  "name": "Microsoft Exchange",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2264,
+  "sha256": "4ec28d3d73faff2e7a18c8dea69c7aaa29bae10a3b191c45764940e73b483f3a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftexchange.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftonedrive",
+  "assetId": "microsoftonedrive",
+  "name": "Microsoft OneDrive",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1331,
+  "sha256": "43320b9321c3face2313ecfbbd741e9bc17b67acfcef488546fac5e09e729965",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftonedrive.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftonenote",
+  "assetId": "microsoftonenote",
+  "name": "Microsoft OneNote",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 574,
+  "sha256": "4784b0ad16f5bc1a159bedbe95aca9bd4223c4ca15da12ffc0dc0ebc6fd193cf",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftonenote.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftoutlook",
+  "assetId": "microsoftoutlook",
+  "name": "Microsoft Outlook",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1019,
+  "sha256": "f2fcdd8cbd3be6855935de2ab3fb7010aef607963fb157c64ac308e693a18f87",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftoutlook.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftpowerpoint",
+  "assetId": "microsoftpowerpoint",
+  "name": "Microsoft PowerPoint",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1323,
+  "sha256": "068333400277f45786efcd042d89cc98f5127ef1d7ec543f30710783ee4377a6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftpowerpoint.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftsharepoint",
+  "assetId": "microsoftsharepoint",
+  "name": "Microsoft SharePoint",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2261,
+  "sha256": "bb24f734b05e9a6461ab8cd627a9e88a9cdd50ee7abc7063d54772bb19547e0c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftsharepoint.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftsqlserver",
+  "assetId": "microsoftsqlserver",
+  "name": "Microsoft SQL Server",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 9352,
+  "sha256": "a6c3517a8bce0273d95f51d530d3b28231a60fe27a6423b8cd5eb74484aad9be",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftsqlserver.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftstore",
+  "assetId": "microsoftstore",
+  "name": "Microsoft Store",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 504,
+  "sha256": "88411f17cb64dec0cf2fd265a5f3cb05697d988288a0087bf3b4ebd8e424742c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftstore.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftteams",
+  "assetId": "microsoftteams",
+  "name": "Microsoft Teams",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1850,
+  "sha256": "9c509b9aea846e4a773d59df7fe3d29843e9e05c3579ce167d1e7e5ba14be1d1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftteams.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsofttranslator",
+  "assetId": "microsofttranslator",
+  "name": "Microsoft Translator",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2902,
+  "sha256": "d7e46ba5446b5f52ea9b4488e2d1c93bcbb758aa6d02342050ccc70d8e6d722d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsofttranslator.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftvisio",
+  "assetId": "microsoftvisio",
+  "name": "Microsoft Visio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1273,
+  "sha256": "3f729066042b4123dd28c09dca9a3e741464b53fe0a1a4831ec067dac85f900d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftvisio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftword",
+  "assetId": "microsoftword",
+  "name": "Microsoft Word",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 510,
+  "sha256": "92bbd002d1bb151aa918e51b680586af256ff2b7ccc5314e41a893e3c4a30d5c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/microsoftword.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "minecraft",
+  "assetId": "minecraft",
+  "name": "Minecraft",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2534,
+  "sha256": "119bb97c62a09814e900a6463b4635c9d9e4f4c5db4886db961a1a815ae32dd0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/minecraft.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "mojangstudios",
+  "assetId": "mojangstudios",
+  "name": "Mojang Studios",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4345,
+  "sha256": "194d75f84bc47457050f24345922bea81191826aa5a7ce0902f447a035a0afa0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/mojangstudios.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "niantic",
+  "assetId": "niantic",
+  "name": "Niantic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3202,
+  "sha256": "75fc5f5f4faa04d02ff34e6efb05aeb84b14d545d6f4f79aa408b4e8e0e4d02f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/niantic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "nintendonetwork",
+  "assetId": "nintendonetwork",
+  "name": "Nintendo Network",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1037,
+  "sha256": "ece5fccde90ebbe879b88c44202f56e99a2c6330abc2334e295bc90f5199a7ff",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/nintendonetwork.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "playwright",
+  "assetId": "playwright",
+  "name": "Playwright",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1000,
+  "sha256": "301a01f1b6726c941bbdfae8a758d5d129a90904fe21d9fac4652cc736ec55f5",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/playwright.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powerapps",
+  "assetId": "powerapps",
+  "name": "Power Apps",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1379,
+  "sha256": "a8c829f5ed0b0fb236fc2dfadb49052deb014fc465813282cacfecdf0a320f06",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powerapps.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powerautomate",
+  "assetId": "powerautomate",
+  "name": "Power Automate",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 459,
+  "sha256": "2da54abbf811347a9797f42938cf0b585c0f67bc0f097d6408434d22cb0c22f4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powerautomate.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powerbi",
+  "assetId": "powerbi",
+  "name": "Power BI",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 330,
+  "sha256": "d013902e022208ea00acc45c0ed4377699a2913ce1b26267e85e85001603d554",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powerbi.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powerfx",
+  "assetId": "powerfx",
+  "name": "Power Fx",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1262,
+  "sha256": "3503f41b98ae7c8aabc9c1606b9eb9447cb7266fa2ab992ec83368745115d871",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powerfx.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powerpages",
+  "assetId": "powerpages",
+  "name": "Power Pages",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 580,
+  "sha256": "6190e9be38faf066a810af02545ecfa4ef45ea584d0002a590a4e9c3c8b62551",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powerpages.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powershell",
+  "assetId": "powershell",
+  "name": "PowerShell",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 622,
+  "sha256": "4e17d9ce4e5c5ab91e1dcd3af4b271ec441e8eee5aba9c1eb2075791206376fa",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powershell.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "powervirtualagents",
+  "assetId": "powervirtualagents",
+  "name": "Power Virtual Agents",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1153,
+  "sha256": "ae094238f3b457c02cddf50b722a64d0192d2b89ee9e46134d9337ff8ff5574b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/powervirtualagents.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "renovatebot",
+  "assetId": "renovatebot",
+  "name": "RenovateBot",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1486,
+  "sha256": "bb41a404e21258f5a206453d9264083eb16181853ec1705468ee770cf7c65146",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/renovatebot.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "rome",
+  "assetId": "rome",
+  "name": "Rome",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 791,
+  "sha256": "df0091ee3132fb0aa48badeed7d532133d1144be53bb82915d230f5a96c4f76c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/rome.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "rstudio",
+  "assetId": "rstudio",
+  "name": "RStudio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 615,
+  "sha256": "6ec0ef2e169a80bcb2691d6ae50db3816c4e4fce5a90169910dc633ae7fba110",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/rstudio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "shotcut",
+  "assetId": "shotcut",
+  "name": "Shotcut",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 261,
+  "sha256": "57b7bb3841a28bdd6aadd8e893f0c04f9d5fc23a338b5871df8ab8b4efa69a9f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/shotcut.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "skynet",
+  "assetId": "skynet",
+  "name": "Skynet",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 833,
+  "sha256": "aa91f7f1201ce840038b690a299e5fd4e02b47c7c021c99b1831c66f4b16a605",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/skynet.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "skype",
+  "assetId": "skype",
+  "name": "Skype",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1314,
+  "sha256": "53131d81dad8553153bb15ed0c9a8f2aa335b75cbf713ca808ee785d379bf4d7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/skype.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "skypeforbusiness",
+  "assetId": "skypeforbusiness",
+  "name": "Skype for Business",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1134,
+  "sha256": "6f33014c1490840fb82d3e1036e55afecb51d50f3c97a82fb87801bf0824412e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/skypeforbusiness.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "twitter",
+  "assetId": "twitter",
+  "name": "Twitter",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 565,
+  "sha256": "4e7e73ba9813f46b7b95bc707704ddaf5367048c6571e07a4ff3cd3ba18bb04a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/twitter.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "visualbasic",
+  "assetId": "visualbasic",
+  "name": "Visual Basic",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 975,
+  "sha256": "8cd0a4fc713b5228e0e0ae791ab8a9195c124d5b3f6f0aec0ec1318388c2096a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/visualbasic.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "visualstudio",
+  "assetId": "visualstudio",
+  "name": "Visual Studio",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1729,
+  "sha256": "cf09514e5b4dba7c84145a7db0351f2f953cd1b8e4917aa484d0c21c8182629a",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/visualstudio.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "visualstudioappcenter",
+  "assetId": "visualstudioappcenter",
+  "name": "Visual Studio App Center",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 450,
+  "sha256": "261215fbc18238959bcd9a746bd3586a1c73b49fcc2ac1968d94309b6a67c050",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/visualstudioappcenter.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "visualstudiocode",
+  "assetId": "visualstudiocode",
+  "name": "Visual Studio Code",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 483,
+  "sha256": "09553cc3887603f3f8b61d411f7ec5f21afd2aa11d391200094fa7eabe68899b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/visualstudiocode.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windows",
+  "assetId": "windows",
+  "name": "Windows",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 203,
+  "sha256": "d35703096661a3f7590178d1c6872f2c9ffa15b537f250b4470150d349b30b37",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windows.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windows10",
+  "assetId": "windows10",
+  "name": "Windows 10",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 226,
+  "sha256": "864a01e62d78d63b0949753eae98e08628023d6f37f84173af618fdad156ebcf",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windows10.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windows11",
+  "assetId": "windows11",
+  "name": "Windows 11",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 206,
+  "sha256": "474ee3ca7e8a4cf7cd4d5073f0a88829e414c280551dfa612a74db5f37af5c5e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windows11.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windows95",
+  "assetId": "windows95",
+  "name": "Windows 95",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2439,
+  "sha256": "9f92febda734a2641577acdb8df329726a625699a0a549ef7ebc9ecb97a42715",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windows95.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windowsterminal",
+  "assetId": "windowsterminal",
+  "name": "Windows Terminal",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 498,
+  "sha256": "36fbb13bd8e4ba22abab9e0451f59f2a4a5d67dd0b49be7e3e98cc247f383bce",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windowsterminal.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windowsxp",
+  "assetId": "windowsxp",
+  "name": "Windows XP",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 641,
+  "sha256": "7066e9079f87009dc6f3f3f27e3afd2a2a78572b2af73a29c11c91e369e41ec1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/windowsxp.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "xamarin",
+  "assetId": "xamarin",
+  "name": "Xamarin",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 749,
+  "sha256": "c8aedea878327ec6ceef6ef6a9045abebfcaaf2ffd7c7329fef745329e137493",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/xamarin.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "xaml",
+  "assetId": "xaml",
+  "name": "XAML",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 986,
+  "sha256": "e16718ebbd68af3f8c72b742b28b035b6bc843e97617da258f069805c9338e91",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/xaml.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "xbox",
+  "assetId": "xbox",
+  "name": "Xbox",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 843,
+  "sha256": "c5ec61839e921542b3581d9aab7d72b822200975c4b508ea4f9bc02ce4c6f025",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/xbox.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "yammer",
+  "assetId": "yammer",
+  "name": "Yammer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 900,
+  "sha256": "203953a81e9bcd57a3e36fee20d333154424d90d6b8e46dc4a4080ef9319b7d4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-11.15.0.tgz#icons/yammer.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "11.15.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "abletonlive",
+  "assetId": "abletonlive",
+  "name": "Ableton Live",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 264,
+  "sha256": "1b1a253926577d40edfedd2eb88f41b92c44516ed16d6465044549ea542cbf59",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/abletonlive.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "acclaim",
+  "assetId": "acclaim",
+  "name": "Acclaim",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 514,
+  "sha256": "d5d1b6bce5a557297be2e2d8d6c09a2d5ce4561782a1ddfb3cd4f9c61fc2e26b",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/acclaim.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "addthis",
+  "assetId": "addthis",
+  "name": "AddThis",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 329,
+  "sha256": "179f9faf25afdc77ccec2022708ddf3d72b6baaaf8d90253d95151de38436591",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/addthis.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "anchor",
+  "assetId": "anchor",
+  "name": "Anchor",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 901,
+  "sha256": "93c526160f170bb6771db3c8bdde46c22c41c750715a4d2a5cdc6bdaf60fb0a2",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/anchor.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "angellist",
+  "assetId": "angellist",
+  "name": "AngelList",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3161,
+  "sha256": "9585865d91fdab75a97cb7cdd7ac59e0d7fa252ef94ea8d5499d68d5e77609d6",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/angellist.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "angularjs",
+  "assetId": "angularjs",
+  "name": "AngularJS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 348,
+  "sha256": "eaed02196d20dedcff9f57a945d95f25493989240dbf68fe24e33365058f0baa",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/angularjs.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "angularuniversal",
+  "assetId": "angularuniversal",
+  "name": "Angular Universal",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 610,
+  "sha256": "592fc6c24eb738eeea035b28d77aaded08e5f78b46e8ca6142dfa4c27cf5f2a4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/angularuniversal.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "askubuntu",
+  "assetId": "askubuntu",
+  "name": "Ask Ubuntu",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2491,
+  "sha256": "a9adb00b6805f8dd48a5dbcc6ddda604e54a9fb5767e52bd127c487e492dd1d8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/askubuntu.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "atom",
+  "assetId": "atom",
+  "name": "Atom",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1787,
+  "sha256": "51c9a6b1b13dcb1669980200e7484e0299ec5fdc1c0f2b84ca965436b22ef0b4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/atom.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "badgr",
+  "assetId": "badgr",
+  "name": "Badgr",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4394,
+  "sha256": "47139f60a5c099e423c046addd9dd3ca3a5b56da31e8b6dc511c03a58729d2e5",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/badgr.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "bathasu",
+  "assetId": "bathasu",
+  "name": "Bath ASU",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1455,
+  "sha256": "b0785c6355f08d0eae9891855d528883b0cda02b1681211d5027bd4c716cd6f5",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/bathasu.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "bbc",
+  "assetId": "bbc",
+  "name": "BBC",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2012,
+  "sha256": "bc809ee00cc11b894b6047540d9721120f73c715479a36c86a8eae2b15320093",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/bbc.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "bbciplayer",
+  "assetId": "bbciplayer",
+  "name": "BBC iPlayer",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 659,
+  "sha256": "7630217b3e5bcaedae908207b5b0805282be3af4c46a9b7cc3fb25ed95013be0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/bbciplayer.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "byte",
+  "assetId": "byte",
+  "name": "byte",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 570,
+  "sha256": "a57db4caaa799c25e18a178a603b8b036bdf14ba92c35e71b37d511b80f25b82",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/byte.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "codereview",
+  "assetId": "codereview",
+  "name": "Code Review",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 840,
+  "sha256": "ac3383ce137e53a2763eebfc392fef77e30043dbbc41d4dea13367a7db803e55",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/codereview.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "forestry",
+  "assetId": "forestry",
+  "name": "Forestry",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 467,
+  "sha256": "93a726dd6ab09aa55562f30973acd45709ee6c7b1c7bbe285f185adbf4e5ee04",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/forestry.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "hulu",
+  "assetId": "hulu",
+  "name": "Hulu",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 647,
+  "sha256": "d69d8e0ca00f25831846a3b3a74175f009219f74e529ccaccf86764e920bece7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/hulu.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "hurriyetemlak",
+  "assetId": "hurriyetemlak",
+  "name": "Hurriyetemlak",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 186,
+  "sha256": "3b9bad5c3522219f15a4326cfbda64fe30063c53a671d16874a04fc44ad3d6ca",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/hurriyetemlak.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "hyperledger",
+  "assetId": "hyperledger",
+  "name": "Hyperledger",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2538,
+  "sha256": "dae7e46f905c347feed28afb9c557b307a64aab126d75f961d1db0d3f97610a8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/hyperledger.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "iscsquared",
+  "assetId": "iscsquared",
+  "name": "(ISC)²",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1311,
+  "sha256": "46603c35453e41afa0bcbee03dafe2b007f607f19049da7633ac238692ef7b0c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/iscsquared.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "jenkinsx",
+  "assetId": "jenkinsx",
+  "name": "Jenkins X",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 4505,
+  "sha256": "0f2110be2d748559f06ec190faad1dd649eab593ca5dee3eef0154475b24ba84",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/jenkinsx.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "jfrogbintray",
+  "assetId": "jfrogbintray",
+  "name": "JFrog Bintray",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 338,
+  "sha256": "ebb251e4532acd62da75333bfa8587c89c1c40d4bc800f6e26d8573b16c013b3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/jfrogbintray.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "lgtm",
+  "assetId": "lgtm",
+  "name": "LGTM",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2157,
+  "sha256": "0153e434803e101c707e6393865059af25a311f1c2df0acf1814497e38b6a197",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/lgtm.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "mediatemple",
+  "assetId": "mediatemple",
+  "name": "MediaTemple",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1062,
+  "sha256": "5d24186471e65b2852090ca129c3dd786ce83ab832ad22c102d272cab3e86b4e",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/mediatemple.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "microsoftoffice",
+  "assetId": "microsoftoffice",
+  "name": "Microsoft Office",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 861,
+  "sha256": "94efe890e59f4db3ffd79fa0811e30627a9fdbca3d34207abe951456dc22749c",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/microsoftoffice.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "opentf",
+  "assetId": "opentf",
+  "name": "OpenTF",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 737,
+  "sha256": "2b9a25cc7307d53297c32ad093062b1ad8d5396998842d05a8956ec444bd65e7",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/opentf.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pepsi",
+  "assetId": "pepsi",
+  "name": "Pepsi",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 356,
+  "sha256": "85d33160ce6b6de7b632af3c7b711d3dd0d6d087ef40145dd56a3e7366b88420",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/pepsi.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sendinblue",
+  "assetId": "sendinblue",
+  "name": "Sendinblue",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1591,
+  "sha256": "141199b05e5869953be20691254984ea494d8aa659b3915e50a2d4633a8bda49",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/sendinblue.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sonarsource",
+  "assetId": "sonarsource",
+  "name": "SonarSource",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 402,
+  "sha256": "e2f9af7db3d12fed6c109f5e4801599e04d7ba994f9193d1ce245ab784968ec0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/sonarsource.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "sourcegraph",
+  "assetId": "sourcegraph",
+  "name": "Sourcegraph",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 778,
+  "sha256": "80d39dc2eca895d9c9bf81a2b395ad607ce92da31e4e73ed9df50c785a388b5f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/sourcegraph.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "tnt",
+  "assetId": "tnt",
+  "name": "TNT",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1735,
+  "sha256": "1330e7e92adbe31416cf002186c38c23e2cbb96d3f7e5e13016e02a767f027f4",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/tnt.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "twoo",
+  "assetId": "twoo",
+  "name": "Twoo",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1213,
+  "sha256": "652aa4562a1989c8db354f355e2d3a10ead9556aa1d4659ac0ff8fb541773540",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/twoo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "uno",
+  "assetId": "uno",
+  "name": "Uno",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 3294,
+  "sha256": "db68fbb83e3ef7fb8156d847e9e6a259794e85ecfb394fc513f98a769fa9c6c1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/uno.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "untangle",
+  "assetId": "untangle",
+  "name": "Untangle",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2000,
+  "sha256": "577c2adce309f24caa158010995f2229cdb0e92c8f99ebcd6b7c9e94130fb29f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/untangle.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "uploaded",
+  "assetId": "uploaded",
+  "name": "Uploaded",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 576,
+  "sha256": "4ef3fbeaaba1d27f605efb2603c723ff74d752649c3817f22ab37b638999152d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/uploaded.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "w3c",
+  "assetId": "w3c",
+  "name": "W3C",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1336,
+  "sha256": "6665142a54b4c0bedd42ede790b3b702fdd351758824ffbefe9c308d17587d23",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/w3c.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "webhint",
+  "assetId": "webhint",
+  "name": "webhint",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 957,
+  "sha256": "e5048d5ac6eb7ec3cdafe9cb1059c515b8bac436996e565e92344d98331fb167",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/webhint.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "whitesource",
+  "assetId": "whitesource",
+  "name": "WhiteSource",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 577,
+  "sha256": "004b833b768f07210d6d99948fc3db87d2a2d8304d517649c6db525ccb546a76",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/whitesource.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "windicss",
+  "assetId": "windicss",
+  "name": "Windi CSS",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1138,
+  "sha256": "5e21a5472cd9eb97b19729260fafa5b71ade989df840638782d3c8690710df7f",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/windicss.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "winmate",
+  "assetId": "winmate",
+  "name": "Winmate",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 588,
+  "sha256": "6e4a21d832737467c372a3c612f2fabf48435f28ab1413cbf73a0d9a609770f8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/winmate.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "xilinx",
+  "assetId": "xilinx",
+  "name": "Xilinx",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 252,
+  "sha256": "2e79b93ecf6e52e5a2ff1b6f6e8bd20202a594dda590c10ec4ed8a1fe368f8f8",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/xilinx.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "yahoo",
+  "assetId": "yahoo",
+  "name": "Yahoo!",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 377,
+  "sha256": "5400908f825ce6b16da4850c1188597bbdf3867df614e57a70ce76b6aee3fdd3",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/yahoo.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "yourtraveldottv",
+  "assetId": "yourtraveldottv",
+  "name": "YourTravel.TV",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 2210,
+  "sha256": "16248cd32979ebf8d043518cbc643c75c31e710417beef3b65c6e823f3f7a5df",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/yourtraveldottv.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "zendframework",
+  "assetId": "zendframework",
+  "name": "Zend Framework",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 458,
+  "sha256": "540242108406721f714e762045f846b7d57b4f16f156bd63c0e8b1896ea18115",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/zendframework.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "zeromq",
+  "assetId": "zeromq",
+  "name": "ZeroMQ",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 613,
+  "sha256": "d1027909a2245b845b6d8f2d2b1cc15a8583c6654d58d3434a85e87f14498de0",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/zeromq.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "zwave",
+  "assetId": "zwave",
+  "name": "Z-Wave",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 490,
+  "sha256": "ea7000b9c6c1460fda37035bc0e7941f8885b1966fe653d296ac5c7ecbd9d1de",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-9.21.0.tgz#icons/zwave.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "9.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "alitalia",
+  "assetId": "alitalia",
+  "name": "Alitalia",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 247,
+  "sha256": "4e1acd60965864ca797bb92717488aeb494e49466ee1108e30ebb65540498d48",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/alitalia.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "appannie",
+  "assetId": "appannie",
+  "name": "App Annie",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 459,
+  "sha256": "13e9bc3572db18258b070a4267145a7269869549138bc58d563e6c0e402eb6d1",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/appannie.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "dataversioncontrol",
+  "assetId": "dataversioncontrol",
+  "name": "Data Version Control",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1142,
+  "sha256": "8f358e7d52fc727db3c17fb296ce4e7441142d5b8cf32d92976a5edbc5028660",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/dataversioncontrol.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "linode",
+  "assetId": "linode",
+  "name": "Linode",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 1299,
+  "sha256": "14c14b3897ff1a821fa9954389679a86a5887a423f2b54ba451d41f9277b51df",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/linode.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "monogames",
+  "assetId": "monogames",
+  "name": "MonoGames",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 431,
+  "sha256": "9fda2eb6b322435d7e5b983d49df2fa925b6b6b84b6fe8fcafbf908c8822203d",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/monogames.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "pytorchlightning",
+  "assetId": "pytorchlightning",
+  "name": "PyTorch Lightning",
+  "color": "282338",
+  "ai": false,
+  "preserveColors": false,
+  "bytes": 220,
+  "sha256": "ee7244a397660516702d6d43bb634e4850b44fe5bbdf35afe79c8e865eb2e5e2",
+  "source": "https://registry.npmjs.org/simple-icons/-/simple-icons-7.21.0.tgz#icons/pytorchlightning.svg",
+  "license": {
+   "type": "CC0-1.0",
+   "notice": "docs/SIMPLE_ICONS_LICENSE.md"
+  },
+  "package": "simple-icons",
+  "version": "7.21.0",
+  "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
  }
 ]

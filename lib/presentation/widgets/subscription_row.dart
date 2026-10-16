@@ -6,10 +6,11 @@ import 'service_avatar.dart';
 
 /// Clean list row: mark, name and next date on the left; amount and cadence right-aligned.
 class SubscriptionRow extends StatelessWidget {
-  const SubscriptionRow({super.key, required this.item, required this.onTap, this.subtitle, this.compactTrailing = false});
+  const SubscriptionRow({super.key, required this.item, required this.onTap, this.subtitle, this.subtitleColor, this.compactTrailing = false});
   final Subscription item;
   final VoidCallback onTap;
   final String? subtitle;
+  final Color? subtitleColor;
   /// Calendar variant: single-line amount followed by a chevron.
   final bool compactTrailing;
   @override
@@ -19,6 +20,7 @@ class SubscriptionRow extends StatelessWidget {
     final secondary = subtitle ?? switch (item.status) {
       SubscriptionStatus.paused => s.paused,
       SubscriptionStatus.archived => s.archived,
+      _ when item.stopsRenewing => s.rowNotRenewing(context.dayMonth(item.renewalDeadline!)),
       _ => next == null ? s.noRenewal : context.dayMonth(next),
     };
     final price = item.free ? s.free : context.amountWithCode(item.amountMinor, item.currency);
@@ -33,7 +35,7 @@ class SubscriptionRow extends StatelessWidget {
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500, color: t.textPrimary)),
           const SizedBox(height: 3),
           Text(secondary, maxLines: 1, overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 15, color: t.textSecondary)),
+            style: TextStyle(fontSize: 15, color: subtitleColor ?? (subtitle == null && item.stopsRenewing ? t.alert : t.textSecondary))),
         ])),
         const SizedBox(width: 12),
         if (compactTrailing) ...[

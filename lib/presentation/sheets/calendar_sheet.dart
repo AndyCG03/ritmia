@@ -60,7 +60,16 @@ class _CalendarSheetState extends ConsumerState<CalendarSheet> {
     final leading = _month.weekday - 1;
     final days = DateTime(_month.year, _month.month + 1, 0).day;
     final rows = ((leading + days) / 7).ceil();
-    final selected = events[dateKey(_selected)] ?? const <Subscription>[];
+    // Past renewals are not marked: only today onwards.
+    final selected = _selected.isBefore(today) ? const <Subscription>[] : events[dateKey(_selected)] ?? const <Subscription>[];
+    // The first purchase day is kept and shown in blue.
+    final purchases = <String, List<Subscription>>{};
+    for (final i in items) { purchases.putIfAbsent(dateKey(i.purchaseDate), () => []).add(i); }
+    final selectedPurchases = purchases[dateKey(_selected)] ?? const <Subscription>[];
+    // "Don't renew" deadlines are marked too, so the last day to cancel is visible.
+    final endings = <String, List<Subscription>>{};
+    for (final i in items.where((i) => i.stopsRenewing)) { endings.putIfAbsent(i.endsOn!, () => []).add(i); }
+    final selectedEndings = endings[dateKey(_selected)] ?? const <Subscription>[];
     final head = TextStyle(fontSize: 14, color: t.textSecondary, fontWeight: FontWeight.w500);
 
     return SingleChildScrollView(padding: const EdgeInsets.fromLTRB(16, 0, 16, 24), child: Column(
@@ -83,20 +92,25 @@ class _CalendarSheetState extends ConsumerState<CalendarSheet> {
           final date = DateTime(_month.year, _month.month, day);
           final key = dateKey(date);
           final isSelected = key == dateKey(_selected), isToday = key == dateKey(today);
-          final daily = events[key] ?? const <Subscription>[];
+          final daily = date.isBefore(today) ? const <Subscription>[] : events[key] ?? const <Subscription>[];
+          final deadline = endings.containsKey(key), bought = purchases.containsKey(key);
           return Expanded(child: Semantics(button: true, selected: isSelected,
             label: '${context.longDay(date)}, ${daily.length}',
             child: InkWell(borderRadius: BorderRadius.circular(12), onTap: () => setState(() => _selected = date),
               child: SizedBox(height: 56, child: Center(child: Container(width: 48, height: 48,
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),
-                  color: isSelected ? t.selectedDay : null,
+                  color: isSelected ? (deadline ? t.alert : t.selectedDay) : deadline ? t.alert.withValues(alpha: 0.12) : null,
                   border: isToday && !isSelected ? Border.all(color: t.separator) : null),
                 child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Text('$day', style: TextStyle(fontSize: 17, fontFeatures: BrandTheme.tabular,
                     fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-                    color: isSelected ? t.onSelectedDay : t.textPrimary)),
+                    color: isSelected ? t.onSelectedDay : deadline ? t.alert : t.textPrimary)),
                   const SizedBox(height: 4),
-                  RenewalDot(visible: daily.isNotEmpty, today: isToday, onSelected: isSelected),
+                  if (deadline) Container(width: 6, height: 6, decoration: BoxDecoration(shape: BoxShape.circle,
+                    color: isSelected ? t.onSelectedDay : t.alert))
+                  else if (bought) Container(width: 6, height: 6, decoration: BoxDecoration(shape: BoxShape.circle,
+                    color: isSelected ? t.onSelectedDay : t.purchase))
+                  else RenewalDot(visible: daily.isNotEmpty, today: isToday, onSelected: isSelected),
                 ])))))));
         })),
         const SizedBox(height: 16),
@@ -104,7 +118,17 @@ class _CalendarSheetState extends ConsumerState<CalendarSheet> {
         Padding(padding: const EdgeInsets.fromLTRB(8, 24, 8, 8), child: Text(context.longDay(_selected),
           style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600, color: t.textPrimary))),
         Padding(padding: const EdgeInsets.symmetric(horizontal: 8), child: Column(children: [
-          if (selected.isEmpty) Padding(padding: const EdgeInsets.symmetric(vertical: 16),
+          for (final item in selectedPurchases) ...[
+            SubscriptionRow(item: item, compactTrailing: true, subtitle: context.l10n.purchasedHere, subtitleColor: t.purchase,
+              onTap: () => showDetailSheet(context, item)),
+            const Hairline(),
+          ],
+          for (final item in selectedEndings) ...[
+            SubscriptionRow(item: item, compactTrailing: true, subtitle: context.l10n.endsHere, subtitleColor: t.alert,
+              onTap: () => showDetailSheet(context, item)),
+            const Hairline(),
+          ],
+          if (selected.isEmpty && selectedEndings.isEmpty && selectedPurchases.isEmpty) Padding(padding: const EdgeInsets.symmetric(vertical: 16),
             child: Align(alignment: Alignment.centerLeft, child: Text(s.noEvents, style: TextStyle(fontSize: 15, color: t.textSecondary))))
           else for (final item in selected) ...[
             SubscriptionRow(item: item, compactTrailing: true, subtitle: context.renewalLabel(item.cycle),

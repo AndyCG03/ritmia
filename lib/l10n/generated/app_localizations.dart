@@ -1249,6 +1249,252 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Notifications'**
   String get notificationsSection;
+
+  /// No description provided for @priceSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get priceSection;
+
+  /// No description provided for @paidOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get paidOption;
+
+  /// No description provided for @freeOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get freeOption;
+
+  /// No description provided for @becomesPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Becomes paid later'**
+  String get becomesPaid;
+
+  /// No description provided for @becomesPaidHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Set the day charges start and how much they will be.'**
+  String get becomesPaidHelp;
+
+  /// No description provided for @paidFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Charges start on'**
+  String get paidFrom;
+
+  /// No description provided for @amountAfter.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount after that'**
+  String get amountAfter;
+
+  /// No description provided for @purchaseDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase date'**
+  String get purchaseDate;
+
+  /// No description provided for @purchaseHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'It renews every cycle from this day. Renewals appear in the calendar.'**
+  String get purchaseHelp;
+
+  /// No description provided for @yesterday.
+  ///
+  /// In en, this message translates to:
+  /// **'Yesterday'**
+  String get yesterday;
+
+  /// No description provided for @pickDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a date'**
+  String get pickDate;
+
+  /// No description provided for @nextRenewalPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Next renewal: {date}'**
+  String nextRenewalPreview(String date);
+
+  /// No description provided for @freeUntilPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Free until {date}, then {amount}'**
+  String freeUntilPreview(String date, String amount);
+
+  /// No description provided for @moreOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'More options'**
+  String get moreOptions;
+
+  /// No description provided for @searchCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Search currency'**
+  String get searchCurrency;
+
+  /// No description provided for @customLook.
+  ///
+  /// In en, this message translates to:
+  /// **'Color and logo'**
+  String get customLook;
+
+  /// No description provided for @serviceName.
+  ///
+  /// In en, this message translates to:
+  /// **'Service name'**
+  String get serviceName;
+
+  /// No description provided for @chooseCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get chooseCurrency;
+
+  /// No description provided for @about.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// No description provided for @general.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get general;
+
+  /// No description provided for @dataSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data'**
+  String get dataSection;
+
+  /// No description provided for @openPhoneSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Open phone settings'**
+  String get openPhoneSettings;
+
+  /// No description provided for @notifOnSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'On · 9:00 before each renewal'**
+  String get notifOnSummary;
+
+  /// No description provided for @notifOffSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get notifOffSummary;
+
+  /// No description provided for @notifBlockedSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Blocked in phone settings'**
+  String get notifBlockedSummary;
+
+  /// No description provided for @appearanceSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get appearanceSummary;
+
+  /// No description provided for @languageSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get languageSummary;
+
+  /// No description provided for @autoRenew.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewal'**
+  String get autoRenew;
+
+  /// No description provided for @willRenew.
+  ///
+  /// In en, this message translates to:
+  /// **'Renews'**
+  String get willRenew;
+
+  /// No description provided for @stopRenewing.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t renew'**
+  String get stopRenewing;
+
+  /// No description provided for @resumeRenewing.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew again'**
+  String get resumeRenewing;
+
+  /// No description provided for @notRenewing.
+  ///
+  /// In en, this message translates to:
+  /// **'Won\'t renew'**
+  String get notRenewing;
+
+  /// No description provided for @cancelBefore.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel before {date}'**
+  String cancelBefore(String date);
+
+  /// No description provided for @rowNotRenewing.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t renew · {date}'**
+  String rowNotRenewing(String date);
+
+  /// No description provided for @stopRenewHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Ritmia marks the deadline to cancel with the provider before the next charge.'**
+  String get stopRenewHelp;
+
+  /// No description provided for @stopRenewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop renewing {name}?'**
+  String stopRenewTitle(String name);
+
+  /// No description provided for @stopRenewBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ll see {date} as your deadline to cancel, with reminders before it. Ritmia doesn\'t cancel the plan for you.'**
+  String stopRenewBody(String date);
+
+  /// No description provided for @endsHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Last day · don\'t renew'**
+  String get endsHere;
+
+  /// No description provided for @chooseIcon.
+  ///
+  /// In en, this message translates to:
+  /// **'Icon'**
+  String get chooseIcon;
+
+  /// No description provided for @uploadOwn.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload your own image'**
+  String get uploadOwn;
+
+  /// No description provided for @purchasedHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchased'**
+  String get purchasedHere;
 }
 
 class _AppLocalizationsDelegate

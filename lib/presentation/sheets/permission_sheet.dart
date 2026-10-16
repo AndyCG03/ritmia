@@ -33,7 +33,12 @@ Future<void> showBlockedSheet(BuildContext context) => showRitmiaSheet<void>(con
     const SizedBox(height: 10),
     Text(s.permDeniedBody, style: TextStyle(fontSize: 16, height: 1.45, color: t.textSecondary)),
     const SizedBox(height: 24),
-    FilledButton(onPressed: () => Navigator.pop(c), child: Text(s.understood)),
+    FilledButton.icon(onPressed: () async {
+      Navigator.pop(c);
+      await NotificationService.instance.openSystemSettings();
+    }, icon: const Icon(Icons.open_in_new_rounded, size: 20), label: Text(s.openPhoneSettings)),
+    const SizedBox(height: 4),
+    TextButton(onPressed: () => Navigator.pop(c), style: TextButton.styleFrom(foregroundColor: t.textPrimary), child: Text(s.permLater)),
   ]));
 });
 
