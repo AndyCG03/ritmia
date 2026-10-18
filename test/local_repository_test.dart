@@ -11,15 +11,17 @@ void main(){
   late LocalRepository repo;
   setUp(()async{SharedPreferences.setMockInitialValues({});repo=LocalRepository(await SharedPreferences.getInstance());});
   tearDown(()=>repo.dispose());
-  test('parallel writes cannot bypass the free quota',()async{
+  test('writes are persisted sequentially and allow unlimited records',()async{
     final outcomes=await Future.wait(List.generate(8,(i)=>repo.save(item(i)).then<Object>((s)=>s).catchError((Object e)=>e)));
-    expect(outcomes.whereType<Subscription>().length,5);expect(outcomes.whereType<AppFailure>().length,3);
-    expect((await repo.watch().first).length,5);
+    expect(outcomes.whereType<Subscription>().length,8);
+    expect((await repo.watch().first).length,8);
   });
-  test('archived records count and deletion frees a slot',()async{
+  test('archived records persist and deletion removes an item',()async{
     final saved=await Future.wait(List.generate(5,(i)=>repo.save(item(i,status:SubscriptionStatus.archived))));
-    await expectLater(repo.save(item(6)),throwsA(isA<AppFailure>()));
-    await repo.delete(saved.first);await repo.save(item(6));expect((await repo.watch().first).length,5);
+    final extra=await repo.save(item(6));
+    expect((await repo.watch().first).length,6);
+    await repo.delete(saved.first);
+    expect((await repo.watch().first).length,5);
   });
   test('edits check revision and persist optimized logos',()async{
     final saved=await repo.save(item(1));
@@ -27,9 +29,9 @@ void main(){
     final updated=await repo.setLogo(saved,Uint8List.fromList([1,2,3]));
     expect(await repo.loadLogo(updated),[1,2,3]);expect(updated.revision,2);
   });
-  test('quota failure does not poison later writes',()async{
+  test('sequential writes continue to succeed',()async{
     final saved=await Future.wait(List.generate(5,(i)=>repo.save(item(i))));
-    await expectLater(repo.save(item(6)),throwsA(isA<AppFailure>()));
-    await repo.delete(saved.last);await repo.save(item(7));expect((await repo.watch().first).length,5);
+    await repo.save(item(6));
+    await repo.delete(saved.last);await repo.save(item(7));expect((await repo.watch().first).length,6);
   });
 }

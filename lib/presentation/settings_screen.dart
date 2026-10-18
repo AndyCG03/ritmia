@@ -102,28 +102,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         const SheetCloseButton(),
       ])),
 
-      // Plan (Pro upsell hidden unless RITMIA_PRO_ENABLED)
-      _Group(children: [InkWell(onTap: proEnabled ? () => showProSheet(context) : null, child: Padding(padding: const EdgeInsets.all(20), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      // Plan
+      _Group(children: [Padding(padding: const EdgeInsets.all(20), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [
-          Expanded(child: Text(widget.plan.pro ? s.proPlan : s.freePlan, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: t.textPrimary))),
-          if (limit != null) Text('$used / $limit', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: t.textPrimary, fontFeatures: BrandTheme.tabular))
-          else Text(s.proActiveBadge, style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: t.textAction)),
+          Expanded(child: Text(s.proBenefitUnlimitedTitle, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: t.textPrimary))),
+          Text('$used', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: t.textPrimary, fontFeatures: BrandTheme.tabular)),
         ]),
-        if (limit != null) ...[
-          const SizedBox(height: 12),
-          ClipRRect(borderRadius: BorderRadius.circular(4), child: LinearProgressIndicator(value: (used / limit).clamp(0, 1).toDouble(),
-            minHeight: 6, backgroundColor: t.separator, color: used >= limit ? t.danger : t.accent)),
-          const SizedBox(height: 12),
-          Text(s.quotaHelp, style: TextStyle(fontSize: 14, color: t.textSecondary)),
-        ] else Padding(padding: const EdgeInsets.only(top: 6), child: Text('${s.proBenefitUnlimitedTitle} · ${s.proBenefitNoAdsTitle}', style: TextStyle(fontSize: 14, color: t.textSecondary))),
-        if (proEnabled && !widget.plan.pro) ...[
-          const SizedBox(height: 14),
-          Row(children: [
-            Expanded(child: Text('${s.proPlan} · ${s.proBenefitOneTimeTitle}', style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.w600, color: t.textAction))),
-            Icon(Icons.chevron_right_rounded, size: 20, color: t.textAction),
-          ]),
-        ],
-      ])))]),
+        const SizedBox(height: 6),
+        Text(s.subscriptionCount(used), style: TextStyle(fontSize: 14, color: t.textSecondary)),
+      ]))]),
 
       _Header(s.general),
       _Group(children: [

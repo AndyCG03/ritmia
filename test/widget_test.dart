@@ -54,7 +54,7 @@ void main(){
     expect(find.text('Tap a date to see its renewals'),findsOneWidget);
     await tester.tap(find.byTooltip('Close').last);await tester.pumpAndSettle();
     await tester.tap(find.byTooltip('Settings'));await tester.pumpAndSettle();
-    expect(find.text('Ritmia Free'),findsOneWidget);
+    expect(find.text('Unlimited subscriptions'),findsOneWidget);
     expect(tester.takeException(),isNull);
   });
   testWidgets('catalog sheet, AI tab and creation of a free subscription', (tester)async{
@@ -138,19 +138,11 @@ void main(){
     expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(),inTour:false),isTrue);
     expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(pro:true),inTour:false),isFalse);
   });
-  testWidgets('Pro upsell is hidden by default in this release', (tester)async{
+  testWidgets('settings shows unlimited subscriptions and no paywalls', (tester)async{
     await open(tester);
     await tester.tap(find.byTooltip('Settings'));await tester.pumpAndSettle();
-    await tester.tap(find.text('Ritmia Free'));await tester.pumpAndSettle();
+    expect(find.text('Unlimited subscriptions'),findsOneWidget);
     expect(find.text('ONE-TIME PURCHASE · FOREVER'),findsNothing);
     expect(find.textContaining('Ritmia Pro'),findsNothing);
-  });
-  testWidgets('settings plan card opens Ritmia Pro one-time unlock sheet when enabled', (tester)async{
-    await tester.pumpWidget(ProviderScope(overrides:[reminderSyncProvider.overrideWith((ref)async{}),proFeatureProvider.overrideWithValue(true)],child:const RitmiaApp()));await tester.pumpAndSettle();
-    await tester.tap(find.byTooltip('Settings'));await tester.pumpAndSettle();
-    await tester.tap(find.text('Ritmia Free'));await tester.pumpAndSettle();
-    expect(find.text('ONE-TIME PURCHASE · FOREVER'),findsOneWidget);
-    expect(find.text('Unlimited subscriptions'),findsOneWidget);
-    expect(find.text('No ads'),findsOneWidget);
   });
 }

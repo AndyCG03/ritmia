@@ -12,7 +12,8 @@ class LocalRepository implements SubscriptionRepository {
   Future<void> _pending=Future.value();
   static const _key='ritmia.local.subscriptions.v1';
   static const _proKey='ritmia.local.pro.v1';
-  bool get _pro=>preferences.getBool(_proKey)==true;
+  // Local mode allows unlimited subscriptions without paywalls.
+  bool get _pro => true;
   List<Subscription> _read()=>(jsonDecode(preferences.getString(_key)??'[]') as List)
     .map((e)=>Subscription.fromJson(Map<String,dynamic>.from(e as Map))).toList();
   @override
