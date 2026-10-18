@@ -3,10 +3,18 @@
 
 App Flutter para Android, web e iOS con arquitectura por capas. Creada con el SDK local real: Flutter **3.47.7**, Dart **3.13.5**, Android SDK **36**. Proyecto independiente de Tumbo.
 
-## Probar en Android
-El APK de prueba se publica en `dist/` cuando termina la compilación. Es una versión local: no necesita cuenta y conserva los datos en el dispositivo. Permite cinco registros en total. Al desinstalar, se pierden los datos locales; exporta CSV antes.
+<p align="center">
+  <img src="docs/marketing/linkedin/home.png" width="300" alt="Pantalla principal de Ritmia" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/marketing/linkedin/calendar.png" width="300" alt="Calendario y aviso de no renovación" />
+</p>
 
-Instala el APK desde el teléfono y permite instalar aplicaciones desde la app que lo abra. En Ajustes de Ritmia puedes autorizar las notificaciones. Android puede retrasar avisos por ahorro de batería.
+## Descargar APK (Releases)
+Puedes descargar directamente el APK precompilado desde los [Releases de GitHub](https://github.com/AndyCG03/ritmia/releases).
+
+## Probar en Android
+Es una versión local: no necesita cuenta y conserva los datos en el dispositivo de forma privada (local-first). Permite hasta cinco registros gratuitos en total.
+Instala el APK en tu dispositivo y activa las notificaciones desde Ajustes para recibir los avisos 3 y 1 día antes de cada renovación.
 
 ## Ejecutar
 ```powershell
