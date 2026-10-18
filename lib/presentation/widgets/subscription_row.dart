@@ -26,27 +26,27 @@ class SubscriptionRow extends StatelessWidget {
     final price = item.free ? s.free : context.amountWithCode(item.amountMinor, item.currency);
     const tab = TextStyle(fontFeatures: BrandTheme.tabular);
     return Semantics(button: true, child: InkWell(onTap: onTap, child: ConstrainedBox(
-      constraints: const BoxConstraints(minHeight: 76),
-      child: Padding(padding: const EdgeInsets.symmetric(vertical: 12), child: Row(children: [
+      constraints: const BoxConstraints(minHeight: 68),
+      child: Padding(padding: const EdgeInsets.symmetric(vertical: 10), child: Row(children: [
         ServiceAvatar(item: item),
-        const SizedBox(width: 20),
+        const SizedBox(width: 16),
         Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(item.name, maxLines: 1, overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500, color: t.textPrimary)),
-          const SizedBox(height: 3),
+            style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w500, color: t.textPrimary)),
+          const SizedBox(height: 2),
           Text(secondary, maxLines: 1, overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 15, color: subtitleColor ?? (subtitle == null && item.stopsRenewing ? t.alert : t.textSecondary))),
+            style: TextStyle(fontSize: 14, color: subtitleColor ?? (subtitle == null && item.stopsRenewing ? t.alert : t.textSecondary))),
         ])),
         const SizedBox(width: 12),
         if (compactTrailing) ...[
-          Text(price, style: tab.copyWith(fontSize: 16, color: t.textPrimary)),
+          Text(price, style: tab.copyWith(fontSize: 15.5, color: t.textPrimary)),
           const SizedBox(width: 8),
           Icon(Icons.chevron_right_rounded, color: t.textSecondary),
         ] else Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
           Text(price, style: tab.copyWith(fontSize: 16, fontWeight: FontWeight.w600, color: t.textPrimary)),
           if (!item.free) ...[
-            const SizedBox(height: 3),
-            Text(context.perCycle(item.cycle), style: TextStyle(fontSize: 14, color: t.textSecondary)),
+            const SizedBox(height: 2),
+            Text(context.perCycle(item.cycle), style: TextStyle(fontSize: 13, color: t.textSecondary)),
           ],
         ]),
       ])))));

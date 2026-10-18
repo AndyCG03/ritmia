@@ -6,6 +6,7 @@ import '../../core/errors.dart';
 import '../../core/providers.dart';
 import '../../core/theme.dart';
 import '../../domain/subscription.dart';
+import '../../services/calendar_service.dart';
 import '../../l10n/context.dart';
 import '../editor_screen.dart';
 import '../widgets/service_avatar.dart';
@@ -135,6 +136,11 @@ class _DetailSheetState extends ConsumerState<DetailSheet> {
               Text(hasLink ? s.providerHelp(provider) : s.noProviderLink, style: TextStyle(fontSize: 15, color: t.textSecondary)),
             ])),
           ]))),
+        if (item.status == SubscriptionStatus.active) OutlinedButton.icon(
+          onPressed: _busy ? null : () => _run(() async {
+            final opened = await CalendarService.addDate(context, item);
+            if (context.mounted && !opened) showInfo(context, s.calendarNoDates);
+          }), icon: const Icon(Icons.event_available_outlined), label: Text(s.addToCalendar)),
         const SizedBox(height: 16),
         FilledButton(onPressed: _busy ? null : () => _edit(item), child: Text(s.edit)),
         const SizedBox(height: 12),

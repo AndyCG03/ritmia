@@ -53,6 +53,15 @@ int? parseAmount(String value, String currency) {
 String dateKey(DateTime v) => '${v.year.toString().padLeft(4, '0')}-${v.month.toString().padLeft(2, '0')}-${v.day.toString().padLeft(2, '0')}';
 DateTime dateOnly(DateTime v) => DateTime(v.year, v.month, v.day);
 String newId() { final random = Random.secure(); return base64UrlEncode(List.generate(15, (_) => random.nextInt(256))); }
+DateTime addBillingCycle(DateTime anchor, BillingCycle cycle, [int count = 1]) {
+  if (cycle == BillingCycle.weekly) return DateTime(anchor.year, anchor.month, anchor.day + count * 7);
+  final step = switch (cycle) {
+    BillingCycle.monthly => 1, BillingCycle.quarterly => 3,
+    BillingCycle.yearly => 12, BillingCycle.weekly => 0,
+  };
+  final first = DateTime(anchor.year, anchor.month + step * count, 1);
+  return DateTime(first.year, first.month, min(anchor.day, DateTime(first.year, first.month + 1, 0).day));
+}
 class Subscription {
   const Subscription({required this.id, required this.name, required this.amountMinor,
     required this.currency, required this.free, required this.anchorDate,
@@ -70,16 +79,7 @@ class Subscription {
   final BillingCycle cycle;
   final SubscriptionStatus status;
   final Category category;
-  DateTime occurrence(int index) {
-    final anchor = DateTime.parse(anchorDate);
-    if (cycle == BillingCycle.weekly) return DateTime(anchor.year, anchor.month, anchor.day + index * 7);
-    final step = switch (cycle) {
-      BillingCycle.monthly => 1, BillingCycle.quarterly => 3,
-      BillingCycle.yearly => 12, BillingCycle.weekly => 0,
-    };
-    final first = DateTime(anchor.year, anchor.month + step * index, 1);
-    return DateTime(first.year, first.month, min(anchor.day, DateTime(first.year, first.month + 1, 0).day));
-  }
+  DateTime occurrence(int index) => addBillingCycle(DateTime.parse(anchorDate), cycle, index);
   Iterable<DateTime> occurrences(DateTime from, DateTime until) sync* {
     if (status != SubscriptionStatus.active) return;
     final start = dateOnly(from), anchor = DateTime.parse(anchorDate);

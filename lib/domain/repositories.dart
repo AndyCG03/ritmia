@@ -10,6 +10,7 @@ class AppFailure implements Exception {
 class Entitlement {
   const Entitlement({this.pro = false});
   final bool pro;
+  bool get showAds => !pro;
   int? get subscriptionLimit => pro ? null : 5;
   bool canCreate(int count) => pro || count < 5;
 }

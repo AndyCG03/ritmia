@@ -33,7 +33,7 @@ extension LocalizationContext on BuildContext {
   String weekdayInitial(int mondayIndex) => _es
     ? const ['L','M','X','J','V','S','D'][mondayIndex]
     : DateFormat.EEEEE(_tag).format(DateTime(2024, 1, 1 + mondayIndex));
-  String renewalLabel(BillingCycle cycle) => l10n.renewalLabel(_es ? cycleLabel(cycle).toLowerCase() : cycleLabel(cycle));
+  String renewalLabel(BillingCycle cycle) => l10n.renewalLabel(cycleLabel(cycle).toLowerCase());
   String remindersSummary(List<int> days) {
     if (days.isEmpty) return l10n.noReminders;
     final sorted = [...days]..sort((a, b) => b.compareTo(a));

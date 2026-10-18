@@ -44,7 +44,7 @@
   "invalidName": "Enter a name of up to 80 characters.",
   "invalidAmount": "Enter a valid amount greater than zero, with no thousands separators.",
   "invalidUrl": "Use a valid https address.",
-  "dateOrder": "The end date must follow the anchor date.",
+  "dateOrder": "The end date cannot be before the start date.",
   "status": "Status",
   "category": "Category",
   "entertainment": "Entertainment",
@@ -138,7 +138,7 @@
   "onboardTitleThree": "A timely reminder.\nA calmer decision.",
   "onboardBodyThree": "Choose alerts before renewals or trial endings. When you want to cancel, open your provider's link.",
   "thisMonth": "This month",
-  "subscriptionCount": "{count, plural, =1{1 subscription} other{{count} subscriptions}}",
+  "subscriptionCount": "{count, plural, =0{0 subscriptions} =1{1 subscription} other{{count} subscriptions}}",
   "@subscriptionCount": {
     "placeholders": {
       "count": {
@@ -366,5 +366,124 @@
   "endsHere": "Last day · don't renew",
   "chooseIcon": "Icon",
   "uploadOwn": "Upload your own image",
-  "purchasedHere": "Purchased"
+  "purchasedHere": "Purchased",
+  "widgetTitle": "Home screen widget",
+  "widgetHelp": "Your next three plans, with cancellation deadlines first.",
+  "widgetCompactTitle": "Compact row widget",
+  "widgetCompactHelp": "Single row (3 to 4 columns) with your next plans.",
+  "widgetManual": "Long-press an empty area on your home screen → Widgets → Ritmia.",
+  "notifCancelTitle": "Cancel {name} {when}",
+  "notifCancelBody": "Avoid the next {amount} charge. Deadline: {date}. Open Ritmia to review this plan.",
+  "@notifCancelTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "@notifCancelBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifScheduleError": "Reminders are enabled, but scheduling failed. Try again.",
+  "addToCalendar": "Add to device calendar",
+  "calendarAddHelp": "Review and save this date in your calendar app.",
+  "calendarExport": "Export to calendar",
+  "calendarExportHelp": "Next 12 months · up to 1,000 dates · .ics file",
+  "calendarNoDates": "No upcoming dates to add.",
+  "calendarOpened": "Review the event and save it in your calendar.",
+  "calendarRenewalTitle": "{name} renewal",
+  "calendarTrialTitle": "{name} trial ends",
+  "calendarCancelTitle": "Cancel {name}",
+  "calendarEventHelp": "Tracked in Ritmia. Changing this event does not change your subscription or cancel your plan.",
+  "notificationTest": "Send a test alert",
+  "notificationTestSent": "Test alert sent. Check your notification panel.",
+  "notifTestTitle": "Your Ritmia reminders are ready",
+  "notifTestBody": "This is a test alert. Your subscription reminders will appear here.",
+  "@calendarRenewalTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@calendarTrialTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@calendarCancelTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "guidedTour": "Create a subscription step by step",
+  "guidedTourHelp": "A guided tour that highlights the controls as you use the app.",
+  "tourProgress": "{current} of {total}",
+  "tourSkip": "Skip tour",
+  "tourNext": "Continue",
+  "tourBack": "Back",
+  "tourFinish": "Finish",
+  "tourAddTitle": "Your first subscription",
+  "tourAddBody": "Tap the highlighted button. You’ll create a real record; you can skip this tour at any time.",
+  "tourBrandTitle": "Choose a brand",
+  "tourBrandBody": "Search for your service and tap its name. You can also create a custom one. Logos are already in the app.",
+  "tourNameTitle": "Give it a name",
+  "tourNameBody": "The brand fills in the name and logo. Change the name to distinguish a plan or account.",
+  "tourPriceTitle": "Free or paid?",
+  "tourPriceBody": "Choose the plan type. For paid plans, enter the amount, choose the currency and how often you are charged.",
+  "tourDateTitle": "When did you buy it?",
+  "tourDateBody": "Choose the purchase date. Ritmia calculates the next renewal from that day and your billing cycle.",
+  "tourRemindersTitle": "Choose your reminders",
+  "tourRemindersBody": "Select how many days before to be reminded. You can choose several. Alerts need your phone’s permission.",
+  "tourSaveTitle": "Save your subscription",
+  "tourSaveBody": "Tap Save to create the record. If a detail is missing, go back to the previous step to complete it.",
+  "tourRecordTitle": "Here’s your plan",
+  "tourRecordBody": "Tap the subscription for its details. You can mark Don’t renew there; those plans appear first.",
+  "tourCalendarTitle": "See your dates",
+  "tourCalendarBody": "Open the calendar to review renewals. You can add a date to your phone’s calendar from the plan details.",
+  "tourFilterTitle": "Find what you need",
+  "tourFilterBody": "Filter by Renews or Don’t renew. Combine it with a search by name or notes.",
+  "tourSettingsTitle": "Make it yours",
+  "tourSettingsBody": "Turn on and test alerts, choose a language or theme, add the widget and export dates to your calendar here.",
+  "@tourProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "notificationSetupError": "Could not start reminders. Update Ritmia or try again.",
+  "proBadge": "ONE-TIME PURCHASE · FOREVER",
+  "proSubtitle": "Unlock everything in Ritmia with a single payment, without adding another subscription to your month.",
+  "proBenefitUnlimitedTitle": "Unlimited subscriptions",
+  "proBenefitUnlimitedBody": "Track all your active, paused and archived services without the 5-slot limit.",
+  "proBenefitNoAdsTitle": "No ads",
+  "proBenefitNoAdsBody": "Remove occasional ads for a clean, uninterrupted experience.",
+  "proBenefitOneTimeTitle": "One-time lifetime payment",
+  "proBenefitOneTimeBody": "Pay once and keep Ritmia Pro forever.",
+  "proUnlockCta": "Unlock Ritmia Pro",
+  "proRestoreCta": "Restore purchase",
+  "proActiveBadge": "Active · One-time purchase",
+  "proRestoreEmpty": "No previous Ritmia Pro purchase was found.",
+  "adInterstitialLabel": "SPONSORED",
+  "adInterstitialTitle": "Go ad-free with Ritmia Pro",
+  "adInterstitialBody": "With a one-time payment you remove occasional ads and unlock unlimited subscriptions forever.",
+  "adContinueFree": "Continue with Ritmia Free"
 }

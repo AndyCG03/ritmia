@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --ink:#282338; --lav:#B9A3F5; --coral:#F47D68; --paper:#F8F6F1; --primary:#7251AF; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1080px; height:1350px; overflow:hidden; }
+  body {
+    font-family:"Segoe UI Variable Display","Segoe UI",Roboto,sans-serif;
+    background:
+      radial-gradient(900px 700px at 85% 70%, rgba(185,163,245,.30), transparent 60%),
+      radial-gradient(700px 520px at 5% 95%, rgba(244,125,104,.22), transparent 60%),
+      linear-gradient(160deg, #2f2942 0%, #201b2e 55%, #17131f 100%);
+    color:var(--paper); position:relative;
+  }
+  .grain { position:absolute; inset:0; opacity:.06;
+    background-image:radial-gradient(rgba(255,255,255,.9) 1px, transparent 1px); background-size:4px 4px; }
+  /* Brand rhythm wave, echoing the logo strokes */
+  .wave { position:absolute; left:0; right:0; top:330px; height:220px; opacity:.18; }
+
+  header { position:absolute; left:72px; top:68px; right:72px; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .brand img { width:64px; height:64px; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.35); }
+  .brand span { font-size:40px; font-weight:700; letter-spacing:-.5px; }
+  .tag { margin-left:auto; font-size:18px; font-weight:600; color:var(--lav);
+    border:1.5px solid rgba(185,163,245,.45); padding:8px 18px; border-radius:999px; }
+  h1 { margin-top:40px; font-size:70px; line-height:1.02; font-weight:800; letter-spacing:-2px; }
+  h1 em { font-style:normal; color:var(--lav); }
+  h1 b { color:var(--coral); }
+  .sub { margin-top:18px; font-size:25px; line-height:1.4; color:rgba(248,246,241,.78); max-width:880px; }
+
+  .stage { position:absolute; left:0; right:0; top:425px; height:820px; }
+  .phone { position:absolute; width:340px; padding:12px; border-radius:58px;
+    background:linear-gradient(145deg,#4a4458,#16131d 40%,#0c0a10);
+    box-shadow: 0 0 0 2px #5d566c inset, 0 40px 80px rgba(0,0,0,.55), 0 10px 24px rgba(0,0,0,.4); }
+  .phone::before, .phone::after { content:""; position:absolute; right:-4px; width:4px; border-radius:0 3px 3px 0; background:#3d3749; }
+  .phone::before { top:150px; height:70px; } .phone::after { top:240px; height:110px; }
+  .screen { position:relative; border-radius:46px; overflow:hidden; background:#000; aspect-ratio:460/1024; }
+  .screen img { width:100%; height:100%; display:block; }
+  .cam { position:absolute; top:12px; left:50%; width:16px; height:16px; margin-left:-8px; border-radius:50%;
+    background:radial-gradient(circle at 35% 35%, #2a2d3a, #000 60%); box-shadow:0 0 0 2px #111; }
+  .back { left:170px; top:14px; transform:rotate(-7deg); filter:brightness(.92); }
+  .front { left:540px; top:0; transform:rotate(4deg); }
+
+  .bubble { position:absolute; background:var(--paper); color:var(--ink); border-radius:22px;
+    padding:12px 22px 12px 12px; font-size:20px; font-weight:700; box-shadow:0 16px 36px rgba(0,0,0,.35);
+    display:flex; align-items:center; gap:14px; line-height:1.15; }
+  .bubble small { display:block; font-size:15px; font-weight:600; opacity:.65; }
+  .ico { width:44px; height:44px; border-radius:14px; display:grid; place-items:center; flex:none; }
+  .ico svg { width:24px; height:24px; }
+  .b1 { left:60px; top:330px; }
+  .b1 .ico { background:var(--coral); }
+  .b2 { left:60px; top:150px; background:var(--lav); }
+  .b2 .ico { background:var(--ink); }
+  .days { display:inline-flex; gap:6px; margin-left:2px; }
+  .days span { background:var(--ink); color:var(--paper); font-size:15px; padding:2px 9px; border-radius:999px; }
+
+  footer { position:absolute; left:72px; right:72px; bottom:40px; display:flex; gap:12px; flex-wrap:wrap; }
+  .chip { display:inline-flex; align-items:center; gap:10px; font-size:19px; font-weight:600; padding:9px 18px 9px 10px;
+    border-radius:999px; background:rgba(248,246,241,.07); border:1px solid rgba(248,246,241,.16); color:rgba(248,246,241,.92); }
+  .chip i { width:30px; height:30px; border-radius:50%; display:grid; place-items:center; background:rgba(185,163,245,.18); }
+  .chip i.c { background:rgba(244,125,104,.2); }
+  .chip svg { width:17px; height:17px; }
+</style>
+</head>
+<body>
+  <div class="grain"></div>
+  <svg class="wave" viewBox="0 0 1080 220" preserveAspectRatio="none" fill="none">
+    <path d="M0 150 C120 150 140 60 220 60 S320 170 400 170 S500 40 600 40 S720 160 800 160 S920 80 1080 80" stroke="#B9A3F5" stroke-width="3"/>
+    <path d="M0 175 C120 175 150 95 230 95 S330 195 410 195 S520 75 610 75 S730 185 810 185 S930 110 1080 110" stroke="#F47D68" stroke-width="2"/>
+  </svg>
+
+  <header>
+    <div class="brand"><img src="icon.png" alt=""><span>ritmia</span><div class="tag">App Android · Flutter</div></div>
+    <h1>Que ninguna suscripción<br>te <b>cobre</b> por <em>sorpresa</em>.</h1>
+    <p class="sub">Registra tus servicios, mira cada renovación en el calendario y recibe un aviso antes de que llegue el cargo.</p>
+  </header>
+
+  <div class="stage">
+    <div class="phone back"><div class="screen"><img src="calendar.png" alt=""><div class="cam"></div></div></div>
+    <div class="phone front"><div class="screen"><img src="home.png" alt=""><div class="cam"></div></div></div>
+
+    <div class="bubble b2">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#B9A3F5" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="9" r="6"/><path d="M15.5 9.6A6 6 0 1 1 9.6 15.5"/><path d="M9 6.5v5M7.2 8h2.6a1 1 0 0 1 0 2H8.2a1 1 0 0 0 0 2h2.6"/></svg></span>
+      <span>Elige la moneda que quieras<small>Cada divisa con su propio total</small></span>
+    </div>
+    <div class="bubble b1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#F8F6F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></span>
+      <span>Avisos antes del cobro<small><span class="days"><span>3 días</span><span>1 día</span></span></small></span>
+    </div>
+  </div>
+
+  <footer>
+    <span class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="#B9A3F5" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></i>Calendario de renovaciones</span>
+    <span class="chip"><i class="c"><svg viewBox="0 0 24 24" fill="none" stroke="#F47D68" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></i>Recordatorios</span>
+    <span class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="#B9A3F5" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></i>200+ marcas</span>
+    <span class="chip"><i class="c"><svg viewBox="0 0 24 24" fill="none" stroke="#F47D68" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg></i>Local-first</span>
+  </footer>
+</body>
+</html>

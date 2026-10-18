@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'widgets/ritmia_logo.dart';
 import 'package:lottie/lottie.dart';
 import '../core/onboarding_provider.dart';
+import '../core/reminder_providers.dart';
 import '../core/theme.dart';
 import '../l10n/context.dart';
-import '../services/notification_service.dart';
 import 'sheets/permission_sheet.dart';
 
 /// Three short steps. Language follows the phone; the last step explains reminders
@@ -27,9 +27,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   Future<void> _finish({bool withReminders = false}) async {
     if (withReminders) {
       setState(() => _busy = true);
-      await askForReminders(context, ref);
+      await askForReminders(context, ref, showConfirmation: false);
       if (mounted) setState(() => _busy = false);
     }
+    if (mounted) ScaffoldMessenger.maybeOf(context)?.clearSnackBars();
     await ref.read(onboardingProvider.notifier).complete();
   }
 
@@ -47,12 +48,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       ('bell', s.onboardTitleThree, s.onboardBodyThree, s.onboardEyebrowThree),
     ];
     final last = _page == slides.length - 1;
-    final remindersAvailable = NotificationService.instance.supported;
+    final remindersAvailable = ref.watch(notificationPermissionProvider).supported;
 
     return Scaffold(body: SafeArea(child: Center(child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 560), child: Column(children: [
       // Header: brand mark + skip
       Padding(padding: const EdgeInsets.fromLTRB(24, 12, 12, 0), child: SizedBox(height: 56, child: Row(children: [
-        SvgPicture.asset('assets/brand/mark.svg', width: 30, height: 30, semanticsLabel: 'Ritmia'),
+        const RitmiaLogo(size: 30),
         const SizedBox(width: 10),
         ExcludeSemantics(child: Text('ritmia', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, letterSpacing: -0.6, color: t.textPrimary))),
         const Spacer(),
@@ -75,9 +76,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             return SingleChildScrollView(padding: const EdgeInsets.fromLTRB(24, 28, 24, 12), child: ConstrainedBox(
               constraints: BoxConstraints(minHeight: c.maxHeight - 40),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
-                // Animation stage: flat aubergine panel, the Lottie carries the motion.
+                // Animation stage: aubergine panel with subtle border so it stands out in both light and dark themes.
                 Container(height: stage, width: double.infinity, alignment: Alignment.center,
-                  decoration: BoxDecoration(color: BrandTheme.ink, borderRadius: BorderRadius.circular(28)),
+                  decoration: BoxDecoration(color: BrandTheme.ink, borderRadius: BorderRadius.circular(28),
+                    border: Border.all(color: BrandTheme.lavender.withValues(alpha: 0.18))),
                   child: SizedBox.square(dimension: stage * 0.92, child: Lottie.asset('assets/lottie/${slide.$1}.json',
                     animate: !reduce, repeat: !reduce, frameRate: FrameRate.max,
                     errorBuilder: (_, _, _) => const Icon(Icons.auto_awesome, color: BrandTheme.lavender, size: 72)))),

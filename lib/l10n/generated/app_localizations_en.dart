@@ -145,7 +145,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get invalidUrl => 'Use a valid https address.';
 
   @override
-  String get dateOrder => 'The end date must follow the anchor date.';
+  String get dateOrder => 'The end date cannot be before the start date.';
 
   @override
   String get status => 'Status';
@@ -454,6 +454,7 @@ class AppLocalizationsEn extends AppLocalizations {
       locale: localeName,
       other: '$count subscriptions',
       one: '1 subscription',
+      zero: '0 subscriptions',
     );
     return '$_temp0';
   }
@@ -785,4 +786,246 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get purchasedHere => 'Purchased';
+
+  @override
+  String get widgetTitle => 'Home screen widget';
+
+  @override
+  String get widgetHelp =>
+      'Your next three plans, with cancellation deadlines first.';
+
+  @override
+  String get widgetCompactTitle => 'Compact row widget';
+
+  @override
+  String get widgetCompactHelp =>
+      'Single row (3 to 4 columns) with your next plans.';
+
+  @override
+  String get widgetManual =>
+      'Long-press an empty area on your home screen → Widgets → Ritmia.';
+
+  @override
+  String notifCancelTitle(String name, String when) {
+    return 'Cancel $name $when';
+  }
+
+  @override
+  String notifCancelBody(String amount, String date) {
+    return 'Avoid the next $amount charge. Deadline: $date. Open Ritmia to review this plan.';
+  }
+
+  @override
+  String get notifScheduleError =>
+      'Reminders are enabled, but scheduling failed. Try again.';
+
+  @override
+  String get addToCalendar => 'Add to device calendar';
+
+  @override
+  String get calendarAddHelp =>
+      'Review and save this date in your calendar app.';
+
+  @override
+  String get calendarExport => 'Export to calendar';
+
+  @override
+  String get calendarExportHelp =>
+      'Next 12 months · up to 1,000 dates · .ics file';
+
+  @override
+  String get calendarNoDates => 'No upcoming dates to add.';
+
+  @override
+  String get calendarOpened => 'Review the event and save it in your calendar.';
+
+  @override
+  String calendarRenewalTitle(String name) {
+    return '$name renewal';
+  }
+
+  @override
+  String calendarTrialTitle(String name) {
+    return '$name trial ends';
+  }
+
+  @override
+  String calendarCancelTitle(String name) {
+    return 'Cancel $name';
+  }
+
+  @override
+  String get calendarEventHelp =>
+      'Tracked in Ritmia. Changing this event does not change your subscription or cancel your plan.';
+
+  @override
+  String get notificationTest => 'Send a test alert';
+
+  @override
+  String get notificationTestSent =>
+      'Test alert sent. Check your notification panel.';
+
+  @override
+  String get notifTestTitle => 'Your Ritmia reminders are ready';
+
+  @override
+  String get notifTestBody =>
+      'This is a test alert. Your subscription reminders will appear here.';
+
+  @override
+  String get guidedTour => 'Create a subscription step by step';
+
+  @override
+  String get guidedTourHelp =>
+      'A guided tour that highlights the controls as you use the app.';
+
+  @override
+  String tourProgress(int current, int total) {
+    return '$current of $total';
+  }
+
+  @override
+  String get tourSkip => 'Skip tour';
+
+  @override
+  String get tourNext => 'Continue';
+
+  @override
+  String get tourBack => 'Back';
+
+  @override
+  String get tourFinish => 'Finish';
+
+  @override
+  String get tourAddTitle => 'Your first subscription';
+
+  @override
+  String get tourAddBody =>
+      'Tap the highlighted button. You’ll create a real record; you can skip this tour at any time.';
+
+  @override
+  String get tourBrandTitle => 'Choose a brand';
+
+  @override
+  String get tourBrandBody =>
+      'Search for your service and tap its name. You can also create a custom one. Logos are already in the app.';
+
+  @override
+  String get tourNameTitle => 'Give it a name';
+
+  @override
+  String get tourNameBody =>
+      'The brand fills in the name and logo. Change the name to distinguish a plan or account.';
+
+  @override
+  String get tourPriceTitle => 'Free or paid?';
+
+  @override
+  String get tourPriceBody =>
+      'Choose the plan type. For paid plans, enter the amount, choose the currency and how often you are charged.';
+
+  @override
+  String get tourDateTitle => 'When did you buy it?';
+
+  @override
+  String get tourDateBody =>
+      'Choose the purchase date. Ritmia calculates the next renewal from that day and your billing cycle.';
+
+  @override
+  String get tourRemindersTitle => 'Choose your reminders';
+
+  @override
+  String get tourRemindersBody =>
+      'Select how many days before to be reminded. You can choose several. Alerts need your phone’s permission.';
+
+  @override
+  String get tourSaveTitle => 'Save your subscription';
+
+  @override
+  String get tourSaveBody =>
+      'Tap Save to create the record. If a detail is missing, go back to the previous step to complete it.';
+
+  @override
+  String get tourRecordTitle => 'Here’s your plan';
+
+  @override
+  String get tourRecordBody =>
+      'Tap the subscription for its details. You can mark Don’t renew there; those plans appear first.';
+
+  @override
+  String get tourCalendarTitle => 'See your dates';
+
+  @override
+  String get tourCalendarBody =>
+      'Open the calendar to review renewals. You can add a date to your phone’s calendar from the plan details.';
+
+  @override
+  String get tourFilterTitle => 'Find what you need';
+
+  @override
+  String get tourFilterBody =>
+      'Filter by Renews or Don’t renew. Combine it with a search by name or notes.';
+
+  @override
+  String get tourSettingsTitle => 'Make it yours';
+
+  @override
+  String get tourSettingsBody =>
+      'Turn on and test alerts, choose a language or theme, add the widget and export dates to your calendar here.';
+
+  @override
+  String get notificationSetupError =>
+      'Could not start reminders. Update Ritmia or try again.';
+
+  @override
+  String get proBadge => 'ONE-TIME PURCHASE · FOREVER';
+
+  @override
+  String get proSubtitle =>
+      'Unlock everything in Ritmia with a single payment, without adding another subscription to your month.';
+
+  @override
+  String get proBenefitUnlimitedTitle => 'Unlimited subscriptions';
+
+  @override
+  String get proBenefitUnlimitedBody =>
+      'Track all your active, paused and archived services without the 5-slot limit.';
+
+  @override
+  String get proBenefitNoAdsTitle => 'No ads';
+
+  @override
+  String get proBenefitNoAdsBody =>
+      'Remove occasional ads for a clean, uninterrupted experience.';
+
+  @override
+  String get proBenefitOneTimeTitle => 'One-time lifetime payment';
+
+  @override
+  String get proBenefitOneTimeBody => 'Pay once and keep Ritmia Pro forever.';
+
+  @override
+  String get proUnlockCta => 'Unlock Ritmia Pro';
+
+  @override
+  String get proRestoreCta => 'Restore purchase';
+
+  @override
+  String get proActiveBadge => 'Active · One-time purchase';
+
+  @override
+  String get proRestoreEmpty => 'No previous Ritmia Pro purchase was found.';
+
+  @override
+  String get adInterstitialLabel => 'SPONSORED';
+
+  @override
+  String get adInterstitialTitle => 'Go ad-free with Ritmia Pro';
+
+  @override
+  String get adInterstitialBody =>
+      'With a one-time payment you remove occasional ads and unlock unlimited subscriptions forever.';
+
+  @override
+  String get adContinueFree => 'Continue with Ritmia Free';
 }

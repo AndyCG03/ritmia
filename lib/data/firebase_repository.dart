@@ -15,7 +15,8 @@ class FirebaseSubscriptionRepository implements SubscriptionRepository {
   @override
   Stream<Entitlement> watchEntitlement()=>_db.doc('users/$uid/private/billing').snapshots().map((doc){
     final data=doc.data(),expires=data?['expiresAt'];
-    return Entitlement(pro:data?['plan']=='pro'&&expires is Timestamp&&expires.toDate().isAfter(DateTime.now()));
+    final active=data?['lifetime']==true||(expires is Timestamp&&expires.toDate().isAfter(DateTime.now()));
+    return Entitlement(pro:data?['plan']=='pro'&&active);
   });
   @override
   Future<Subscription> save(Subscription s)async{

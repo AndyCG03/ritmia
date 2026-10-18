@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import '../../core/theme.dart';
 import '../../domain/subscription.dart';
 import '../../l10n/context.dart';
+import '../../l10n/currency_names.dart';
 import 'sheet.dart';
 
 String currencyName(BuildContext context, String code) {
+  final localized=additionalCurrencyNames[Localizations.localeOf(context).languageCode]?[code];
+  if(localized!=null)return localized;
   final names = currencyNames[code];
   if (names == null) return code;
   return Localizations.localeOf(context).languageCode == 'es' ? names.$1 : names.$2;

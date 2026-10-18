@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../core/catalog.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../core/guided_tour_provider.dart';
+import '../widgets/guided_tour.dart';
+import '../widgets/bottom_action.dart';
 import '../../core/theme.dart';
 import '../../l10n/context.dart';
 import '../editor_screen.dart';
@@ -9,8 +13,11 @@ import 'sheet.dart';
 /// Service chooser. Picking a row (or "custom") closes the sheet and opens the editor.
 Future<void> showCatalogSheet(BuildContext context) async {
   final navigator = Navigator.of(context);
+  final tour=ProviderScope.containerOf(context).read(guidedTourProvider.notifier);
+  tour.advanceIf(TourStep.add,TourStep.brand);
   final choice = await showRitmiaSheet<_Choice>(context, heightFactor: 0.86, maxFactor: 0.9, builder: (_) => const CatalogSheet());
-  if (choice == null) return;
+  if (choice == null) { tour.advanceIf(TourStep.brand,TourStep.add); return; }
+  tour.advanceIf(TourStep.brand,TourStep.name);
   navigator.push(MaterialPageRoute<void>(builder: (_) => EditorScreen(initialBrand: choice.brand)));
 }
 
@@ -24,7 +31,7 @@ class CatalogSheet extends StatefulWidget {
 
 class _CatalogSheetState extends State<CatalogSheet> {
   String _query = '';
-  bool _ai = true;
+  bool _ai = false;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +45,8 @@ class _CatalogSheetState extends State<CatalogSheet> {
           decoration: BoxDecoration(color: t.accent, borderRadius: BorderRadius.circular(2)))),
       ])))));
 
-    return Padding(padding: const EdgeInsets.fromLTRB(24, 0, 24, 16), child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+    return TourAnchor(id:'brand',child:Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      Expanded(child: Padding(padding: const EdgeInsets.symmetric(horizontal: 24), child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Row(children: [
         Expanded(child: Semantics(header: true, child: Text(s.add,
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: t.textPrimary)))),
@@ -69,9 +77,9 @@ class _CatalogSheetState extends State<CatalogSheet> {
                 const SizedBox(width: 6),
               ])));
             })),
-      const SizedBox(height: 8),
-      OutlinedButton.icon(onPressed: () => Navigator.pop(context, const _Choice(null)),
-        icon: const Icon(Icons.add_rounded, size: 26), label: Text(s.addCustom)),
+      ]))),
+      BottomAction(child: FilledButton.icon(onPressed: () => Navigator.pop(context, const _Choice(null)),
+        icon: const Icon(Icons.add_rounded, size: 28), label: Text(s.addCustom, maxLines: 1, overflow: TextOverflow.ellipsis))),
     ]));
   }
 }

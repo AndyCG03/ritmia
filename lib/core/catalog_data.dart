@@ -2,7 +2,7 @@
 // Provenance: docs/SERVICE_ICONS.json. Do not edit by hand.
 part of 'catalog.dart';
 
-const serviceBrands = [
+const bundledServiceBrands = [
   ServiceBrand("1password","1Password",0xFF282338,""),
   ServiceBrand("aircall","Aircall",0xFF282338,""),
   ServiceBrand("airtable","Airtable",0xFF282338,""),

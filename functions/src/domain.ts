@@ -7,7 +7,7 @@ export const subscriptionSchema=z.object({
   amountMinor:z.number().int().min(0).max(99999999999),
   currency:z.enum(["USD","EUR","MXN","ARS","COP","CLP","PEN","UYU","BOB","PYG","VES","BRL","DOP","CUP","GTQ","HNL","NIO","CRC","PAB","CAD","GBP","CHF","AUD","NZD","JPY","CNY","KRW","INR","SEK","NOK","DKK","PLN","TRY"]),free:z.boolean(),
   anchorDate:dateSchema,cycle:z.enum(["weekly","monthly","quarterly","yearly"]),
-  color:z.number().int().min(0).max(4294967295),brandId:z.string().regex(/^[a-z0-9]+$/).max(80).nullable(),
+  color:z.number().int().min(0).max(4294967295),brandId:z.string().regex(/^(?:[a-z0-9]+|generic:[a-z0-9]+)$/).max(80).nullable(),
   status:z.enum(["active","paused","archived"]),category:z.enum(["entertainment","productivity","storage","education","health","utilities","other"]),
   notes:z.string().trim().max(1000),logoPath:z.string().max(240).nullable(),revision:z.number().int().min(0),
   reminderDays:z.array(z.union([z.literal(1),z.literal(3),z.literal(7),z.literal(14)])).max(4)
@@ -15,7 +15,7 @@ export const subscriptionSchema=z.object({
   endsOn:dateSchema.nullable(),trialEndsOn:dateSchema.nullable(),purchasedOn:dateSchema.nullable().optional(),
   cancelUrl:z.union([z.literal(""),z.string().url().max(500).refine(v=>new URL(v).protocol==="https:")]),
 }).strict().refine(s=>s.free?s.amountMinor===0:s.amountMinor>0)
-  .refine(s=>s.endsOn===null||s.endsOn>s.anchorDate);
+  .refine(s=>s.endsOn===null||s.endsOn>=s.anchorDate);
 export type Subscription=z.infer<typeof subscriptionSchema>;
 export function canCreate(count:number,pro:boolean):boolean{return pro||count<5;}
 export function revisionMatches(expected:number,actual:number):boolean{return expected===actual;}

@@ -94,3 +94,27 @@ ui-debug.log
 # OS / editors
 Thumbs.db
 desktop.ini
+.vscode/*
+!.vscode/extensions.json
+
+# Flutter generated plugin registrants (regenerated on build)
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+ios/Runner/GeneratedPluginRegistrant.*
+macos/Flutter/GeneratedPluginRegistrant.swift
+windows/flutter/generated_*
+linux/flutter/generated_*
+.flutter-plugins
+
+# Node (any level) and Firebase extras
+node_modules/
+functions/.runtimeconfig.json
+firebase-debug.log
+pubsub-debug.log
+pglite-debug.log
+
+# Credentials (never commit)
+*service-account*.json
+*serviceAccount*.json
+*.p12
+*.pem
+*.mobileprovision

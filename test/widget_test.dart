@@ -5,8 +5,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ritmia/app.dart';
 import 'package:ritmia/core/catalog.dart';
+import 'package:ritmia/core/features.dart';
+import 'package:ritmia/domain/repositories.dart';
 import 'package:ritmia/domain/subscription.dart';
 import 'package:ritmia/core/reminder_providers.dart';
+import 'package:ritmia/services/ad_service.dart';
 void main(){
   setUp((){SharedPreferences.setMockInitialValues({'locale':'en','onboardingComplete':true});});
   Future<void> open(WidgetTester tester)async{
@@ -36,6 +39,7 @@ void main(){
   test('AI catalog and aliases',(){
     expect(searchBrands('',aiOnly:true).first.name,'ChatGPT');
     expect(searchBrands('gpt').map((b)=>b.id),contains('openai'));
+    expect(searchBrands('higssfield',aiOnly:true).single.id,'higgsfield');
     expect(searchBrands('anthropic').map((b)=>b.id),contains('claude'));
     expect(searchBrands('copilot').map((b)=>b.id),contains('microsoftcopilot'));
     for(final id in ['openai','claude','googlegemini','perplexity','microsoftcopilot','midjourney','cursor','elevenlabs','poe']){
@@ -56,6 +60,8 @@ void main(){
   testWidgets('catalog sheet, AI tab and creation of a free subscription', (tester)async{
     await open(tester);await tester.tap(find.text('Add subscription').last);await tester.pumpAndSettle();
     expect(find.text('Artificial intelligence'),findsOneWidget);
+    expect(searchBrands('').any((b) => !b.ai),isTrue);
+    await tester.tap(find.text('Artificial intelligence'));await tester.pumpAndSettle();
     expect(find.text('ChatGPT'),findsOneWidget);
     await tester.tap(find.text('All'));await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField),'Vercel');await tester.pumpAndSettle();
@@ -86,5 +92,65 @@ void main(){
     expect(find.text("Won't renew"),findsOneWidget);
     expect(find.textContaining('Cancel before'),findsOneWidget);
     expect(tester.takeException(),isNull);
+  });
+  testWidgets('add custom service button matches add subscription height and size with gesture inset', (tester)async{
+    tester.view.physicalSize=const Size(390,844);tester.view.devicePixelRatio=1;
+    tester.view.padding=const FakeViewPadding(top:44,bottom:34);
+    tester.view.viewPadding=const FakeViewPadding(top:44,bottom:34);
+    addTearDown(tester.view.resetPhysicalSize);addTearDown(tester.view.resetDevicePixelRatio);
+    addTearDown(tester.view.resetPadding);addTearDown(tester.view.resetViewPadding);
+    await open(tester);
+    final addButton=find.widgetWithText(FilledButton,'Add subscription');
+    final addRect=tester.getRect(addButton);
+    expect(addRect.height,56);
+    await tester.tap(addButton);await tester.pumpAndSettle();
+    final customButton=find.widgetWithText(FilledButton,'Add custom service');
+    final customRect=tester.getRect(customButton);
+    expect(customRect,addRect);
+  });
+  testWidgets('changing purchase date or cycle automatically updates paidFrom date', (tester)async{
+    await open(tester);
+    await tester.tap(find.text('Add subscription').last);await tester.pumpAndSettle();
+    await tester.tap(find.text('Artificial intelligence'));await tester.pumpAndSettle();
+    await tester.tap(find.text('ChatGPT').last);await tester.pumpAndSettle();
+    await tester.tap(find.text('Free'));await tester.pumpAndSettle();
+    await tester.tap(find.text('Becomes paid later'));await tester.pumpAndSettle();
+    final amountField=find.byWidgetPredicate((w)=>w is TextField&&w.decoration?.labelText=='Amount after that');
+    await tester.enterText(amountField,'15');await tester.pumpAndSettle();
+    final listScroll=find.descendant(of:find.byType(ListView),matching:find.byType(Scrollable)).first;
+    await tester.scrollUntilVisible(find.text('Yesterday'),150,scrollable:listScroll);
+    await tester.tap(find.text('Yesterday'));await tester.pumpAndSettle();
+    final yesterday=dateOnly(DateTime.now()).subtract(const Duration(days:1));
+    final expectedMonthly=addBillingCycle(yesterday,BillingCycle.monthly);
+    await tester.scrollUntilVisible(find.text('Save'),300,scrollable:listScroll);
+    await tester.tap(find.text('Save'));await tester.pumpAndSettle();
+    final prefs=await SharedPreferences.getInstance();
+    final saved=(jsonDecode(prefs.getString('ritmia.local.subscriptions.v1')!) as List).single as Map<String,dynamic>;
+    expect(saved['purchasedOn'],dateKey(yesterday));
+    expect(saved['trialEndsOn'],dateKey(expectedMonthly));
+    expect(saved['anchorDate'],dateKey(expectedMonthly));
+  });
+  test('occasional interstitial triggers every 3rd save in Free tier and never in Pro', ()async{
+    final prefs=await SharedPreferences.getInstance();
+    const ads=AdService(frequency:3);
+    expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(),inTour:false),isFalse);
+    expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(),inTour:false),isFalse);
+    expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(),inTour:false),isTrue);
+    expect(await ads.recordSaveAndShouldShowInterstitial(prefs,plan:const Entitlement(pro:true),inTour:false),isFalse);
+  });
+  testWidgets('Pro upsell is hidden by default in this release', (tester)async{
+    await open(tester);
+    await tester.tap(find.byTooltip('Settings'));await tester.pumpAndSettle();
+    await tester.tap(find.text('Ritmia Free'));await tester.pumpAndSettle();
+    expect(find.text('ONE-TIME PURCHASE · FOREVER'),findsNothing);
+    expect(find.textContaining('Ritmia Pro'),findsNothing);
+  });
+  testWidgets('settings plan card opens Ritmia Pro one-time unlock sheet when enabled', (tester)async{
+    await tester.pumpWidget(ProviderScope(overrides:[reminderSyncProvider.overrideWith((ref)async{}),proFeatureProvider.overrideWithValue(true)],child:const RitmiaApp()));await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Settings'));await tester.pumpAndSettle();
+    await tester.tap(find.text('Ritmia Free'));await tester.pumpAndSettle();
+    expect(find.text('ONE-TIME PURCHASE · FOREVER'),findsOneWidget);
+    expect(find.text('Unlimited subscriptions'),findsOneWidget);
+    expect(find.text('No ads'),findsOneWidget);
   });
 }

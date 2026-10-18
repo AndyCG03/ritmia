@@ -28,3 +28,10 @@ test("timezone calculation uses user's civil date",()=>{
   assert.deepEqual(localDay(new Date("2026-10-16T13:00:00Z"),"America/Havana"),{day:"2026-10-16",hour:9});
   assert.deepEqual(localDay(new Date("2026-10-16T00:30:00Z"),"America/Los_Angeles"),{day:"2026-10-15",hour:17});
 });
+
+test("custom service icons and cancellation before the first charge are accepted",()=>{
+  assert.equal(subscriptionSchema.safeParse({...sample,brandId:"generic:music",endsOn:sample.anchorDate}).success,true);
+  for(const brandId of ["generic:","generic:../music","Generic:music"]){
+    assert.equal(subscriptionSchema.safeParse({...sample,brandId}).success,false);
+  }
+});

@@ -5,11 +5,13 @@ import 'core/onboarding_provider.dart';
 import 'presentation/onboarding_screen.dart';
 import 'core/providers.dart';
 import 'core/reminder_providers.dart';
+import 'core/widget_providers.dart';
 import 'core/theme.dart';
 import 'l10n/context.dart';
 import 'l10n/generated/app_localizations.dart';
 import 'presentation/auth_screen.dart';
 import 'presentation/home_screen.dart';
+import 'presentation/widgets/guided_tour.dart';
 class RitmiaApp extends ConsumerWidget {
   const RitmiaApp({super.key,this.startupError});
   final String? startupError;
@@ -18,9 +20,12 @@ class RitmiaApp extends ConsumerWidget {
     return MaterialApp(title:'Ritmia',debugShowCheckedModeBanner:false,theme:BrandTheme.light,darkTheme:BrandTheme.dark,themeMode:ref.watch(themeModeProvider),
       locale:ref.watch(localeProvider),localizationsDelegates:AppLocalizations.localizationsDelegates,
       supportedLocales:AppLocalizations.supportedLocales,
+      builder:(context,child)=>Stack(children:[child!,const GuidedTourOverlay()]),
       home:Builder(builder:(context){
         if(startupError!=null)return Scaffold(body:Center(child:Padding(padding:const EdgeInsets.all(32),child:Text(context.l10n.cloudSetupError))));
         ref.watch(reminderSyncProvider);
+        ref.watch(homeWidgetSyncProvider);
+        ref.watch(appLifecycleProvider);
         final preferences=ref.watch(preferencesProvider);
         if(preferences.isLoading)return const Scaffold(body:Center(child:CircularProgressIndicator()));
         if(preferences.hasError)return Scaffold(body:Center(child:Text(context.l10n.genericError)));

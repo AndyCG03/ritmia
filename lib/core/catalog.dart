@@ -16,6 +16,13 @@ class ServiceBrand {
   String get asset => 'assets/services/${assetId ?? id}.svg';
 }
 
+// Small additions kept outside the generated icon pack.
+const serviceBrands = <ServiceBrand>[
+  ...bundledServiceBrands,
+  ServiceBrand('higgsfield', 'Higgsfield', 0xFFD1FE17, 'https://higgsfield.ai',
+    preserveColors: true, ai: true, aliases: ['higssfield', 'higgs field', 'ai video']),
+];
+
 final Map<String, ServiceBrand> _byId = {for (final b in serviceBrands) b.id: b};
 ServiceBrand? findBrand(String? id) => id == null ? null : _byId[id];
 

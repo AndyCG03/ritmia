@@ -46,6 +46,12 @@ Los datos locales y cloud son almacenes distintos; esta versión no migra regist
 ## Planes
 Gratis: cinco registros, incluidas pausadas y archivadas. Pro: sin límite de registros. Calendario, recordatorios, logos, idiomas y exportación disponibles en ambos. Las compras todavía no están implementadas; no hay botón que simule un cobro ni un desbloqueo local.
 
+**En esta versión Ritmia Pro está oculto.** La hoja de pago único, el aviso al llegar al límite y el interstitial "Pásate a Pro" siguen en el código (`lib/presentation/sheets/pro_sheet.dart`, `lib/services/billing_service.dart`) detrás del flag `RITMIA_PRO_ENABLED` (`lib/core/features.dart`). Para reactivarlos:
+
+```powershell
+flutter run --dart-define=RITMIA_PRO_ENABLED=true
+```
+
 ## Comprobar
 ```powershell
 flutter analyze

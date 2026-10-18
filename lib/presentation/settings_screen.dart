@@ -9,15 +9,20 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:share_plus/share_plus.dart';
 import '../core/environment.dart';
 import '../core/errors.dart';
+import '../core/features.dart';
 import '../core/providers.dart';
 import '../core/reminder_providers.dart';
 import '../core/theme.dart';
 import '../domain/export.dart';
+import '../domain/calendar_export.dart';
+import '../services/calendar_service.dart';
+import '../core/supported_languages.dart';
 import '../domain/repositories.dart';
 import '../domain/subscription.dart';
 import '../l10n/context.dart';
 import '../services/notification_service.dart';
 import 'sheets/permission_sheet.dart';
+import 'sheets/pro_sheet.dart';
 import 'sheets/sheet.dart';
 
 final emailPreferencesProvider = StreamProvider<Map<String, dynamic>>((ref) {
@@ -37,18 +42,6 @@ class SettingsScreen extends ConsumerStatefulWidget {
 
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _busy = false;
-  late final AppLifecycleListener _lifecycle;
-
-  @override
-  void initState() {
-    super.initState();
-    // Coming back from the phone's settings: re-read the real permission state.
-    _lifecycle = AppLifecycleListener(onResume: () => ref.invalidate(systemBlockedProvider));
-  }
-
-  @override
-  void dispose() { _lifecycle.dispose(); super.dispose(); }
-
   Future<void> _action(Future<void> Function() action) async {
     setState(() => _busy = true);
     try { await action(); } catch (error) { if (mounted) showFailure(context, error); }
@@ -77,7 +70,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final choice = await showRitmiaSheet<String>(context, builder: (c) => Padding(padding: const EdgeInsets.fromLTRB(24, 0, 24, 16),
       child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         Row(children: [Expanded(child: Text(s.language, style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: c.tokens.textPrimary))), const SheetCloseButton()]),
-        for (final (v, l) in [('system', s.system), ('es', 'Español'), ('en', 'English')]) ...[
+        for (final (v, l) in [('system', s.system), ...languageNames.entries.map((e) => (e.key, e.value))]) ...[
           InkWell(onTap: () => Navigator.pop(c, v), child: SizedBox(height: 56, child: Row(children: [
             Expanded(child: Text(l, style: TextStyle(fontSize: 17, color: c.tokens.textPrimary))),
             if (v == current) Icon(Icons.check_rounded, color: c.tokens.textAction),
@@ -101,6 +94,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     final blocked = ref.watch(systemBlockedProvider).asData?.value == true;
     final locale = ref.watch(localeProvider)?.languageCode;
     final used = widget.items.length, limit = widget.plan.subscriptionLimit;
+    final proEnabled = ref.watch(proFeatureProvider);
 
     return ListView(padding: const EdgeInsets.fromLTRB(20, 0, 20, 32), children: [
       Padding(padding: const EdgeInsets.fromLTRB(4, 0, 0, 16), child: Row(children: [
@@ -108,11 +102,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         const SheetCloseButton(),
       ])),
 
-      // Plan
-      _Group(children: [Padding(padding: const EdgeInsets.all(20), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      // Plan (Pro upsell hidden unless RITMIA_PRO_ENABLED)
+      _Group(children: [InkWell(onTap: proEnabled ? () => showProSheet(context) : null, child: Padding(padding: const EdgeInsets.all(20), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(children: [
           Expanded(child: Text(widget.plan.pro ? s.proPlan : s.freePlan, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: t.textPrimary))),
-          if (limit != null) Text('$used / $limit', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: t.textPrimary, fontFeatures: BrandTheme.tabular)),
+          if (limit != null) Text('$used / $limit', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: t.textPrimary, fontFeatures: BrandTheme.tabular))
+          else Text(s.proActiveBadge, style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: t.textAction)),
         ]),
         if (limit != null) ...[
           const SizedBox(height: 12),
@@ -120,12 +115,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             minHeight: 6, backgroundColor: t.separator, color: used >= limit ? t.danger : t.accent)),
           const SizedBox(height: 12),
           Text(s.quotaHelp, style: TextStyle(fontSize: 14, color: t.textSecondary)),
-        ] else Padding(padding: const EdgeInsets.only(top: 6), child: Text(s.proFeatures, style: TextStyle(fontSize: 14, color: t.textSecondary))),
-        if (!widget.plan.pro) ...[
+        ] else Padding(padding: const EdgeInsets.only(top: 6), child: Text('${s.proBenefitUnlimitedTitle} · ${s.proBenefitNoAdsTitle}', style: TextStyle(fontSize: 14, color: t.textSecondary))),
+        if (proEnabled && !widget.plan.pro) ...[
           const SizedBox(height: 14),
-          Text('${s.proPlan} · ${s.proPending}', style: TextStyle(fontSize: 13, color: t.textSecondary)),
+          Row(children: [
+            Expanded(child: Text('${s.proPlan} · ${s.proBenefitOneTimeTitle}', style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.w600, color: t.textAction))),
+            Icon(Icons.chevron_right_rounded, size: 20, color: t.textAction),
+          ]),
         ],
-      ]))]),
+      ])))]),
 
       _Header(s.general),
       _Group(children: [
@@ -139,7 +137,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ], onSelectionChanged: (v) => ref.read(themeModeProvider.notifier).set(v.first)))),
         const Hairline(indent: 68),
         _Row(icon: Icons.translate_rounded, title: s.languageSummary,
-          value: locale == 'es' ? 'Español' : locale == 'en' ? 'English' : s.system,
+          value: languageNames[locale] ?? s.system,
           onTap: _busy ? null : () => _chooseLanguage(emailEnabled)),
       ]),
 
@@ -148,8 +146,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         if (NotificationService.instance.supported) ...[
           _Row(icon: alerts && !blocked ? Icons.notifications_active_outlined : Icons.notifications_none_rounded,
             title: s.notificationToggle,
-            subtitle: alerts && !blocked ? s.notifOnSummary : s.notifOffSummary,
-            trailing: Switch(value: alerts && !blocked, onChanged: _busy ? null : (enabled) => _action(() async {
+            subtitle: blocked ? s.notifBlockedSummary : alerts ? s.notifOnSummary : s.notifOffSummary,
+            trailing: Switch(value: alerts, onChanged: _busy ? null : (enabled) => _action(() async {
               if (enabled) { await askForReminders(context, ref); }
               else { await ref.read(deviceAlertsProvider.notifier).setEnabled(false); }
               ref.invalidate(systemBlockedProvider);
@@ -162,11 +160,24 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             trailing: Switch(value: emailEnabled, onChanged: _busy || emailState.isLoading ? null : (v) => _action(() => _email(v)))),
         ],
       ]),
+      if (alerts && ref.watch(reminderSyncProvider).hasError) Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4), child: Row(children: [
+          Expanded(child: Text(s.notifScheduleError, style: TextStyle(color: t.danger, fontSize: 13))),
+          TextButton(onPressed: () => ref.invalidate(reminderSyncProvider), child: Text(s.retry)),
+        ])),
       if (NotificationService.instance.supported) Padding(padding: const EdgeInsets.fromLTRB(4, 8, 4, 0),
         child: Text(s.notificationHelp, style: TextStyle(fontSize: 13, height: 1.4, color: t.textSecondary))),
 
       _Header(s.dataSection),
       _Group(children: [
+        _Row(icon: Icons.event_available_outlined, title: s.calendarExport, subtitle: s.calendarExportHelp,
+          onTap: _busy ? null : () => _action(() async {
+            final now = dateOnly(DateTime.now());
+            final entries = subscriptionCalendarEntries(widget.items, now, DateTime(now.year + 1, now.month, now.day));
+            if (entries.isEmpty) { showInfo(context, s.calendarNoDates); return; }
+            await CalendarService.shareDates(context, entries);
+          })),
+        const Hairline(indent: 68),
         _Row(icon: Icons.file_download_outlined, title: s.export, subtitle: s.exportHelp, onTap: _busy ? null : () => _action(_export)),
       ]),
 
@@ -192,7 +203,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       const SizedBox(height: 28),
       Text(s.privacy, textAlign: TextAlign.center, style: TextStyle(fontSize: 13, height: 1.4, color: t.textSecondary)),
       const SizedBox(height: 6),
-      Text('Ritmia · 1.2.1', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: t.textSecondary)),
+      Text('Ritmia · 1.2.3', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: t.textSecondary)),
     ]);
   }
 }

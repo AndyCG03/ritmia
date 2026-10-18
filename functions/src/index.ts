@@ -71,7 +71,7 @@ export const deleteSubscription=onCall(options,async request=>{
 });
 export const setReminderPreferences=onCall(options,async request=>{
   const uid=requireUid(request.auth);
-  const parsed=z.object({emailEnabled:z.boolean(),timeZone:z.string().max(100),locale:z.enum(["es","en"])}).strict().safeParse(request.data);
+  const parsed=z.object({emailEnabled:z.boolean(),timeZone:z.string().max(100),locale:z.enum(["es","en","pt","fr"])}).strict().safeParse(request.data);
   if(!parsed.success)invalid();
   try{localDay(new Date(),parsed.data.timeZone);}catch{invalid();}
   const user=await getAuth().getUser(uid);
@@ -108,11 +108,13 @@ export const enqueueReminders=onSchedule({
             await db.runTransaction(async tx=>{
               const [existing,current,currentPreferences]=await Promise.all([tx.get(mail),tx.get(document.ref),tx.get(preferences.ref)]);
               if(existing.exists||!current.exists||current.get("revision")!==s.revision||currentPreferences.get("emailEnabled")!==true)return;
-              const es=p.locale==="es";
-              const kind=reminder.kind==="renewal"?(es?"renovación":"renewal"):reminder.kind==="trial"?(es?"fin de prueba":"trial end"):(es?"fin de plan":"plan end");
-              const subject=es?`Ritmia · ${s.name}: ${kind} en ${reminder.leadDays} días`:`Ritmia · ${s.name}: ${kind} in ${reminder.leadDays} days`;
-              const text=es?`${s.name}: ${kind} el ${reminder.target}. Revisa tu plan con el proveedor antes de esa fecha.`:
-                `${s.name}: ${kind} on ${reminder.target}. Review your plan with the provider before that date.`;
+              const lang=["es","en","pt","fr"].includes(p.locale)?p.locale:"en";
+              const words:Record<string,string[]>={es:["renovación","fin de prueba","fin de plan"],en:["renewal","trial end","plan end"],pt:["renovação","fim do teste","fim do plano"],fr:["renouvellement","fin de l’essai","fin du forfait"]};
+              const kind=words[lang][reminder.kind==="renewal"?0:reminder.kind==="trial"?1:2];
+              const lead:Record<string,string>={es:`en ${reminder.leadDays} días`,en:`in ${reminder.leadDays} days`,pt:`em ${reminder.leadDays} dias`,fr:`dans ${reminder.leadDays} jours`};
+              const subject=`Ritmia · ${s.name}: ${kind} ${lead[lang]}`;
+              const messages:Record<string,string>={es:`${s.name}: ${kind} el ${reminder.target}. Revisa tu plan con el proveedor antes de esa fecha.`,en:`${s.name}: ${kind} on ${reminder.target}. Review your plan with the provider before that date.`,pt:`${s.name}: ${kind} em ${reminder.target}. Confira seu plano com o provedor antes dessa data.`,fr:`${s.name} : ${kind} le ${reminder.target}. Vérifiez votre forfait auprès du fournisseur avant cette date.`};
+              const text=messages[lang];
               tx.create(mail,{owner:uid,to:[user.email],message:{subject,text:text+(s.cancelUrl?"\n"+s.cancelUrl:"")},
                 reminderKey:reminder.key,createdAt:FieldValue.serverTimestamp(),expiresAt:Timestamp.fromMillis(Date.now()+90*86400000)});
             });

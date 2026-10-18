@@ -5,12 +5,17 @@ import 'package:image/image.dart' as img;
 import 'package:image_picker/image_picker.dart';
 import '../core/catalog.dart';
 import '../core/errors.dart';
+import '../core/features.dart';
 import '../core/providers.dart';
+import '../core/guided_tour_provider.dart';
+import 'widgets/guided_tour.dart';
 import '../core/theme.dart';
 import '../domain/repositories.dart';
 import '../domain/subscription.dart';
 import '../l10n/context.dart';
+import '../services/ad_service.dart';
 import 'sheets/currency_sheet.dart';
+import 'sheets/pro_sheet.dart';
 import 'sheets/sheet.dart';
 import 'widgets/generic_icons.dart';
 import 'widgets/service_avatar.dart';
@@ -28,12 +33,13 @@ class EditorScreen extends ConsumerStatefulWidget {
 
 class _EditorScreenState extends ConsumerState<EditorScreen> {
   final _form = GlobalKey<FormState>();
+  late final GuidedTourController _tour;
   late final TextEditingController _name, _amount, _notes, _url;
   late final String _id;
   late String _currency;
   late DateTime _purchase, _paidFrom;
   DateTime? _ends;
-  late bool _free, _becomesPaid;
+  late bool _free, _becomesPaid, _customPaidFrom;
   bool _busy = false, _removeLogo = false;
   String? _brand;
   late BillingCycle _cycle;
@@ -47,6 +53,7 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
   @override
   void initState() {
     super.initState();
+    _tour=ref.read(guidedTourProvider.notifier);
     final s = widget.item, b = widget.initialBrand, today = dateOnly(DateTime.now());
     _id = s?.id ?? newId();
     _name = TextEditingController(text: s?.name ?? b?.name ?? '');
@@ -61,20 +68,41 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
     _free = s == null ? false : (s.free || trialConverts);
     _becomesPaid = trialConverts;
     _purchase = s == null ? today : s.purchaseDate;
-    _paidFrom = trialConverts ? DateTime.parse(s.anchorDate) : DateTime(today.year, today.month + 1, today.day);
+    _cycle = s?.cycle ?? BillingCycle.monthly;
+    _customPaidFrom = trialConverts;
+    _paidFrom = trialConverts ? DateTime.parse(s.anchorDate) : addBillingCycle(_purchase, _cycle);
     _ends = s?.endsOn == null ? null : DateTime.parse(s!.endsOn!);
     _brand = s?.brandId ?? b?.id;
-    _cycle = s?.cycle ?? BillingCycle.monthly;
     _status = s?.status ?? SubscriptionStatus.active; // kept, not edited here
     _category = s?.category ?? (b != null && b.ai ? Category.productivity : Category.other);
     _reminders = (s?.reminderDays ?? [3, 1]).toSet();
+    _tour.registerValidator(_isTourStepReady);
+  }
+
+  void _setPurchase(DateTime date) => setState(() {
+    _purchase = date;
+    _customPaidFrom = false;
+    _paidFrom = addBillingCycle(_purchase, _cycle);
+  });
+
+  bool _isTourStepReady(TourStep step) => switch (step) {
+    TourStep.name => _name.text.trim().isNotEmpty && _name.text.trim().length <= 80,
+    TourStep.price => !_charges || (parseAmount(_amount.text, _currency) ?? 0) > 0,
+    TourStep.reminders => _reminders.isNotEmpty,
+    _ => true,
+  };
+
+  @override
+  void setState(VoidCallback fn) {
+    super.setState(fn);
+    _tour.refreshStepReady();
   }
 
   @override
-  void dispose() { for (final c in [_name, _amount, _notes, _url]) { c.dispose(); } super.dispose(); }
+  void dispose() { _tour.unregisterValidator(_isTourStepReady); _tour.editorClosed(); for (final c in [_name, _amount, _notes, _url]) { c.dispose(); } super.dispose(); }
 
-  Future<DateTime?> _pick(DateTime initial) => showDatePicker(context: context, initialDate: initial,
-    firstDate: DateTime(2000), lastDate: DateTime(2100, 12, 31));
+  Future<DateTime?> _pick(DateTime initial) => _tour.withModal(()=>showDatePicker(context: context, initialDate: initial,
+    firstDate: DateTime(2000), lastDate: DateTime(2100, 12, 31)));
 
   Future<void> _pickImage() async {
     try {
@@ -103,8 +131,8 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
 
   Future<void> _save() async {
     if (!_form.currentState!.validate()) return;
-    if (_ends != null && !_ends!.isAfter(_anchor)) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(context.l10n.dateOrder))); return;
+    if (_ends != null && _ends!.isBefore(_anchor)) {
+      if (context.mounted) showInfo(context, context.l10n.dateOrder); return;
     }
     setState(() => _busy = true);
     var saved = false;
@@ -113,10 +141,24 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
       if (repo == null) throw const AppFailure('storage');
       final record = await repo.save(_build()); saved = true;
       if (_image != null && _custom) await repo.setLogo(record, _image!);
-      if (mounted) Navigator.pop(context);
+      final prefs = ref.read(preferencesProvider).asData?.value;
+      final plan = ref.read(entitlementProvider).asData?.value ?? const Entitlement();
+      final inTour = ref.read(guidedTourProvider).step != null;
+      final showAd = ref.read(proFeatureProvider) && prefs != null && await ref.read(adServiceProvider).recordSaveAndShouldShowInterstitial(
+        prefs, plan: plan, inTour: inTour);
+      _tour.advanceIf(TourStep.save,TourStep.record);
+      if (mounted) {
+        final nav = Navigator.of(context);
+        nav.pop();
+        if (showAd && nav.context.mounted) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (nav.context.mounted) showInterstitialAdSheet(nav.context);
+          });
+        }
+      }
     } catch (error) {
       if (mounted) {
-        if (saved) { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(context.l10n.logoPartialError))); Navigator.pop(context); }
+        if (saved) { _tour.advanceIf(TourStep.save,TourStep.record); if (context.mounted) showInfo(context, context.l10n.logoPartialError); Navigator.pop(context); }
         else { showFailure(context, error); }
       }
     } finally { if (mounted) setState(() => _busy = false); }
@@ -141,30 +183,33 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
             else if (widget.item != null) ServiceAvatar(item: preview, size: 56)
             else BrandMark(name: _name.text, brand: brand, icon: genericIconFor(_brand), size: 56),
             const SizedBox(width: 16),
-            Expanded(child: TextFormField(controller: _name, maxLength: 80, onChanged: (_) => setState(() {}),
+            Expanded(child:TourAnchor(id:'name',child: TextFormField(controller: _name, maxLength: 80, onChanged: (_) => setState(() {}),
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: t.textPrimary),
               decoration: InputDecoration(labelText: s.serviceName, counterText: ''),
-              validator: (v) => v == null || v.trim().isEmpty || v.trim().length > 80 ? s.invalidName : null)),
+              validator: (v) => v == null || v.trim().isEmpty || v.trim().length > 80 ? s.invalidName : null))),
           ]),
 
           // Price
           label(s.priceSection),
-          SegmentedButton<bool>(showSelectedIcon: false, segments: [
+          TourAnchor(id:'price',child:SegmentedButton<bool>(showSelectedIcon: false, segments: [
             ButtonSegment(value: false, label: Text(s.paidOption)),
             ButtonSegment(value: true, label: Text(s.freeOption)),
-          ], selected: {_free}, onSelectionChanged: _busy ? null : (v) => setState(() => _free = v.first)),
+          ], selected: {_free}, onSelectionChanged: _busy ? null : (v) => setState(() => _free = v.first))),
           if (_free) ...[
             const SizedBox(height: 8),
-            SwitchListTile(contentPadding: EdgeInsets.zero, value: _becomesPaid,
+            TourAnchor(id:'trial',child:SwitchListTile(contentPadding: EdgeInsets.zero, value: _becomesPaid,
               title: Text(s.becomesPaid, style: TextStyle(fontSize: 16, color: t.textPrimary)),
               subtitle: Text(s.becomesPaidHelp, style: TextStyle(color: t.textSecondary)),
-              onChanged: _busy ? null : (v) => setState(() => _becomesPaid = v)),
-            if (_becomesPaid) _DateRow(label: s.paidFrom, date: _paidFrom, enabled: !_busy,
-              onPick: () async { final d = await _pick(_paidFrom); if (d != null) setState(() => _paidFrom = d); }),
+              onChanged: _busy ? null : (v) => setState(() {
+                _becomesPaid = v;
+                if (v && !_customPaidFrom) _paidFrom = addBillingCycle(_purchase, _cycle);
+              }))),
+            if (_becomesPaid) TourAnchor(id:'paidFrom',child:_DateRow(label: s.paidFrom, date: _paidFrom, enabled: !_busy,
+              onPick: () async { final d = await _pick(_paidFrom); if (d != null) setState(() { _paidFrom = d; _customPaidFrom = true; }); })),
           ],
           if (_charges) ...[
             const SizedBox(height: 16),
-            Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            TourAnchor(id:'amount',child:Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Expanded(child: TextFormField(controller: _amount, onChanged: (_) => setState(() {}),
                 keyboardType: TextInputType.numberWithOptions(decimal: currencyDigits(_currency) > 0),
                 inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]'))],
@@ -175,30 +220,33 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
               SizedBox(height: 56, child: OutlinedButton(
                 style: OutlinedButton.styleFrom(minimumSize: const Size(96, 56), side: BorderSide(color: t.separator),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14))),
-                onPressed: _busy ? null : () async { final c = await showCurrencySheet(context, _currency); if (c != null) setState(() => _currency = c); },
+                onPressed: _busy ? null : () async { final c = await _tour.withModal(()=>showCurrencySheet(context, _currency)); if (c != null) setState(() => _currency = c); },
                 child: Row(mainAxisSize: MainAxisSize.min, children: [
                   Text(_currency, style: const TextStyle(fontWeight: FontWeight.w600)),
                   const SizedBox(width: 4), Icon(Icons.expand_more_rounded, size: 20, color: t.textSecondary),
                 ]))),
-            ]),
+            ])),
             const SizedBox(height: 16),
-            Wrap(spacing: 8, runSpacing: 8, children: BillingCycle.values.map((c) => ChoiceChip(
+            TourAnchor(id:'cycle',child:Wrap(spacing: 8, runSpacing: 8, children: BillingCycle.values.map((c) => ChoiceChip(
               label: Text(context.cycleLabel(c)), selected: _cycle == c, showCheckmark: false,
-              onSelected: _busy ? null : (_) => setState(() => _cycle = c))).toList()),
+              onSelected: _busy ? null : (_) => setState(() {
+                _cycle = c;
+                if (!_customPaidFrom) _paidFrom = addBillingCycle(_purchase, _cycle);
+              }))).toList())),
           ],
 
           // Date: only the purchase date is needed
           ...[
             label(s.purchaseDate),
-            Wrap(spacing: 8, runSpacing: 8, children: [
+            TourAnchor(id:'date',child:Wrap(spacing: 8, runSpacing: 8, children: [
               for (final (text, date) in [(s.today, dateOnly(DateTime.now())), (s.yesterday, dateOnly(DateTime.now()).subtract(const Duration(days: 1)))])
                 ChoiceChip(label: Text(text), selected: _purchase == date, showCheckmark: false,
-                  onSelected: _busy ? null : (_) => setState(() => _purchase = date)),
+                  onSelected: _busy ? null : (_) => _setPurchase(date)),
               ActionChip(avatar: Icon(Icons.calendar_today_outlined, size: 18, color: t.textPrimary),
                 label: Text(_purchase == dateOnly(DateTime.now()) || _purchase == dateOnly(DateTime.now()).subtract(const Duration(days: 1))
                   ? s.pickDate : context.dayMonthYear(_purchase)),
-                onPressed: _busy ? null : () async { final d = await _pick(_purchase); if (d != null) setState(() => _purchase = d); }),
-            ]),
+                onPressed: _busy ? null : () async { final d = await _pick(_purchase); if (d != null) _setPurchase(d); }),
+            ])),
             const SizedBox(height: 10),
             Text(s.purchaseHelp, style: TextStyle(fontSize: 14, height: 1.4, color: t.textSecondary)),
           ],
@@ -217,9 +265,9 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
 
           // Reminders
           label(s.reminders),
-          Wrap(spacing: 8, runSpacing: 8, children: [(1, s.daysOne), (3, s.daysThree), (7, s.daysSeven), (14, s.daysFourteen)].map((e) => FilterChip(
+          TourAnchor(id:'reminders',child:Wrap(spacing: 8, runSpacing: 8, children: [(1, s.daysOne), (3, s.daysThree), (7, s.daysSeven), (14, s.daysFourteen)].map((e) => FilterChip(
             label: Text(e.$2), selected: _reminders.contains(e.$1),
-            onSelected: _busy ? null : (v) => setState(() { v ? _reminders.add(e.$1) : _reminders.remove(e.$1); }))).toList()),
+            onSelected: _busy ? null : (v) => setState(() { v ? _reminders.add(e.$1) : _reminders.remove(e.$1); }))).toList())),
 
           // Color and logo only for custom services; catalog brands keep their own mark.
           if (_custom) ...[
@@ -248,18 +296,18 @@ class _EditorScreenState extends ConsumerState<EditorScreen> {
           // Less common fields
           const SizedBox(height: 20),
           Theme(data: Theme.of(context).copyWith(dividerColor: Colors.transparent), child: ExpansionTile(
-            tilePadding: EdgeInsets.zero, childrenPadding: EdgeInsets.zero,
+            tilePadding: EdgeInsets.zero, childrenPadding: const EdgeInsets.only(top: 14, bottom: 4),
             title: Text(s.moreOptions, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: t.textPrimary)),
             children: [
               TextFormField(controller: _url, maxLength: 500, decoration: InputDecoration(labelText: s.cancelUrl, helperText: s.manageHelp, helperMaxLines: 3),
                 validator: (v) { if (v == null || v.trim().isEmpty) return null; final uri = Uri.tryParse(v.trim());
                   return uri != null && uri.scheme == 'https' && uri.host.contains('.') ? null : s.invalidUrl; }),
-              const SizedBox(height: 8),
-              TextFormField(controller: _notes, maxLength: 1000, maxLines: 3, decoration: InputDecoration(labelText: s.notes)),
+              const SizedBox(height: 14),
+              TextFormField(controller: _notes, maxLength: 1000, maxLines: 3, decoration: InputDecoration(labelText: s.notes, alignLabelWithHint: true)),
             ])),
           const SizedBox(height: 24),
-          FilledButton(onPressed: _busy ? null : _save, child: _busy
-            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2)) : Text(s.save)),
+          TourAnchor(id:'save',child:FilledButton(onPressed: _busy ? null : _save, child: _busy
+            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2)) : Text(s.save))),
         ])))));
   }
 }

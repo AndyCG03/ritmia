@@ -74224,5 +74224,25 @@
   "package": "simple-icons",
   "version": "7.21.0",
   "note": "Retired from later Simple Icons releases; brand marks remain trademarks of their owners, used only to identify the service."
+ },
+ {
+  "id": "higgsfield",
+  "assetId": "higgsfield",
+  "name": "Higgsfield",
+  "color": "D1FE17",
+  "ai": true,
+  "preserveColors": true,
+  "bytes": 1839,
+  "sha256": "ce7f790aeb5629b3c0d06e2fe51538d7d711d5f0a20bbe3a997b38db79976a21",
+  "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/higgsfield.svg",
+  "license": {
+   "type": "Apache-2.0",
+   "notice": "docs/DASHBOARD_ICONS_LICENSE.txt"
+  },
+  "aliases": [
+   "higssfield",
+   "higgs field",
+   "ai video"
+  ]
  }
 ]

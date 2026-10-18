@@ -1,26 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/reminder_providers.dart';
+import '../../core/errors.dart';
 import '../../core/theme.dart';
 import '../../l10n/context.dart';
 import '../../services/notification_service.dart';
 import 'sheet.dart';
 
-/// Explains reminders first; only after "Turn on" does the OS permission dialog appear.
+/// Requests permission directly through the OS.
 /// Returns true when reminders end up enabled.
-Future<bool> askForReminders(BuildContext context, WidgetRef ref) async {
+Future<bool> askForReminders(BuildContext context, WidgetRef ref, {bool showConfirmation = true}) async {
   // Straight to the system permission prompt: granted → on, otherwise it stays off.
   final s = context.l10n;
-  final messenger = ScaffoldMessenger.maybeOf(context);
-  final outcome = await ref.read(deviceAlertsProvider.notifier).setEnabled(true);
+  final PermissionOutcome outcome;
+  try {
+    outcome = await ref.read(deviceAlertsProvider.notifier).setEnabled(true);
+  } catch (error) {
+    if (showConfirmation && context.mounted) showFailure(context, error);
+    return false;
+  }
+
   if (outcome == PermissionOutcome.granted) {
-    messenger?.showSnackBar(SnackBar(content: Text(s.permGranted)));
+    if (showConfirmation && context.mounted) showSuccess(context, s.permGranted);
     return true;
   }
-  if (outcome == PermissionOutcome.denied) {
-    // Android stops showing the prompt after repeated denials; offer its notification page.
-    messenger?.showSnackBar(SnackBar(content: Text(s.permBlockedBanner), duration: const Duration(seconds: 6),
-      action: SnackBarAction(label: s.openPhoneSettings, onPressed: () => NotificationService.instance.openSystemSettings())));
+
+  if (outcome == PermissionOutcome.denied && showConfirmation) {
+    // If permission is denied, the system dialog might have been suppressed or the user clicked "deny".
+    // Show the blocked sheet immediately to explain how to enable them in settings.
+    if (context.mounted) await showBlockedSheet(context);
   }
   return false;
 }

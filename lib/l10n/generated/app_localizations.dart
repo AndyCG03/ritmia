@@ -7,6 +7,8 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_pt.dart';
 
 // ignore_for_file: type=lint
 
@@ -96,6 +98,8 @@ abstract class AppLocalizations {
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
     Locale('es'),
+    Locale('fr'),
+    Locale('pt'),
   ];
 
   /// No description provided for @tagline.
@@ -365,7 +369,7 @@ abstract class AppLocalizations {
   /// No description provided for @dateOrder.
   ///
   /// In en, this message translates to:
-  /// **'The end date must follow the anchor date.'**
+  /// **'The end date cannot be before the start date.'**
   String get dateOrder;
 
   /// No description provided for @status.
@@ -929,7 +933,7 @@ abstract class AppLocalizations {
   /// No description provided for @subscriptionCount.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 subscription} other{{count} subscriptions}}'**
+  /// **'{count, plural, =0{0 subscriptions} =1{1 subscription} other{{count} subscriptions}}'**
   String subscriptionCount(int count);
 
   /// No description provided for @subscriptionsHeading.
@@ -1495,6 +1499,414 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Purchased'**
   String get purchasedHere;
+
+  /// No description provided for @widgetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Home screen widget'**
+  String get widgetTitle;
+
+  /// No description provided for @widgetHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Your next three plans, with cancellation deadlines first.'**
+  String get widgetHelp;
+
+  /// No description provided for @widgetCompactTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compact row widget'**
+  String get widgetCompactTitle;
+
+  /// No description provided for @widgetCompactHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Single row (3 to 4 columns) with your next plans.'**
+  String get widgetCompactHelp;
+
+  /// No description provided for @widgetManual.
+  ///
+  /// In en, this message translates to:
+  /// **'Long-press an empty area on your home screen → Widgets → Ritmia.'**
+  String get widgetManual;
+
+  /// No description provided for @notifCancelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel {name} {when}'**
+  String notifCancelTitle(String name, String when);
+
+  /// No description provided for @notifCancelBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid the next {amount} charge. Deadline: {date}. Open Ritmia to review this plan.'**
+  String notifCancelBody(String amount, String date);
+
+  /// No description provided for @notifScheduleError.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders are enabled, but scheduling failed. Try again.'**
+  String get notifScheduleError;
+
+  /// No description provided for @addToCalendar.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to device calendar'**
+  String get addToCalendar;
+
+  /// No description provided for @calendarAddHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Review and save this date in your calendar app.'**
+  String get calendarAddHelp;
+
+  /// No description provided for @calendarExport.
+  ///
+  /// In en, this message translates to:
+  /// **'Export to calendar'**
+  String get calendarExport;
+
+  /// No description provided for @calendarExportHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Next 12 months · up to 1,000 dates · .ics file'**
+  String get calendarExportHelp;
+
+  /// No description provided for @calendarNoDates.
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming dates to add.'**
+  String get calendarNoDates;
+
+  /// No description provided for @calendarOpened.
+  ///
+  /// In en, this message translates to:
+  /// **'Review the event and save it in your calendar.'**
+  String get calendarOpened;
+
+  /// No description provided for @calendarRenewalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} renewal'**
+  String calendarRenewalTitle(String name);
+
+  /// No description provided for @calendarTrialTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} trial ends'**
+  String calendarTrialTitle(String name);
+
+  /// No description provided for @calendarCancelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel {name}'**
+  String calendarCancelTitle(String name);
+
+  /// No description provided for @calendarEventHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Tracked in Ritmia. Changing this event does not change your subscription or cancel your plan.'**
+  String get calendarEventHelp;
+
+  /// No description provided for @notificationTest.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a test alert'**
+  String get notificationTest;
+
+  /// No description provided for @notificationTestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Test alert sent. Check your notification panel.'**
+  String get notificationTestSent;
+
+  /// No description provided for @notifTestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Ritmia reminders are ready'**
+  String get notifTestTitle;
+
+  /// No description provided for @notifTestBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a test alert. Your subscription reminders will appear here.'**
+  String get notifTestBody;
+
+  /// No description provided for @guidedTour.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a subscription step by step'**
+  String get guidedTour;
+
+  /// No description provided for @guidedTourHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'A guided tour that highlights the controls as you use the app.'**
+  String get guidedTourHelp;
+
+  /// No description provided for @tourProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} of {total}'**
+  String tourProgress(int current, int total);
+
+  /// No description provided for @tourSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip tour'**
+  String get tourSkip;
+
+  /// No description provided for @tourNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get tourNext;
+
+  /// No description provided for @tourBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get tourBack;
+
+  /// No description provided for @tourFinish.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get tourFinish;
+
+  /// No description provided for @tourAddTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your first subscription'**
+  String get tourAddTitle;
+
+  /// No description provided for @tourAddBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the highlighted button. You’ll create a real record; you can skip this tour at any time.'**
+  String get tourAddBody;
+
+  /// No description provided for @tourBrandTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a brand'**
+  String get tourBrandTitle;
+
+  /// No description provided for @tourBrandBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for your service and tap its name. You can also create a custom one. Logos are already in the app.'**
+  String get tourBrandBody;
+
+  /// No description provided for @tourNameTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Give it a name'**
+  String get tourNameTitle;
+
+  /// No description provided for @tourNameBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The brand fills in the name and logo. Change the name to distinguish a plan or account.'**
+  String get tourNameBody;
+
+  /// No description provided for @tourPriceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Free or paid?'**
+  String get tourPriceTitle;
+
+  /// No description provided for @tourPriceBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the plan type. For paid plans, enter the amount, choose the currency and how often you are charged.'**
+  String get tourPriceBody;
+
+  /// No description provided for @tourDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'When did you buy it?'**
+  String get tourDateTitle;
+
+  /// No description provided for @tourDateBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the purchase date. Ritmia calculates the next renewal from that day and your billing cycle.'**
+  String get tourDateBody;
+
+  /// No description provided for @tourRemindersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your reminders'**
+  String get tourRemindersTitle;
+
+  /// No description provided for @tourRemindersBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Select how many days before to be reminded. You can choose several. Alerts need your phone’s permission.'**
+  String get tourRemindersBody;
+
+  /// No description provided for @tourSaveTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Save your subscription'**
+  String get tourSaveTitle;
+
+  /// No description provided for @tourSaveBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap Save to create the record. If a detail is missing, go back to the previous step to complete it.'**
+  String get tourSaveBody;
+
+  /// No description provided for @tourRecordTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Here’s your plan'**
+  String get tourRecordTitle;
+
+  /// No description provided for @tourRecordBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the subscription for its details. You can mark Don’t renew there; those plans appear first.'**
+  String get tourRecordBody;
+
+  /// No description provided for @tourCalendarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See your dates'**
+  String get tourCalendarTitle;
+
+  /// No description provided for @tourCalendarBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the calendar to review renewals. You can add a date to your phone’s calendar from the plan details.'**
+  String get tourCalendarBody;
+
+  /// No description provided for @tourFilterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find what you need'**
+  String get tourFilterTitle;
+
+  /// No description provided for @tourFilterBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter by Renews or Don’t renew. Combine it with a search by name or notes.'**
+  String get tourFilterBody;
+
+  /// No description provided for @tourSettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make it yours'**
+  String get tourSettingsTitle;
+
+  /// No description provided for @tourSettingsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on and test alerts, choose a language or theme, add the widget and export dates to your calendar here.'**
+  String get tourSettingsBody;
+
+  /// No description provided for @notificationSetupError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not start reminders. Update Ritmia or try again.'**
+  String get notificationSetupError;
+
+  /// No description provided for @proBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'ONE-TIME PURCHASE · FOREVER'**
+  String get proBadge;
+
+  /// No description provided for @proSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock everything in Ritmia with a single payment, without adding another subscription to your month.'**
+  String get proSubtitle;
+
+  /// No description provided for @proBenefitUnlimitedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited subscriptions'**
+  String get proBenefitUnlimitedTitle;
+
+  /// No description provided for @proBenefitUnlimitedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Track all your active, paused and archived services without the 5-slot limit.'**
+  String get proBenefitUnlimitedBody;
+
+  /// No description provided for @proBenefitNoAdsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No ads'**
+  String get proBenefitNoAdsTitle;
+
+  /// No description provided for @proBenefitNoAdsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove occasional ads for a clean, uninterrupted experience.'**
+  String get proBenefitNoAdsBody;
+
+  /// No description provided for @proBenefitOneTimeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time lifetime payment'**
+  String get proBenefitOneTimeTitle;
+
+  /// No description provided for @proBenefitOneTimeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay once and keep Ritmia Pro forever.'**
+  String get proBenefitOneTimeBody;
+
+  /// No description provided for @proUnlockCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock Ritmia Pro'**
+  String get proUnlockCta;
+
+  /// No description provided for @proRestoreCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore purchase'**
+  String get proRestoreCta;
+
+  /// No description provided for @proActiveBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Active · One-time purchase'**
+  String get proActiveBadge;
+
+  /// No description provided for @proRestoreEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No previous Ritmia Pro purchase was found.'**
+  String get proRestoreEmpty;
+
+  /// No description provided for @adInterstitialLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'SPONSORED'**
+  String get adInterstitialLabel;
+
+  /// No description provided for @adInterstitialTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Go ad-free with Ritmia Pro'**
+  String get adInterstitialTitle;
+
+  /// No description provided for @adInterstitialBody.
+  ///
+  /// In en, this message translates to:
+  /// **'With a one-time payment you remove occasional ads and unlock unlimited subscriptions forever.'**
+  String get adInterstitialBody;
+
+  /// No description provided for @adContinueFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Ritmia Free'**
+  String get adContinueFree;
 }
 
 class _AppLocalizationsDelegate
@@ -1508,7 +1920,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['en', 'es'].contains(locale.languageCode);
+      <String>['en', 'es', 'fr', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -1521,6 +1933,10 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'pt':
+      return AppLocalizationsPt();
   }
 
   throw FlutterError(

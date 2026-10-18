@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/errors.dart';
 import '../core/providers.dart';
+import '../core/supported_languages.dart';
 import '../l10n/context.dart';
 class AuthScreen extends ConsumerStatefulWidget {
   const AuthScreen({super.key});
@@ -40,8 +41,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   Widget build(BuildContext context){
     final s=context.l10n;
     return Scaffold(appBar:AppBar(actions:[
-      TextButton(onPressed:()=>ref.read(localeProvider.notifier).setLocale(const Locale('es')),child:const Text('ES')),
-      TextButton(onPressed:()=>ref.read(localeProvider.notifier).setLocale(const Locale('en')),child:const Text('EN')),
+      PopupMenuButton<String>(tooltip:s.language,icon:const Icon(Icons.translate_rounded),
+        onSelected:(code)=>ref.read(localeProvider.notifier).setLocale(Locale(code)),
+        itemBuilder:(_)=>[for(final e in languageNames.entries) PopupMenuItem(value:e.key,child:Text(e.value))]),
     ]),body:Center(child:ConstrainedBox(constraints:const BoxConstraints(maxWidth:440),child:SingleChildScrollView(
       padding:const EdgeInsets.all(28),child:Form(key:_form,child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
         Center(child:ClipRRect(borderRadius:BorderRadius.circular(24),child:Image.asset('assets/brand/app-icon-ai.png',width:90,height:90))),
